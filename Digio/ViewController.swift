@@ -6,14 +6,20 @@
 //
 
 import UIKit
+import os.log
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        // Do any additional setup after loading the view.
+//    }
+
+    func test1(age: Int) {
+        os_log("test")
     }
 
-
+    func executeOperation(completion: () -> Void) {
+        completion()
+    }
 }
-
