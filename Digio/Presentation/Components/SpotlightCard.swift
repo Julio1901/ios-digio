@@ -52,8 +52,8 @@ class SpotlightCard: UIView {
         self.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         self.layer.cornerRadius = 10
         
-        gradientLayer.startPoint = CGPoint(x: 0.2, y: 1)
-        gradientLayer.endPoint = CGPoint(x: 1.2, y: 0)
+        gradientLayer.startPoint = CGPoint(x: -0.3, y: 1)
+        gradientLayer.endPoint = CGPoint(x: 1.2, y: -0.3)
         gradientLayer.colors = [
             UIColor.lightGray.withAlphaComponent(0.5).cgColor,
             UIColor.white.withAlphaComponent(0.5).cgColor,
