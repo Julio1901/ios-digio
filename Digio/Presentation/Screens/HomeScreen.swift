@@ -41,17 +41,16 @@ class HomeScreen: UIView {
     }()
     var listSpotlightScrollView: UIScrollView = {
         let it = UIScrollView()
-        it.backgroundColor = UIColor.orange
         it.translatesAutoresizingMaskIntoConstraints = false
         it.showsHorizontalScrollIndicator = false
+        it.contentInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
         return it
        }()
     var listSpotlighStackView: UIStackView = {
         let it = UIStackView()
-        it.backgroundColor = UIColor.orange
         it.axis = .horizontal
         it.alignment = .center
-        it.spacing = 4
+        it.spacing = 6
         it.translatesAutoresizingMaskIntoConstraints = false
         return it
       }()
@@ -82,7 +81,8 @@ class HomeScreen: UIView {
             listSpotlightScrollView.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 24),
             listSpotlightScrollView.leadingAnchor.constraint(equalTo: logo.leadingAnchor),
             listSpotlightScrollView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: DEFAULT_TRAILING_ANCHOR_VALUE),
-            listSpotlightScrollView.heightAnchor.constraint(equalToConstant: 150),
+            listSpotlightScrollView.heightAnchor.constraint(equalToConstant: 170),
+            
             listSpotlighStackView.leadingAnchor.constraint(equalTo: listSpotlightScrollView.leadingAnchor),
             listSpotlighStackView.trailingAnchor.constraint(equalTo: listSpotlightScrollView.trailingAnchor),
             listSpotlighStackView.topAnchor.constraint(equalTo: listSpotlightScrollView.topAnchor),
