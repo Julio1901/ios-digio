@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Digio
+
+  Created by Julio Cesar Pereira on 30/06/24.
+  
+*/
+
+//MARK: Home Screen
+"welcome-message" = "Olá, ";

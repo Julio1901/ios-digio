@@ -19,6 +19,12 @@
 		F43F95A92C2FD5FB00FE1C90 /* DigioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F95A82C2FD5FB00FE1C90 /* DigioUITests.swift */; };
 		F43F95AB2C2FD5FB00FE1C90 /* DigioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F95AA2C2FD5FB00FE1C90 /* DigioUITestsLaunchTests.swift */; };
 		F4CBE0592C311260009DE789 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE0582C311260009DE789 /* HomeScreen.swift */; };
+		F4CBE05C2C3121EC009DE789 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE05B2C3121EC009DE789 /* Extensions.swift */; };
+		F4CBE05F2C31230D009DE789 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4CBE05D2C31230D009DE789 /* Localizable.strings */; };
+		F4CBE0622C31261F009DE789 /* Sora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4CBE0612C31261F009DE789 /* Sora-SemiBold.ttf */; };
+		F4CBE0642C31262A009DE789 /* Sora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4CBE0632C31262A009DE789 /* Sora-Bold.ttf */; };
+		F4CBE0662C312633009DE789 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4CBE0652C312633009DE789 /* Sora-Regular.ttf */; };
+		F4CBE0682C31277E009DE789 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE0672C31277E009DE789 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,12 @@
 		F43F95A82C2FD5FB00FE1C90 /* DigioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioUITests.swift; sourceTree = "<group>"; };
 		F43F95AA2C2FD5FB00FE1C90 /* DigioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F4CBE0582C311260009DE789 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		F4CBE05B2C3121EC009DE789 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F4CBE05E2C31230D009DE789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4CBE0612C31261F009DE789 /* Sora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-SemiBold.ttf"; sourceTree = "<group>"; };
+		F4CBE0632C31262A009DE789 /* Sora-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Bold.ttf"; sourceTree = "<group>"; };
+		F4CBE0652C312633009DE789 /* Sora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Regular.ttf"; sourceTree = "<group>"; };
+		F4CBE0672C31277E009DE789 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F78650F0F2D1CB53A0D69DE4 /* Pods-DigioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioTests.debug.xcconfig"; path = "Target Support Files/Pods-DigioTests/Pods-DigioTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,12 +138,15 @@
 		F43F95862C2FD5FA00FE1C90 /* Digio */ = {
 			isa = PBXGroup;
 			children = (
+				F4CBE0602C3125F7009DE789 /* Fonts */,
+				F4CBE05A2C3121DD009DE789 /* Common */,
 				F4CBE0552C311164009DE789 /* Presentation */,
 				F43F95872C2FD5FA00FE1C90 /* AppDelegate.swift */,
 				F43F95892C2FD5FA00FE1C90 /* SceneDelegate.swift */,
 				F43F95902C2FD5FB00FE1C90 /* Assets.xcassets */,
 				F43F95922C2FD5FB00FE1C90 /* LaunchScreen.storyboard */,
 				F43F95952C2FD5FB00FE1C90 /* Info.plist */,
+				F4CBE05D2C31230D009DE789 /* Localizable.strings */,
 			);
 			path = Digio;
 			sourceTree = "<group>";
@@ -176,6 +191,25 @@
 				F43F958B2C2FD5FA00FE1C90 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F4CBE05A2C3121DD009DE789 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F4CBE05B2C3121EC009DE789 /* Extensions.swift */,
+				F4CBE0672C31277E009DE789 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F4CBE0602C3125F7009DE789 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F4CBE0612C31261F009DE789 /* Sora-SemiBold.ttf */,
+				F4CBE0632C31262A009DE789 /* Sora-Bold.ttf */,
+				F4CBE0652C312633009DE789 /* Sora-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		FCD6D9952CA35A989BE099FC /* Pods */ = {
@@ -300,6 +334,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F43F95912C2FD5FB00FE1C90 /* Assets.xcassets in Resources */,
+				F4CBE05F2C31230D009DE789 /* Localizable.strings in Resources */,
+				F4CBE0622C31261F009DE789 /* Sora-SemiBold.ttf in Resources */,
+				F4CBE0642C31262A009DE789 /* Sora-Bold.ttf in Resources */,
+				F4CBE0662C312633009DE789 /* Sora-Regular.ttf in Resources */,
 				F43F95942C2FD5FB00FE1C90 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,10 +451,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4CBE05C2C3121EC009DE789 /* Extensions.swift in Sources */,
 				F4CBE0592C311260009DE789 /* HomeScreen.swift in Sources */,
 				F43F958C2C2FD5FA00FE1C90 /* HomeViewController.swift in Sources */,
 				F43F95882C2FD5FA00FE1C90 /* AppDelegate.swift in Sources */,
 				F43F958A2C2FD5FA00FE1C90 /* SceneDelegate.swift in Sources */,
+				F4CBE0682C31277E009DE789 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +499,14 @@
 				F43F95932C2FD5FB00FE1C90 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F4CBE05D2C31230D009DE789 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4CBE05E2C31230D009DE789 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
