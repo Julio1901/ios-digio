@@ -20,7 +20,6 @@ line_length:
   ignores_comments: true 
   ignores_interpolated_strings: true 
 
-
 type_name:
   min_length: 3          
   max_length: 40         
@@ -43,3 +42,4 @@ custom_rules:
     regex: "((\\bprint)|(Swift\\.print))\\s*\\("
     message: "Prefer os_log over print"
     severity: warning
+

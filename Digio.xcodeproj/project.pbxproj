@@ -12,12 +12,13 @@
 		53787703B673041FE28AF8B2 /* Pods_DigioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF83F9F613F143A60D1D27C /* Pods_DigioTests.framework */; };
 		F43F95882C2FD5FA00FE1C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F95872C2FD5FA00FE1C90 /* AppDelegate.swift */; };
 		F43F958A2C2FD5FA00FE1C90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F95892C2FD5FA00FE1C90 /* SceneDelegate.swift */; };
-		F43F958C2C2FD5FA00FE1C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F958B2C2FD5FA00FE1C90 /* ViewController.swift */; };
+		F43F958C2C2FD5FA00FE1C90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F958B2C2FD5FA00FE1C90 /* HomeViewController.swift */; };
 		F43F95912C2FD5FB00FE1C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43F95902C2FD5FB00FE1C90 /* Assets.xcassets */; };
 		F43F95942C2FD5FB00FE1C90 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F43F95932C2FD5FB00FE1C90 /* Base */; };
 		F43F959F2C2FD5FB00FE1C90 /* DigioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F959E2C2FD5FB00FE1C90 /* DigioTests.swift */; };
 		F43F95A92C2FD5FB00FE1C90 /* DigioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F95A82C2FD5FB00FE1C90 /* DigioUITests.swift */; };
 		F43F95AB2C2FD5FB00FE1C90 /* DigioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F95AA2C2FD5FB00FE1C90 /* DigioUITestsLaunchTests.swift */; };
+		F4CBE0592C311260009DE789 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE0582C311260009DE789 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,7 @@
 		F43F95842C2FD5FA00FE1C90 /* Digio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Digio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43F95872C2FD5FA00FE1C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F43F95892C2FD5FA00FE1C90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F43F958B2C2FD5FA00FE1C90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F43F958B2C2FD5FA00FE1C90 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F43F95902C2FD5FB00FE1C90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F43F95932C2FD5FB00FE1C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F43F95952C2FD5FB00FE1C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		F43F95A42C2FD5FB00FE1C90 /* DigioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43F95A82C2FD5FB00FE1C90 /* DigioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioUITests.swift; sourceTree = "<group>"; };
 		F43F95AA2C2FD5FB00FE1C90 /* DigioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4CBE0582C311260009DE789 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		F78650F0F2D1CB53A0D69DE4 /* Pods-DigioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioTests.debug.xcconfig"; path = "Target Support Files/Pods-DigioTests/Pods-DigioTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,9 +126,9 @@
 		F43F95862C2FD5FA00FE1C90 /* Digio */ = {
 			isa = PBXGroup;
 			children = (
+				F4CBE0552C311164009DE789 /* Presentation */,
 				F43F95872C2FD5FA00FE1C90 /* AppDelegate.swift */,
 				F43F95892C2FD5FA00FE1C90 /* SceneDelegate.swift */,
-				F43F958B2C2FD5FA00FE1C90 /* ViewController.swift */,
 				F43F95902C2FD5FB00FE1C90 /* Assets.xcassets */,
 				F43F95922C2FD5FB00FE1C90 /* LaunchScreen.storyboard */,
 				F43F95952C2FD5FB00FE1C90 /* Info.plist */,
@@ -149,6 +151,31 @@
 				F43F95AA2C2FD5FB00FE1C90 /* DigioUITestsLaunchTests.swift */,
 			);
 			path = DigioUITests;
+			sourceTree = "<group>";
+		};
+		F4CBE0552C311164009DE789 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F4CBE0572C3111CC009DE789 /* ViewControllers */,
+				F4CBE0562C3111AB009DE789 /* Screens */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F4CBE0562C3111AB009DE789 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F4CBE0582C311260009DE789 /* HomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F4CBE0572C3111CC009DE789 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F43F958B2C2FD5FA00FE1C90 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		FCD6D9952CA35A989BE099FC /* Pods */ = {
@@ -386,7 +413,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F43F958C2C2FD5FA00FE1C90 /* ViewController.swift in Sources */,
+				F4CBE0592C311260009DE789 /* HomeScreen.swift in Sources */,
+				F43F958C2C2FD5FA00FE1C90 /* HomeViewController.swift in Sources */,
 				F43F95882C2FD5FA00FE1C90 /* AppDelegate.swift in Sources */,
 				F43F958A2C2FD5FA00FE1C90 /* SceneDelegate.swift in Sources */,
 			);
