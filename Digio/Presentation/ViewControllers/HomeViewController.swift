@@ -16,5 +16,14 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
         view = initialScreen
+        setupViews()
+    }
+    
+    func setupViews() {
+        for i in 0..<10 {
+            let cardTest = SpotlightCard()
+            cardTest.translatesAutoresizingMaskIntoConstraints = false
+            initialScreen.listSpotlighStackView.addArrangedSubview(cardTest)
+        }
     }
 }

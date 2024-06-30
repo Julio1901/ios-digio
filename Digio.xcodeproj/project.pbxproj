@@ -25,6 +25,7 @@
 		F4CBE0642C31262A009DE789 /* Sora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4CBE0632C31262A009DE789 /* Sora-Bold.ttf */; };
 		F4CBE0662C312633009DE789 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4CBE0652C312633009DE789 /* Sora-Regular.ttf */; };
 		F4CBE0682C31277E009DE789 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE0672C31277E009DE789 /* Constants.swift */; };
+		F4CBE06B2C31303C009DE789 /* SpotlightCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE06A2C31303C009DE789 /* SpotlightCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		F4CBE0632C31262A009DE789 /* Sora-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Bold.ttf"; sourceTree = "<group>"; };
 		F4CBE0652C312633009DE789 /* Sora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Regular.ttf"; sourceTree = "<group>"; };
 		F4CBE0672C31277E009DE789 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F4CBE06A2C31303C009DE789 /* SpotlightCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCard.swift; sourceTree = "<group>"; };
 		F78650F0F2D1CB53A0D69DE4 /* Pods-DigioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioTests.debug.xcconfig"; path = "Target Support Files/Pods-DigioTests/Pods-DigioTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 		F4CBE0552C311164009DE789 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F4CBE0692C312F7C009DE789 /* Components */,
 				F4CBE0572C3111CC009DE789 /* ViewControllers */,
 				F4CBE0562C3111AB009DE789 /* Screens */,
 			);
@@ -210,6 +213,14 @@
 				F4CBE0652C312633009DE789 /* Sora-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F4CBE0692C312F7C009DE789 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F4CBE06A2C31303C009DE789 /* SpotlightCard.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		FCD6D9952CA35A989BE099FC /* Pods */ = {
@@ -455,6 +466,7 @@
 				F4CBE0592C311260009DE789 /* HomeScreen.swift in Sources */,
 				F43F958C2C2FD5FA00FE1C90 /* HomeViewController.swift in Sources */,
 				F43F95882C2FD5FA00FE1C90 /* AppDelegate.swift in Sources */,
+				F4CBE06B2C31303C009DE789 /* SpotlightCard.swift in Sources */,
 				F43F958A2C2FD5FA00FE1C90 /* SceneDelegate.swift in Sources */,
 				F4CBE0682C31277E009DE789 /* Constants.swift in Sources */,
 			);

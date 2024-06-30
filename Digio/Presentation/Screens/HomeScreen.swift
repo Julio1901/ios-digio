@@ -8,8 +8,8 @@
 import UIKit
 
 class HomeScreen: UIView {
-    private let DEFAULT_LEADING_ANCHOR_VALUE: CGFloat = 24
-    private let DEFAULT_TRAILING_ANCHOR_VALUE: CGFloat = -24
+    private let DEFAULT_LEADING_ANCHOR_VALUE: CGFloat = 10
+    private let DEFAULT_TRAILING_ANCHOR_VALUE: CGFloat = -10
 
     var logo: UIImageView = {
         let it = UIImageView()
@@ -18,6 +18,17 @@ class HomeScreen: UIView {
         return it
     }()
     private var welcomeLabel: UILabel = {
+        let it = UILabel()
+        it.translatesAutoresizingMaskIntoConstraints = false
+        let text = NSLocalizedString("welcome-message", comment: "")
+        it.text = "\(text) \(MOCK_USER_NAME)"
+        it.textColor = UIColor.black
+        it.font = UIFont(name: "Sora-SemiBold", size: 12)
+        it.isAccessibilityElement = true
+        it.accessibilityHint = "Decorative message: no associated action."
+        return it
+    }()
+    private var welcomeLabel2: UILabel = {
         let it = UILabel()
         it.translatesAutoresizingMaskIntoConstraints = false
         let text = NSLocalizedString("welcome-message", comment: "")
@@ -39,7 +50,7 @@ class HomeScreen: UIView {
         let it = UIStackView()
         it.backgroundColor = UIColor.orange
         it.axis = .horizontal
-        it.alignment = .fill
+        it.alignment = .center
         it.spacing = 4
         it.translatesAutoresizingMaskIntoConstraints = false
         return it
@@ -76,7 +87,7 @@ class HomeScreen: UIView {
             listSpotlighStackView.trailingAnchor.constraint(equalTo: listSpotlightScrollView.trailingAnchor),
             listSpotlighStackView.topAnchor.constraint(equalTo: listSpotlightScrollView.topAnchor),
             listSpotlighStackView.bottomAnchor.constraint(equalTo: listSpotlightScrollView.bottomAnchor),
-            listSpotlighStackView.heightAnchor.constraint(equalTo: listSpotlightScrollView.heightAnchor)
+            listSpotlighStackView.heightAnchor.constraint(equalTo: listSpotlightScrollView.heightAnchor),
         ])
     }
 }
