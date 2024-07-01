@@ -10,7 +10,6 @@ import UIKit
 class SpotlightCard: UIView {
     let gradientLayer = CAGradientLayer()
     private var isSkeletonVisible = true
-    
     override init(frame: CGRect) {
             super.init(frame: frame)
             setupCardView()
@@ -22,7 +21,7 @@ class SpotlightCard: UIView {
         super.layoutSubviews()
         gradientLayer.frame = self.bounds
     }
-    var image : UIImageView = {
+    var image: UIImageView = {
         let it = UIImageView()
         it.translatesAutoresizingMaskIntoConstraints = false
         it.layer.cornerRadius = 10

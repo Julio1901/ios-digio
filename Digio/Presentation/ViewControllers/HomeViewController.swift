@@ -9,24 +9,19 @@ import UIKit
 import os.log
 
 class HomeViewController: UIViewController {
-    
     private var initialScreen = HomeScreen()
-    private var viewModel : MainViewModel!
-    
+    private var viewModel: MainViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
         view = initialScreen
         setupViews()
-        
         let apiClient = APIClient()
         let repository = ProductsRepositoryImpl(apiClient: apiClient)
         self.viewModel = MainViewModel(productsRepository: repository)
-        
         viewModel.delegate = self
         viewModel.fetchItems()
     }
-    
     func setupViews() {
         for i in 0..<10 {
             let cardTest = SpotlightCard()
@@ -38,12 +33,7 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: MainViewModelDelegate {
-    
-   
-    
-    func test(products: String) {
-        print(products)
+    func didFetchProducts() {
+        print(viewModel.productsResponse?.spotlight)
     }
-    
-    
 }

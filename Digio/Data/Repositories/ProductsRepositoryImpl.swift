@@ -7,20 +7,17 @@
 
 import Foundation
 
-class ProductsRepositoryImpl : ProductsRepository {
-    
+class ProductsRepositoryImpl: ProductsRepository{
     private let apiClient: APIClientProtocol
-       
     init(apiClient: APIClientProtocol) {
        self.apiClient = apiClient
     }
-    
-    func fetchItems(completion: @escaping (Result<ProductList, Error>) -> Void) {
+    func fetchItems(completion: @escaping (Result<ProductsResponse, Error>) -> Void) {
         apiClient.fetchItems { result in
             switch result {
             case .success(let data):
                 do {
-                    let productList = try JSONDecoder().decode(ProductList.self, from: data)
+                    let productList = try JSONDecoder().decode(ProductsResponse.self, from: data)
                     DispatchQueue.main.async {
                         completion(.success(productList))
                     }
@@ -36,6 +33,4 @@ class ProductsRepositoryImpl : ProductsRepository {
             }
         }
     }
-    
-
 }

@@ -82,7 +82,6 @@ class HomeScreen: UIView {
             listSpotlightScrollView.leadingAnchor.constraint(equalTo: logo.leadingAnchor),
             listSpotlightScrollView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: DEFAULT_TRAILING_ANCHOR_VALUE),
             listSpotlightScrollView.heightAnchor.constraint(equalToConstant: 170),
-            
             listSpotlighStackView.leadingAnchor.constraint(equalTo: listSpotlightScrollView.leadingAnchor),
             listSpotlighStackView.trailingAnchor.constraint(equalTo: listSpotlightScrollView.trailingAnchor),
             listSpotlighStackView.topAnchor.constraint(equalTo: listSpotlightScrollView.topAnchor),

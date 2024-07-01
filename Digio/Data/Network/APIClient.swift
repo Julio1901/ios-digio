@@ -7,7 +7,7 @@
 
 import Foundation
 
-class APIClient : APIClientProtocol {
+class APIClient: APIClientProtocol {
 
     func fetchItems(completion: @escaping (Result<Data, any Error>) -> Void) {
         guard let endpoint = URL(string: APIEndpoints.Products.fetch) else {

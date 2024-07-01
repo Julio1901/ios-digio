@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ProductList: Codable {
+struct ProductsResponse: Codable {
     let spotlight: [Spotlight]
     let products: [Product]
     let cash: Cash
