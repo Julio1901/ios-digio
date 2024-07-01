@@ -10,15 +10,15 @@ import Foundation
 class SpotlightViewModel {
     var spotlight: Spotlight
     var imageData: Data?
-    private var hasError : Bool?
-    init(spotlight: Spotlight){
+    private var hasError: Bool?
+    init(spotlight: Spotlight) {
         self.spotlight = spotlight
     }
     func loadImage(completion: @escaping (_ imageData: Data?) -> Void) {
-        if imageData == nil && hasError != true{
+        if imageData == nil && hasError != true {
             guard let url = URL(string: spotlight.bannerURL) else { return }
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
-                if let error = error {
+            URLSession.shared.dataTask(with: url) { (data, _, error) in
+                if error != nil {
                     self.hasError = true
                     completion(nil)
                     return

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol MainViewModelDelegate {
+protocol MainViewModelDelegate: AnyObject {
     func didFetchProducts()
 }
 
@@ -29,11 +29,9 @@ class MainViewModel {
                 populateProductViewModelList(products: response.products)
                 populateSpotlightViewModelList(spotlights: response.spotlight)
                 delegate.didFetchProducts()
-//                self.delegate?.test(products: "Dados recebidos com sucesso")
             case .failure(let error):
                 print("Erro ao buscar dados: \(error.localizedDescription)")
                 delegate.didFetchProducts()
-//                self.delegate?.test(products: "Falha na chamada")
             }
         }
     }

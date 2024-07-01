@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProductsRepositoryImpl: ProductsRepository{
+class ProductsRepositoryImpl: ProductsRepository {
     private let apiClient: APIClientProtocol
     init(apiClient: APIClientProtocol) {
        self.apiClient = apiClient

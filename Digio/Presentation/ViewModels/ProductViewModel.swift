@@ -10,8 +10,8 @@ import Foundation
 class ProductViewModel {
     var product: Product
     var imageData: Data?
-    private var hasError : Bool?
-    init(product: Product){
+    private var hasError: Bool?
+    init(product: Product) {
         self.product = product
     }
     func loadImage(from stringUrl: String, completion: @escaping (_ imageData: Data?) -> Void) async {
