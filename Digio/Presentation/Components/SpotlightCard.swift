@@ -9,6 +9,7 @@ import UIKit
 
 class SpotlightCard: UIView {
     let gradientLayer = CAGradientLayer()
+    private var isSkeletonVisible = true
     
     override init(frame: CGRect) {
             super.init(frame: frame)
@@ -23,7 +24,6 @@ class SpotlightCard: UIView {
     }
     var image : UIImageView = {
         let it = UIImageView()
-        it.image = UIImage(named: "image-spotlight-error")
         it.translatesAutoresizingMaskIntoConstraints = false
         it.layer.cornerRadius = 10
         it.layer.masksToBounds = true
@@ -42,13 +42,19 @@ class SpotlightCard: UIView {
         self.layer.shadowRadius = 4
         //self.addSubview(image)
         setupSkeletonView()
+        setupConstraints()
     }
     private func setupConstraints() {
         self.heightAnchor.constraint(equalToConstant: 150).isActive = true
         self.widthAnchor.constraint(equalToConstant: 300).isActive = true
     }
+    private func addContentView() {
+        self.addSubview(image)
+        //TODO: fazer tratativa para verificar erros externamente
+        setImageErrorState()
+    }
     private func setupSkeletonView() {
-       
+        isSkeletonVisible = true
         self.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         self.layer.cornerRadius = 10
         
@@ -70,5 +76,19 @@ class SpotlightCard: UIView {
         animation.duration = 1.5
         animation.repeatCount = .infinity
         gradientLayer.add(animation, forKey: "shimmer")
+    }
+    private func removeSkeletonView() {
+        gradientLayer.removeFromSuperlayer()
+        self.backgroundColor = UIColor.white
+        isSkeletonVisible = false
+    }
+    func showContent() {
+        if isSkeletonVisible {
+            removeSkeletonView() // Remove o skeleton view
+            addContentView() // Adiciona o conteúdo real
+        }
+    }
+    func setImageErrorState() {
+        self.image.image = UIImage(named: "image-spotlight-error")
     }
 }
