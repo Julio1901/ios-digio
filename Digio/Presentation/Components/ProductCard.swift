@@ -8,8 +8,9 @@
 import UIKit
 
 class ProductCard: UIView {
-    let gradientLayer = CAGradientLayer()
-
+    private let gradientLayer = CAGradientLayer()
+    var imageWidth = 60
+    var imageHeigth = 60
     override init(frame: CGRect) {
             super.init(frame: frame)
             setupCardView()
@@ -47,20 +48,19 @@ class ProductCard: UIView {
         handleImage()
     }
     private func handleImage() {
-        var imageWidth = 60
-        var imageHeigth = 60
+
         DispatchQueue.global().async {
             self.viewModel.loadImage(completion: { imageData in
                 self.removeSkeletonView()
                 DispatchQueue.main.async {
-                    if let image = imageData {
-                        self.image.image = UIImage(data: image)
-                    }else {
-                        imageWidth = 120
-                        imageHeigth = 120
+                    if let imageData = imageData, let image = UIImage(data: imageData) {
+                        self.image.image = image
+                    } else {
+                        self.imageWidth = 120
+                        self.imageHeigth = 120
                         self.setImageErrorState()
                     }
-                    self.addContentView(imageWidth: imageWidth, imageHeigth: imageHeigth)
+                    self.addContentView(imageWidth: self.imageWidth, imageHeigth: self.imageHeigth)
                 }
             })
         }
