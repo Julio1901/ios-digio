@@ -108,13 +108,13 @@ class SpotlightCard: UIView {
     func setImageErrorState() {
         self.image.image = UIImage(named: "image-spotlight-error")
     }
-    func setup(image: UIImage?) {
-        func setup(image: UIImage?) {
-            if let image = image {
-                self.image.image = image
-            } else {
-                setImageErrorState()
-            }
-        }
-    }
+//    func setup(image: UIImage?) {
+//        func setup(image: UIImage?) {
+//            if let image = image {
+//                self.image.image = image
+//            } else {
+//                setImageErrorState()
+//            }
+//        }
+//    }
 }

@@ -27,6 +27,7 @@
 		F4B15E2A2C3318B9006E6FC7 /* SpotlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E292C3318B9006E6FC7 /* SpotlightViewModel.swift */; };
 		F4B15E2C2C335564006E6FC7 /* DigioCashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E2B2C335564006E6FC7 /* DigioCashCard.swift */; };
 		F4B15E2E2C335623006E6FC7 /* DigioCashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E2D2C335623006E6FC7 /* DigioCashViewModel.swift */; };
+		F4B15E302C3363C1006E6FC7 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E2F2C3363C1006E6FC7 /* ProductCard.swift */; };
 		F4CBE0592C311260009DE789 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE0582C311260009DE789 /* HomeScreen.swift */; };
 		F4CBE05C2C3121EC009DE789 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE05B2C3121EC009DE789 /* Extensions.swift */; };
 		F4CBE05F2C31230D009DE789 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4CBE05D2C31230D009DE789 /* Localizable.strings */; };
@@ -90,6 +91,7 @@
 		F4B15E292C3318B9006E6FC7 /* SpotlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightViewModel.swift; sourceTree = "<group>"; };
 		F4B15E2B2C335564006E6FC7 /* DigioCashCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioCashCard.swift; sourceTree = "<group>"; };
 		F4B15E2D2C335623006E6FC7 /* DigioCashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioCashViewModel.swift; sourceTree = "<group>"; };
+		F4B15E2F2C3363C1006E6FC7 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		F4CBE0582C311260009DE789 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		F4CBE05B2C3121EC009DE789 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F4CBE05E2C31230D009DE789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 			children = (
 				F4CBE06A2C31303C009DE789 /* SpotlightCard.swift */,
 				F4B15E2B2C335564006E6FC7 /* DigioCashCard.swift */,
+				F4B15E2F2C3363C1006E6FC7 /* ProductCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 				F43F95882C2FD5FA00FE1C90 /* AppDelegate.swift in Sources */,
 				F4CBE06B2C31303C009DE789 /* SpotlightCard.swift in Sources */,
 				F43F958A2C2FD5FA00FE1C90 /* SceneDelegate.swift in Sources */,
+				F4B15E302C3363C1006E6FC7 /* ProductCard.swift in Sources */,
 				F4B15E1F2C32F7D7006E6FC7 /* Product.swift in Sources */,
 				F4CBE0682C31277E009DE789 /* Constants.swift in Sources */,
 				F4B15E2C2C335564006E6FC7 /* DigioCashCard.swift in Sources */,

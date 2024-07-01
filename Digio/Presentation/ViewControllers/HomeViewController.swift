@@ -34,8 +34,14 @@ class HomeViewController: UIViewController {
         for cashViewModel in viewModel.digioCashViewModelList {
             let digioCashCard = DigioCashCard()
             digioCashCard.viewModel = cashViewModel
-//            digioCashCard.translatesAutoresizingMaskIntoConstraints = false
             initialScreen.listDigioCashStackView.addArrangedSubview(digioCashCard)
+        }
+    }
+    private func setupProductCards() {
+        for productViewModel in viewModel.productViewModelList {
+            let productCard = ProductCard()
+            productCard.viewModel = productViewModel
+            initialScreen.listProductStackView.addArrangedSubview(productCard)
         }
     }
 }
@@ -44,5 +50,6 @@ extension HomeViewController: MainViewModelDelegate {
     func didFetchProducts() {
         setupSpotLightCards()
         setupDigioCashCards()
+        setupProductCards()
     }
 }

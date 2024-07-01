@@ -78,6 +78,31 @@ class HomeScreen: UIView {
 //        it.accessibilityHint = "Decorative message: no associated action."
         return it
     }()
+    private var productsLabel: UILabel = {
+        let it = UILabel()
+        it.translatesAutoresizingMaskIntoConstraints = false
+        it.setText(key: "products")
+        it.textColor = UIColor(red: 48/255, green: 56/255, blue: 73/255, alpha: 1.0)
+        it.font = UIFont(name: "Sora-SemiBold", size: 20)
+//        it.isAccessibilityElement = true
+//        it.accessibilityHint = "Decorative message: no associated action."
+        return it
+    }()
+    var listProductScrollView: UIScrollView = {
+        let it = UIScrollView()
+        it.translatesAutoresizingMaskIntoConstraints = false
+        it.showsHorizontalScrollIndicator = false
+        it.contentInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
+        return it
+       }()
+    var listProductStackView: UIStackView = {
+        let it = UIStackView()
+        it.axis = .horizontal
+        it.alignment = .center
+        it.spacing = 15
+        it.translatesAutoresizingMaskIntoConstraints = false
+        return it
+      }()
     init() {
         super.init(frame: .zero)
         self.backgroundColor = UIColor.white
@@ -96,6 +121,9 @@ class HomeScreen: UIView {
         addSubview(secondDigioCashLabel)
         addSubview(listDigioCashScrollView)
         listDigioCashScrollView.addSubview(listDigioCashStackView)
+        addSubview(productsLabel)
+        addSubview(listProductScrollView)
+        listProductScrollView.addSubview(listProductStackView)
     }
     func setupConstraints() {
         let safeArea = safeAreaLayoutGuide
@@ -130,6 +158,19 @@ class HomeScreen: UIView {
             listDigioCashStackView.topAnchor.constraint(equalTo: listDigioCashScrollView.topAnchor),
             listDigioCashStackView.bottomAnchor.constraint(equalTo: listDigioCashScrollView.bottomAnchor),
             listDigioCashStackView.heightAnchor.constraint(equalTo: listDigioCashScrollView.heightAnchor),
+            productsLabel.topAnchor.constraint(equalTo: listDigioCashScrollView.bottomAnchor, constant: 25),
+            productsLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: DEFAULT_LEADING_ANCHOR_VALUE),
+            
+            
+            listProductScrollView.topAnchor.constraint(equalTo: productsLabel.bottomAnchor, constant: 20),
+            listProductScrollView.leadingAnchor.constraint(equalTo: productsLabel.leadingAnchor),
+            listProductScrollView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: DEFAULT_TRAILING_ANCHOR_VALUE),
+            listProductScrollView.heightAnchor.constraint(equalToConstant: 130),
+            listProductStackView.leadingAnchor.constraint(equalTo: listProductScrollView.leadingAnchor),
+            listProductStackView.trailingAnchor.constraint(equalTo: listProductScrollView.trailingAnchor),
+            listProductStackView.topAnchor.constraint(equalTo: listProductScrollView.topAnchor),
+            listProductStackView.bottomAnchor.constraint(equalTo: listProductScrollView.bottomAnchor),
+            listProductStackView.heightAnchor.constraint(equalTo: listProductScrollView.heightAnchor),
         ])
     }
 }
