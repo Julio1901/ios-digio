@@ -28,17 +28,6 @@ class HomeScreen: UIView {
         it.accessibilityHint = "Decorative message: no associated action."
         return it
     }()
-    private var welcomeLabel2: UILabel = {
-        let it = UILabel()
-        it.translatesAutoresizingMaskIntoConstraints = false
-        let text = NSLocalizedString("welcome-message", comment: "")
-        it.text = "\(text) \(MOCK_USER_NAME)"
-        it.textColor = UIColor.black
-        it.font = UIFont(name: "Sora-SemiBold", size: 12)
-        it.isAccessibilityElement = true
-        it.accessibilityHint = "Decorative message: no associated action."
-        return it
-    }()
     var listSpotlightScrollView: UIScrollView = {
         let it = UIScrollView()
         it.translatesAutoresizingMaskIntoConstraints = false
@@ -54,6 +43,41 @@ class HomeScreen: UIView {
         it.translatesAutoresizingMaskIntoConstraints = false
         return it
       }()
+    var listDigioCashScrollView: UIScrollView = {
+        let it = UIScrollView()
+        it.translatesAutoresizingMaskIntoConstraints = false
+        it.showsHorizontalScrollIndicator = false
+        it.contentInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
+        return it
+       }()
+    var listDigioCashStackView: UIStackView = {
+        let it = UIStackView()
+        it.axis = .horizontal
+        it.alignment = .center
+        it.spacing = 6
+        it.translatesAutoresizingMaskIntoConstraints = false
+        return it
+      }()
+    private var firstDigioCashLabel: UILabel = {
+        let it = UILabel()
+        it.translatesAutoresizingMaskIntoConstraints = false
+        it.setText(key: "digio")
+        it.textColor = UIColor(red: 48/255, green: 56/255, blue: 73/255, alpha: 1.0)
+        it.font = UIFont(name: "Sora-SemiBold", size: 20)
+//        it.isAccessibilityElement = true
+//        it.accessibilityHint = "Decorative message: no associated action."
+        return it
+    }()
+    private var secondDigioCashLabel: UILabel = {
+        let it = UILabel()
+        it.translatesAutoresizingMaskIntoConstraints = false
+        it.setText(key: "cash")
+        it.textColor = UIColor(red: 138/255, green: 138/255, blue: 138/255, alpha: 1.0)
+        it.font = UIFont(name: "Sora-SemiBold", size: 20)
+//        it.isAccessibilityElement = true
+//        it.accessibilityHint = "Decorative message: no associated action."
+        return it
+    }()
     init() {
         super.init(frame: .zero)
         self.backgroundColor = UIColor.white
@@ -68,6 +92,10 @@ class HomeScreen: UIView {
         addSubview(welcomeLabel)
         addSubview(listSpotlightScrollView)
         listSpotlightScrollView.addSubview(listSpotlighStackView)
+        addSubview(firstDigioCashLabel)
+        addSubview(secondDigioCashLabel)
+        addSubview(listDigioCashScrollView)
+        listDigioCashScrollView.addSubview(listDigioCashStackView)
     }
     func setupConstraints() {
         let safeArea = safeAreaLayoutGuide
@@ -87,6 +115,21 @@ class HomeScreen: UIView {
             listSpotlighStackView.topAnchor.constraint(equalTo: listSpotlightScrollView.topAnchor),
             listSpotlighStackView.bottomAnchor.constraint(equalTo: listSpotlightScrollView.bottomAnchor),
             listSpotlighStackView.heightAnchor.constraint(equalTo: listSpotlightScrollView.heightAnchor),
+            firstDigioCashLabel.topAnchor.constraint(equalTo: listSpotlightScrollView.bottomAnchor, constant: 20),
+            firstDigioCashLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: DEFAULT_LEADING_ANCHOR_VALUE),
+            secondDigioCashLabel.centerYAnchor.constraint(equalTo: firstDigioCashLabel.centerYAnchor),
+            secondDigioCashLabel.leadingAnchor.constraint(equalTo: firstDigioCashLabel.trailingAnchor, constant: 4),
+            
+            
+            listDigioCashScrollView.topAnchor.constraint(equalTo: firstDigioCashLabel.bottomAnchor, constant: 10),
+            listDigioCashScrollView.leadingAnchor.constraint(equalTo: firstDigioCashLabel.leadingAnchor),
+            listDigioCashScrollView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: DEFAULT_TRAILING_ANCHOR_VALUE),
+            listDigioCashScrollView.heightAnchor.constraint(equalToConstant: 100),
+            listDigioCashStackView.leadingAnchor.constraint(equalTo: listDigioCashScrollView.leadingAnchor),
+            listDigioCashStackView.trailingAnchor.constraint(equalTo: listDigioCashScrollView.trailingAnchor),
+            listDigioCashStackView.topAnchor.constraint(equalTo: listDigioCashScrollView.topAnchor),
+            listDigioCashStackView.bottomAnchor.constraint(equalTo: listDigioCashScrollView.bottomAnchor),
+            listDigioCashStackView.heightAnchor.constraint(equalTo: listDigioCashScrollView.heightAnchor),
         ])
     }
 }

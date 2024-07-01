@@ -17,6 +17,7 @@ class MainViewModel {
     var productsResponse: ProductsResponse?
     var productViewModelList: [ProductViewModel] = []
     var spotlightViewModelList: [SpotlightViewModel] = []
+    var digioCashViewModelList: [DigioCashViewModel] = []
     init(productsRepository: ProductsRepository) {
         self.productsRepository = productsRepository
     }
@@ -28,6 +29,7 @@ class MainViewModel {
                 self.productsResponse = response
                 populateProductViewModelList(products: response.products)
                 populateSpotlightViewModelList(spotlights: response.spotlight)
+                populateDigioCashViewModelList(cashList: createCashList(from: response.cash))
                 delegate.didFetchProducts()
             case .failure(let error):
                 print("Erro ao buscar dados: \(error.localizedDescription)")
@@ -47,4 +49,13 @@ class MainViewModel {
         }
     }
     
+    private func populateDigioCashViewModelList(cashList: [Cash]){
+        for cash in cashList {
+            digioCashViewModelList.append(DigioCashViewModel(digioCash: cash))
+        }
+    }
+    
+    private func createCashList(from cash: Cash) -> [Cash] {
+        return [cash]
+    }
 }

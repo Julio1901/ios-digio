@@ -1,5 +1,5 @@
 //
-//  ProductViewModel.swift
+//  DigioCashViewModel.swift
 //  Digio
 //
 //  Created by Julio Cesar Pereira on 01/07/24.
@@ -7,16 +7,16 @@
 
 import Foundation
 
-class ProductViewModel {
-    var product: Product
+class DigioCashViewModel {
+    var digioCash: Cash
     var imageData: Data?
     private var hasError: Bool?
-    init(product: Product) {
-        self.product = product
+    init(digioCash: Cash) {
+        self.digioCash = digioCash
     }
     func loadImage(completion: @escaping (_ imageData: Data?) -> Void) {
         if imageData == nil && hasError != true {
-            guard let url = URL(string: product.imageURL) else { return }
+            guard let url = URL(string: digioCash.bannerURL) else { return }
             URLSession.shared.dataTask(with: url) { (data, _, error) in
                 if error != nil {
                     self.hasError = true

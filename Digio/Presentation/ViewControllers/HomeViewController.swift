@@ -25,8 +25,17 @@ class HomeViewController: UIViewController {
         for spotlightViewModel in viewModel.spotlightViewModelList {
             let spotLightCard = SpotlightCard()
             spotLightCard.viewModel = spotlightViewModel
-            spotLightCard.translatesAutoresizingMaskIntoConstraints = false
+//            spotLightCard.translatesAutoresizingMaskIntoConstraints = false
             initialScreen.listSpotlighStackView.addArrangedSubview(spotLightCard)
+        }
+    }
+    
+    private func setupDigioCashCards() {
+        for cashViewModel in viewModel.digioCashViewModelList {
+            let digioCashCard = DigioCashCard()
+            digioCashCard.viewModel = cashViewModel
+//            digioCashCard.translatesAutoresizingMaskIntoConstraints = false
+            initialScreen.listDigioCashStackView.addArrangedSubview(digioCashCard)
         }
     }
 }
@@ -34,5 +43,6 @@ class HomeViewController: UIViewController {
 extension HomeViewController: MainViewModelDelegate {
     func didFetchProducts() {
         setupSpotLightCards()
+        setupDigioCashCards()
     }
 }

@@ -1,15 +1,15 @@
 //
-//  SpotlightCard.swift
+//  DigioCashCard.swift
 //  Digio
 //
-//  Created by Julio Cesar Pereira on 30/06/24.
+//  Created by Julio Cesar Pereira on 01/07/24.
 //
 
 import UIKit
 
-class SpotlightCard: UIView {
+class DigioCashCard: UIView {
     let gradientLayer = CAGradientLayer()
-//    private var isSkeletonVisible = true
+
     override init(frame: CGRect) {
             super.init(frame: frame)
             setupCardView()
@@ -21,7 +21,7 @@ class SpotlightCard: UIView {
         super.layoutSubviews()
         gradientLayer.frame = self.bounds
     }
-    var viewModel: SpotlightViewModel!
+    var viewModel: DigioCashViewModel!
     var image: UIImageView = {
         let it = UIImageView()
         it.translatesAutoresizingMaskIntoConstraints = false
@@ -38,10 +38,6 @@ class SpotlightCard: UIView {
         self.translatesAutoresizingMaskIntoConstraints = false
         setupConstraints()
         self.layer.cornerRadius = 10
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOffset = CGSize(width: 0, height: 2)
-        self.layer.shadowOpacity = 0.2
-        self.layer.shadowRadius = 4
         setupSkeletonView()
         setupConstraints()
         handleImage()
@@ -62,16 +58,15 @@ class SpotlightCard: UIView {
         }
     }
     private func setupConstraints() {
-        self.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        self.heightAnchor.constraint(equalToConstant: 95).isActive = true
         self.widthAnchor.constraint(equalToConstant: 300).isActive = true
     }
     private func addContentView() {
-        image.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        image.heightAnchor.constraint(equalToConstant: 95).isActive = true
         image.widthAnchor.constraint(equalToConstant: 300).isActive = true
         self.addSubview(image)
     }
     private func setupSkeletonView() {
-//        isSkeletonVisible = true
         self.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         self.layer.cornerRadius = 10
         
@@ -97,14 +92,7 @@ class SpotlightCard: UIView {
     private func removeSkeletonView() {
         gradientLayer.removeFromSuperlayer()
         self.backgroundColor = UIColor.white
-//        isSkeletonVisible = false
     }
-//    func showContent() {
-//        if isSkeletonVisible {
-//            removeSkeletonView()
-//            addContentView()
-//        }
-//    }
     func setImageErrorState() {
         self.image.image = UIImage(named: "image-spotlight-error")
     }
