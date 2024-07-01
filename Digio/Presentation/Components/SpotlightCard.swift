@@ -9,7 +9,7 @@ import UIKit
 
 class SpotlightCard: UIView {
     let gradientLayer = CAGradientLayer()
-    private var isSkeletonVisible = true
+//    private var isSkeletonVisible = true
     override init(frame: CGRect) {
             super.init(frame: frame)
             setupCardView()
@@ -21,12 +21,14 @@ class SpotlightCard: UIView {
         super.layoutSubviews()
         gradientLayer.frame = self.bounds
     }
+    var viewModel: SpotlightViewModel!
     var image: UIImageView = {
         let it = UIImageView()
         it.translatesAutoresizingMaskIntoConstraints = false
         it.layer.cornerRadius = 10
         it.layer.masksToBounds = true
         it.isAccessibilityElement = true
+        it.contentMode = .scaleToFill
 //        it.accessibilityTraits = .image
 //        it.accessibilityHint = "Decorative image: no associated action."
 //        it.tag = 123
@@ -41,18 +43,34 @@ class SpotlightCard: UIView {
         self.layer.shadowRadius = 4
         setupSkeletonView()
         setupConstraints()
+        handleImage()
+    }
+    private func handleImage() {
+        DispatchQueue.global().async {
+            self.viewModel.loadImage(completion: { imageData in
+                self.removeSkeletonView()
+                DispatchQueue.main.async {
+                    if let image = imageData {
+                        self.image.image = UIImage(data: image)
+                    }else {
+                        self.setImageErrorState()
+                    }
+                    self.addContentView()
+                }
+            })
+        }
     }
     private func setupConstraints() {
         self.heightAnchor.constraint(equalToConstant: 150).isActive = true
         self.widthAnchor.constraint(equalToConstant: 300).isActive = true
     }
     private func addContentView() {
+        image.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        image.widthAnchor.constraint(equalToConstant: 300).isActive = true
         self.addSubview(image)
-        //TODO: fazer tratativa para verificar erros externamente
-        setImageErrorState()
     }
     private func setupSkeletonView() {
-        isSkeletonVisible = true
+//        isSkeletonVisible = true
         self.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         self.layer.cornerRadius = 10
         
@@ -78,14 +96,14 @@ class SpotlightCard: UIView {
     private func removeSkeletonView() {
         gradientLayer.removeFromSuperlayer()
         self.backgroundColor = UIColor.white
-        isSkeletonVisible = false
+//        isSkeletonVisible = false
     }
-    func showContent() {
-        if isSkeletonVisible {
-            removeSkeletonView()
-            addContentView()
-        }
-    }
+//    func showContent() {
+//        if isSkeletonVisible {
+//            removeSkeletonView()
+//            addContentView()
+//        }
+//    }
     func setImageErrorState() {
         self.image.image = UIImage(named: "image-spotlight-error")
     }

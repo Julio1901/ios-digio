@@ -23,8 +23,9 @@ class HomeViewController: UIViewController {
         viewModel.fetchItems()
     }
     private func setupSpotLightCards() {
-        for spotlight in viewModel.spotlightViewModelList {
+        for spotlightViewModel in viewModel.spotlightViewModelList {
             let spotLightCard = SpotlightCard()
+            spotLightCard.viewModel = spotlightViewModel
             spotLightCard.translatesAutoresizingMaskIntoConstraints = false
             initialScreen.listSpotlighStackView.addArrangedSubview(spotLightCard)
             

@@ -11,26 +11,26 @@ class SpotlightViewModel {
     var spotlight: Spotlight
     var imageData: Data?
     private var hasError : Bool?
-    
     init(spotlight: Spotlight){
         self.spotlight = spotlight
     }
-    
-    func loadImage(from stringUrl: String, completion: @escaping (_ imageData: Data?) -> Void) async {
-        if (imageData == nil && hasError != true) {
-            guard let url = URL(string: stringUrl) else {return}
+    func loadImage(completion: @escaping (_ imageData: Data?) -> Void) {
+        if imageData == nil && hasError != true{
+            guard let url = URL(string: spotlight.bannerURL) else { return }
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if let error = error {
                     self.hasError = true
+                    completion(nil)
                     return
                 }
                 guard let data = data else {
                     self.hasError = true
+                    completion(nil)
                     return
                 }
                 self.imageData = data
-                completion(data)
                 self.hasError = false
+                completion(data)
             }.resume()
         }
     }
