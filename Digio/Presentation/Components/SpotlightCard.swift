@@ -39,7 +39,6 @@ class SpotlightCard: UIView {
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.layer.shadowOpacity = 0.2
         self.layer.shadowRadius = 4
-        //self.addSubview(image)
         setupSkeletonView()
         setupConstraints()
     }
@@ -83,11 +82,20 @@ class SpotlightCard: UIView {
     }
     func showContent() {
         if isSkeletonVisible {
-            removeSkeletonView() // Remove o skeleton view
-            addContentView() // Adiciona o conteúdo real
+            removeSkeletonView()
+            addContentView()
         }
     }
     func setImageErrorState() {
         self.image.image = UIImage(named: "image-spotlight-error")
+    }
+    func setup(image: UIImage?) {
+        func setup(image: UIImage?) {
+            if let image = image {
+                self.image.image = image
+            } else {
+                setImageErrorState()
+            }
+        }
     }
 }
