@@ -21,10 +21,9 @@ class HomeScreen: UIView {
     private var welcomeLabel: UILabel = {
         let it = UILabel()
         it.translatesAutoresizingMaskIntoConstraints = false
-        let text = NSLocalizedString("welcome-message", comment: "")
-        it.text = "\(text) \(MOCK_USER_NAME)"
+        it.setupText(key: "welcome-message", fontFamily: "Sora-SemiBold", fontSize: 12)
+        it.text = "\(it.text ?? "") \(MOCK_USER_NAME)"
         it.textColor = UIColor.black
-        it.font = UIFont(name: "Sora-SemiBold", size: 12)
         it.isAccessibilityElement = true
         it.accessibilityHint = "Decorative message: no associated action."
         return it
