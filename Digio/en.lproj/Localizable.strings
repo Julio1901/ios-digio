@@ -7,7 +7,10 @@
 */
 
 //MARK: Home Screen
-"welcome-message" = "Olá, ";
+"welcome-message" = "Hello, ";
 "digio" = "digio";
 "cash" = "Cash";
-"products" = "Produtos";
+"products" = "Products";
+
+//MARK: Home Screen Accessibility
+"accessibility-welcome-label-description" = "Image with the Digio logo on the left and welcome message on the right. Decorative item: No associated action.";

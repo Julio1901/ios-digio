@@ -16,6 +16,7 @@ class HomeScreen: UIView {
         let it = UIImageView()
         it.image = UIImage(named: "icon-digio")
         it.translatesAutoresizingMaskIntoConstraints = false
+        it.isAccessibilityElement = false
         return it
     }()
     private var welcomeLabel: UILabel = {
@@ -25,7 +26,7 @@ class HomeScreen: UIView {
         it.text = "\(it.text ?? "") \(MOCK_USER_NAME)"
         it.textColor = UIColor.black
         it.isAccessibilityElement = true
-        it.accessibilityHint = "Mensagem decorativa, nenhuma ação associada."
+        it.accessibilityHint = NSLocalizedString("accessibility-welcome-label-description", comment: "")
         return it
     }()
     var listSpotlightScrollView: UIScrollView = {

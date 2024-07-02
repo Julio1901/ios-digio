@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Digio
+
+  Created by Julio Cesar Pereira on 30/06/24.
+  
+*/
+
+//MARK: Home Screen
+"welcome-message" = "Olá, ";
+"digio" = "digio";
+"cash" = "Cash";
+"products" = "Produtos";
+
+//MARK: Home Screen Accessibility
+"accessibility-welcome-label-description" = "Imagem com o logo da Digio à esquerda e mensagem de boas vindas à direita. Item decorativo: Não há ação associada";
