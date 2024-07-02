@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import os.log
 
 protocol MainViewModelDelegate: AnyObject {
     func didFetchProducts()
@@ -18,6 +19,7 @@ class MainViewModel {
     var productViewModelList: [ProductViewModel] = []
     var spotlightViewModelList: [SpotlightViewModel] = []
     var digioCashViewModelList: [DigioCashViewModel] = []
+    private let logger = LoggerFactory.makeLogger(category: "network")
     init(productsRepository: ProductsRepository) {
         self.productsRepository = productsRepository
     }
@@ -32,29 +34,26 @@ class MainViewModel {
                 populateDigioCashViewModelList(cashList: createCashList(from: response.cash))
                 delegate.didFetchProducts()
             case .failure(let error):
-                print("Erro ao buscar dados: \(error.localizedDescription)")
+                LoggerFactory.logErrorMessage(error.localizedDescription, logger: self.logger)
                 delegate.didFetchProducts()
             }
         }
     }
-    private func populateProductViewModelList(products: [Product]){
+    private func populateProductViewModelList(products: [Product]) {
         for product in products {
             productViewModelList.append(ProductViewModel(product: product))
         }
     }
-    
-    private func populateSpotlightViewModelList(spotlights: [Spotlight]){
+    private func populateSpotlightViewModelList(spotlights: [Spotlight]) {
         for spotlight in spotlights {
             spotlightViewModelList.append(SpotlightViewModel(spotlight: spotlight))
         }
     }
-    
-    private func populateDigioCashViewModelList(cashList: [Cash]){
+    private func populateDigioCashViewModelList(cashList: [Cash]) {
         for cash in cashList {
             digioCashViewModelList.append(DigioCashViewModel(digioCash: cash))
         }
     }
-    
     private func createCashList(from cash: Cash) -> [Cash] {
         return [cash]
     }

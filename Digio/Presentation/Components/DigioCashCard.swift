@@ -49,7 +49,7 @@ class DigioCashCard: UIView {
                 DispatchQueue.main.async {
                     if let image = imageData {
                         self.image.image = UIImage(data: image)
-                    }else {
+                    } else {
                         self.setImageErrorState()
                     }
                     self.addContentView()
@@ -69,7 +69,6 @@ class DigioCashCard: UIView {
     private func setupSkeletonView() {
         self.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         self.layer.cornerRadius = 10
-        
         gradientLayer.startPoint = CGPoint(x: -0.3, y: 1)
         gradientLayer.endPoint = CGPoint(x: 1.2, y: -0.3)
         gradientLayer.colors = [
@@ -81,7 +80,6 @@ class DigioCashCard: UIView {
         gradientLayer.frame = self.bounds
         gradientLayer.cornerRadius = 10
         self.layer.addSublayer(gradientLayer)
-        
         let animation = CABasicAnimation(keyPath: "locations")
         animation.fromValue = [0, 0, 0.25]
         animation.toValue = [0.75, 1, 1]
@@ -96,13 +94,4 @@ class DigioCashCard: UIView {
     func setImageErrorState() {
         self.image.image = UIImage(named: "image-spotlight-error")
     }
-//    func setup(image: UIImage?) {
-//        func setup(image: UIImage?) {
-//            if let image = image {
-//                self.image.image = image
-//            } else {
-//                setImageErrorState()
-//            }
-//        }
-//    }
 }

@@ -28,6 +28,7 @@
 		F4B15E2C2C335564006E6FC7 /* DigioCashCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E2B2C335564006E6FC7 /* DigioCashCard.swift */; };
 		F4B15E2E2C335623006E6FC7 /* DigioCashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E2D2C335623006E6FC7 /* DigioCashViewModel.swift */; };
 		F4B15E302C3363C1006E6FC7 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E2F2C3363C1006E6FC7 /* ProductCard.swift */; };
+		F4B15E332C3380C2006E6FC7 /* LoggerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E322C3380C2006E6FC7 /* LoggerFactory.swift */; };
 		F4CBE0592C311260009DE789 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE0582C311260009DE789 /* HomeScreen.swift */; };
 		F4CBE05C2C3121EC009DE789 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE05B2C3121EC009DE789 /* Extensions.swift */; };
 		F4CBE05F2C31230D009DE789 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4CBE05D2C31230D009DE789 /* Localizable.strings */; };
@@ -92,6 +93,7 @@
 		F4B15E2B2C335564006E6FC7 /* DigioCashCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioCashCard.swift; sourceTree = "<group>"; };
 		F4B15E2D2C335623006E6FC7 /* DigioCashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioCashViewModel.swift; sourceTree = "<group>"; };
 		F4B15E2F2C3363C1006E6FC7 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		F4B15E322C3380C2006E6FC7 /* LoggerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFactory.swift; sourceTree = "<group>"; };
 		F4CBE0582C311260009DE789 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		F4CBE05B2C3121EC009DE789 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F4CBE05E2C31230D009DE789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		F43F95862C2FD5FA00FE1C90 /* Digio */ = {
 			isa = PBXGroup;
 			children = (
+				F4B15E312C3380A2006E6FC7 /* Utilities */,
 				F4CBE0752C31F0BA009DE789 /* Domain */,
 				F4CBE06C2C31E801009DE789 /* Data */,
 				F4CBE0602C3125F7009DE789 /* Fonts */,
@@ -224,6 +227,14 @@
 				F4B15E2D2C335623006E6FC7 /* DigioCashViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4B15E312C3380A2006E6FC7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15E322C3380C2006E6FC7 /* LoggerFactory.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		F4CBE0552C311164009DE789 /* Presentation */ = {
@@ -580,6 +591,7 @@
 				F43F958C2C2FD5FA00FE1C90 /* HomeViewController.swift in Sources */,
 				F4B15E2E2C335623006E6FC7 /* DigioCashViewModel.swift in Sources */,
 				F4B15E212C32F7EF006E6FC7 /* Cash.swift in Sources */,
+				F4B15E332C3380C2006E6FC7 /* LoggerFactory.swift in Sources */,
 				F4CBE0742C31EA12009DE789 /* APIError.swift in Sources */,
 				F4CBE0702C31E859009DE789 /* APIEndpoints.swift in Sources */,
 				F43F95882C2FD5FA00FE1C90 /* AppDelegate.swift in Sources */,

@@ -79,7 +79,6 @@ class ProductCard: UIView {
     private func setupSkeletonView() {
         self.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         self.layer.cornerRadius = 10
-        
         gradientLayer.startPoint = CGPoint(x: -0.3, y: 1)
         gradientLayer.endPoint = CGPoint(x: 1.2, y: -0.3)
         gradientLayer.colors = [
@@ -91,7 +90,6 @@ class ProductCard: UIView {
         gradientLayer.frame = self.bounds
         gradientLayer.cornerRadius = 10
         self.layer.addSublayer(gradientLayer)
-        
         let animation = CABasicAnimation(keyPath: "locations")
         animation.fromValue = [0, 0, 0.25]
         animation.toValue = [0.75, 1, 1]
@@ -109,13 +107,4 @@ class ProductCard: UIView {
         self.image.widthAnchor.constraint(equalToConstant: 120).isActive = true
         self.image.contentMode = .scaleAspectFit
     }
-//    func setup(image: UIImage?) {
-//        func setup(image: UIImage?) {
-//            if let image = image {
-//                self.image.image = image
-//            } else {
-//                setImageErrorState()
-//            }
-//        }
-//    }
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 
+// swiftlint:disable function_body_length
 class HomeScreen: UIView {
     private let DEFAULT_LEADING_ANCHOR_VALUE: CGFloat = 10
     private let DEFAULT_TRAILING_ANCHOR_VALUE: CGFloat = -10
@@ -147,8 +148,6 @@ class HomeScreen: UIView {
             firstDigioCashLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: DEFAULT_LEADING_ANCHOR_VALUE),
             secondDigioCashLabel.centerYAnchor.constraint(equalTo: firstDigioCashLabel.centerYAnchor),
             secondDigioCashLabel.leadingAnchor.constraint(equalTo: firstDigioCashLabel.trailingAnchor, constant: 4),
-            
-            
             listDigioCashScrollView.topAnchor.constraint(equalTo: firstDigioCashLabel.bottomAnchor, constant: 10),
             listDigioCashScrollView.leadingAnchor.constraint(equalTo: firstDigioCashLabel.leadingAnchor),
             listDigioCashScrollView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: DEFAULT_TRAILING_ANCHOR_VALUE),
@@ -160,8 +159,6 @@ class HomeScreen: UIView {
             listDigioCashStackView.heightAnchor.constraint(equalTo: listDigioCashScrollView.heightAnchor),
             productsLabel.topAnchor.constraint(equalTo: listDigioCashScrollView.bottomAnchor, constant: 25),
             productsLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: DEFAULT_LEADING_ANCHOR_VALUE),
-            
-            
             listProductScrollView.topAnchor.constraint(equalTo: productsLabel.bottomAnchor, constant: 20),
             listProductScrollView.leadingAnchor.constraint(equalTo: productsLabel.leadingAnchor),
             listProductScrollView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: DEFAULT_TRAILING_ANCHOR_VALUE),
@@ -170,7 +167,8 @@ class HomeScreen: UIView {
             listProductStackView.trailingAnchor.constraint(equalTo: listProductScrollView.trailingAnchor),
             listProductStackView.topAnchor.constraint(equalTo: listProductScrollView.topAnchor),
             listProductStackView.bottomAnchor.constraint(equalTo: listProductScrollView.bottomAnchor),
-            listProductStackView.heightAnchor.constraint(equalTo: listProductScrollView.heightAnchor),
+            listProductStackView.heightAnchor.constraint(equalTo: listProductScrollView.heightAnchor)
         ])
     }
 }
+// swiftlint:enable function_body_length
