@@ -9,33 +9,81 @@ import Foundation
 import os.log
 
 protocol MainViewModelDelegate: AnyObject {
+    func didFetchSpotlights()
+    func didFetchCash()
     func didFetchProducts()
 }
 
 class MainViewModel {
     var delegate: MainViewModelDelegate!
-    var productsRepository: ProductsRepository!
+//    var productsRepository: ProductsRepository!
     var productsResponse: ProductsResponse?
     var productViewModelList: [ProductViewModel] = []
     var spotlightViewModelList: [SpotlightViewModel] = []
     var digioCashViewModelList: [DigioCashViewModel] = []
+    private let fetchSpotlightsUseCase: FetchSpotlightsUseCase
+    private let fetchCashUseCase: FetchCashUseCase
+    private let fetchProductsUseCase: FetchProductsUseCase
     private let logger = LoggerFactory.makeLogger(category: "network")
-    init(productsRepository: ProductsRepository) {
-        self.productsRepository = productsRepository
+//    init(productsRepository: ProductsRepository) {
+//        self.productsRepository = productsRepository
+//    }
+    init(fetchSpotlightsUseCase: FetchSpotlightsUseCase, fetchCashUseCase: FetchCashUseCase, fetchProductsUseCase: FetchProductsUseCase) {
+        self.fetchSpotlightsUseCase = fetchSpotlightsUseCase
+        self.fetchCashUseCase = fetchCashUseCase
+        self.fetchProductsUseCase = fetchProductsUseCase
     }
     func fetchItems() {
-        productsRepository.fetchItems { [weak self] result in
-            guard let self = self else { return }
+        loadSpotlights()
+        loadCash()
+        loadProducts()
+//        productsRepository.fetchItems { [weak self] result in
+//            guard let self = self else { return }
+//            switch result {
+//            case .success(let response):
+//                self.productsResponse = response
+//                populateProductViewModelList(products: response.products)
+//                populateSpotlightViewModelList(spotlights: response.spotlight)
+//                populateDigioCashViewModelList(cashList: createCashList(from: response.cash))
+//                delegate.didFetchProducts()
+//            case .failure(let error):
+//                LoggerFactory.logErrorMessage(error.localizedDescription, logger: self.logger)
+//                delegate.didFetchProducts()
+//            }
+//        }
+//        
+        
+    }
+    private func loadSpotlights() {
+        fetchSpotlightsUseCase.execute { result in
             switch result {
-            case .success(let response):
-                self.productsResponse = response
-                populateProductViewModelList(products: response.products)
-                populateSpotlightViewModelList(spotlights: response.spotlight)
-                populateDigioCashViewModelList(cashList: createCashList(from: response.cash))
-                delegate.didFetchProducts()
+            case .success(let spotlights):
+                self.populateSpotlightViewModelList(spotlights: spotlights)
+                self.delegate.didFetchSpotlights()
             case .failure(let error):
                 LoggerFactory.logErrorMessage(error.localizedDescription, logger: self.logger)
-                delegate.didFetchProducts()
+            }
+        }
+    }
+    private func loadCash() {
+        fetchCashUseCase.execute { result in
+            switch result {
+            case .success(let cash):
+                self.populateDigioCashViewModelList(cashList: self.createCashList(from: cash))
+                self.delegate.didFetchCash()
+            case .failure(let error):
+                LoggerFactory.logErrorMessage(error.localizedDescription, logger: self.logger)
+            }
+        }
+    }
+    func loadProducts() {
+        fetchProductsUseCase.execute { result in
+            switch result {
+            case .success(let products):
+                self.populateProductViewModelList(products: products)
+                self.delegate.didFetchProducts()
+            case .failure(let error):
+                LoggerFactory.logErrorMessage(error.localizedDescription, logger: self.logger)
             }
         }
     }

@@ -17,7 +17,14 @@ class HomeViewController: UIViewController {
         view = initialScreen
         let apiClient = APIClient()
         let repository = ProductsRepositoryImpl(apiClient: apiClient)
-        self.viewModel = MainViewModel(productsRepository: repository)
+        let fetchSpotlightsUseCase = FetchSpotlightsUseCaseImpl(repository: repository)
+        let fetchCashUseCase = FetchCashUseCaseImpl(repository: repository)
+        let fetchProductsUseCase = FetchProductsUseCaseImpl(repository: repository)
+        self.viewModel = MainViewModel(
+            fetchSpotlightsUseCase: fetchSpotlightsUseCase,
+            fetchCashUseCase: fetchCashUseCase,
+            fetchProductsUseCase: fetchProductsUseCase
+        )
         viewModel.delegate = self
         viewModel.fetchItems()
     }
@@ -45,9 +52,14 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: MainViewModelDelegate {
-    func didFetchProducts() {
+    func didFetchSpotlights() {
         setupSpotLightCards()
+    }
+    func didFetchCash() {
         setupDigioCashCards()
+    }
+    func didFetchProducts() {
         setupProductCards()
     }
 }
+
