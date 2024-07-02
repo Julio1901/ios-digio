@@ -31,6 +31,7 @@
 		F4B15E332C3380C2006E6FC7 /* LoggerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E322C3380C2006E6FC7 /* LoggerFactory.swift */; };
 		F4B15E362C344951006E6FC7 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E352C344951006E6FC7 /* UILabel+Extensions.swift */; };
 		F4B15E382C34495F006E6FC7 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E372C34495F006E6FC7 /* UIButton+Extensions.swift */; };
+		F4B15E3A2C3454DD006E6FC7 /* AccessibilityUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E392C3454DD006E6FC7 /* AccessibilityUtils.swift */; };
 		F4CBE0592C311260009DE789 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE0582C311260009DE789 /* HomeScreen.swift */; };
 		F4CBE05C2C3121EC009DE789 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE05B2C3121EC009DE789 /* Extensions.swift */; };
 		F4CBE05F2C31230D009DE789 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4CBE05D2C31230D009DE789 /* Localizable.strings */; };
@@ -98,6 +99,7 @@
 		F4B15E322C3380C2006E6FC7 /* LoggerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFactory.swift; sourceTree = "<group>"; };
 		F4B15E352C344951006E6FC7 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		F4B15E372C34495F006E6FC7 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		F4B15E392C3454DD006E6FC7 /* AccessibilityUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityUtils.swift; sourceTree = "<group>"; };
 		F4CBE0582C311260009DE789 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		F4CBE05B2C3121EC009DE789 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F4CBE05E2C31230D009DE789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			children = (
 				F4B15E342C344885006E6FC7 /* Extensions */,
 				F4B15E322C3380C2006E6FC7 /* LoggerFactory.swift */,
+				F4B15E392C3454DD006E6FC7 /* AccessibilityUtils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -621,6 +624,7 @@
 				F4B15E1B2C32F799006E6FC7 /* ProductsResponse.swift in Sources */,
 				F4B15E1D2C32F7C2006E6FC7 /* Spotlight.swift in Sources */,
 				F4CBE0722C31E864009DE789 /* APIClient.swift in Sources */,
+				F4B15E3A2C3454DD006E6FC7 /* AccessibilityUtils.swift in Sources */,
 				F4B15E2A2C3318B9006E6FC7 /* SpotlightViewModel.swift in Sources */,
 				F4CBE0792C31F0FA009DE789 /* ProductsRepository.swift in Sources */,
 				F4B15E242C32FAA3006E6FC7 /* MainViewModel.swift in Sources */,
@@ -807,6 +811,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NZ5C3QSQR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Digio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -835,6 +840,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NZ5C3QSQR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Digio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

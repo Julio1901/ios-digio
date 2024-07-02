@@ -25,7 +25,7 @@ class HomeScreen: UIView {
         it.text = "\(it.text ?? "") \(MOCK_USER_NAME)"
         it.textColor = UIColor.black
         it.isAccessibilityElement = true
-        it.accessibilityHint = "Decorative message: no associated action."
+        it.accessibilityHint = "Mensagem decorativa, nenhuma ação associada."
         return it
     }()
     var listSpotlightScrollView: UIScrollView = {
@@ -61,9 +61,8 @@ class HomeScreen: UIView {
     private var firstDigioCashLabel: UILabel = {
         let it = UILabel()
         it.translatesAutoresizingMaskIntoConstraints = false
-        it.setText(key: "digio")
+        it.setupText(key: "digio", fontFamily: "Sora-SemiBold", fontSize: 20)
         it.textColor = UIColor(red: 48/255, green: 56/255, blue: 73/255, alpha: 1.0)
-        it.font = UIFont(name: "Sora-SemiBold", size: 20)
 //        it.isAccessibilityElement = true
 //        it.accessibilityHint = "Decorative message: no associated action."
         return it
@@ -71,9 +70,9 @@ class HomeScreen: UIView {
     private var secondDigioCashLabel: UILabel = {
         let it = UILabel()
         it.translatesAutoresizingMaskIntoConstraints = false
-        it.setText(key: "cash")
+        it.setupText(key: "cash", fontFamily: "Sora-SemiBold", fontSize: 20)
         it.textColor = UIColor(red: 138/255, green: 138/255, blue: 138/255, alpha: 1.0)
-        it.font = UIFont(name: "Sora-SemiBold", size: 20)
+   
 //        it.isAccessibilityElement = true
 //        it.accessibilityHint = "Decorative message: no associated action."
         return it
@@ -81,9 +80,9 @@ class HomeScreen: UIView {
     private var productsLabel: UILabel = {
         let it = UILabel()
         it.translatesAutoresizingMaskIntoConstraints = false
-        it.setText(key: "products")
+        it.setupText(key: "products", fontFamily: "Sora-SemiBold", fontSize: 20)
         it.textColor = UIColor(red: 48/255, green: 56/255, blue: 73/255, alpha: 1.0)
-        it.font = UIFont(name: "Sora-SemiBold", size: 20)
+
 //        it.isAccessibilityElement = true
 //        it.accessibilityHint = "Decorative message: no associated action."
         return it
