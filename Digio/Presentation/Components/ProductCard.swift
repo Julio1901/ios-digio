@@ -13,7 +13,6 @@ class ProductCard: UIView {
     var imageHeigth = 60
     override init(frame: CGRect) {
             super.init(frame: frame)
-            setupCardView()
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -22,7 +21,7 @@ class ProductCard: UIView {
         super.layoutSubviews()
         gradientLayer.frame = self.bounds
     }
-    var viewModel: ProductViewModel!
+    private var viewModel: ProductViewModel!
     var image: UIImageView = {
         let it = UIImageView()
         it.translatesAutoresizingMaskIntoConstraints = false
@@ -35,7 +34,8 @@ class ProductCard: UIView {
         it.accessibilityHint = ""
         return it
     }()
-    private func setupCardView() {
+    func setupCardView(viewModel: ProductViewModel) {
+        self.viewModel = viewModel
         self.translatesAutoresizingMaskIntoConstraints = false
         setupConstraints()
         self.layer.cornerRadius = 10
@@ -43,9 +43,15 @@ class ProductCard: UIView {
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.layer.shadowOpacity = 0.2
         self.layer.shadowRadius = 4
+        self.isAccessibilityElement = true
         
+        let accessibilityLabel = AccessibilityStringsUtils.getProductAccessibilityStringByKey(
+            localizableKey: "accessibility-label-product-card",
+            productName: viewModel.product.name
+        )
+        self.accessibilityLabel = accessibilityLabel
+        self.accessibilityHint = NSLocalizedString("accessibility-hint-spotlight-card", comment: "")
 
-        
         setupSkeletonView()
         setupConstraints()
         handleImage()
@@ -106,6 +112,10 @@ class ProductCard: UIView {
     }
     func setImageErrorState() {
         self.image.image = UIImage(named: "image-product-error")
+        self.accessibilityLabel = AccessibilityStringsUtils.getProductAccessibilityStringByKey(
+            localizableKey: "accessibility-label-product-card-error-image-state",
+            productName: viewModel.product.name
+        )
         self.image.heightAnchor.constraint(equalToConstant: 120).isActive = true
         self.image.widthAnchor.constraint(equalToConstant: 120).isActive = true
         self.image.contentMode = .scaleAspectFit

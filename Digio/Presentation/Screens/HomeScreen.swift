@@ -82,6 +82,9 @@ class HomeScreen: UIView {
         it.translatesAutoresizingMaskIntoConstraints = false
         it.setupText(key: "products", fontFamily: "Sora-SemiBold", fontSize: 20)
         it.textColor = UIColor(red: 48/255, green: 56/255, blue: 73/255, alpha: 1.0)
+        it.isAccessibilityElement = true
+        it.accessibilityLabel = ""
+        it.accessibilityHint = NSLocalizedString("accessibility-products-label-description", comment: "")
         return it
     }()
     var listProductScrollView: UIScrollView = {

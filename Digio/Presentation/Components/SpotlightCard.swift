@@ -104,5 +104,9 @@ class SpotlightCard: UIView {
     }
     func setImageErrorState() {
         self.image.image = UIImage(named: "image-spotlight-error")
+        self.accessibilityLabel = AccessibilityStringsUtils.getProductAccessibilityStringByKey(
+            localizableKey: "accessibility-label-spotlight-card-error-image-state",
+            productName: viewModel.spotlight.name
+        )
     }
 }

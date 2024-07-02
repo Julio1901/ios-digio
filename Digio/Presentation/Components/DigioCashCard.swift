@@ -100,5 +100,9 @@ class DigioCashCard: UIView {
     }
     func setImageErrorState() {
         self.image.image = UIImage(named: "image-spotlight-error")
+        self.accessibilityLabel = AccessibilityStringsUtils.getProductAccessibilityStringByKey(
+            localizableKey: "accessibility-label-digio-cash-card-error-image-state",
+            productName: viewModel.digioCash.title
+        )
     }
 }

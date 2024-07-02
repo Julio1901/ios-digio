@@ -23,24 +23,22 @@ class HomeViewController: UIViewController {
     }
     private func setupSpotLightCards() {
         for spotlightViewModel in viewModel.spotlightViewModelList {
-            let viewModel = spotlightViewModel
             let spotLightCard = SpotlightCard()
-            spotLightCard.setupCard(viewModel: viewModel)
+            spotLightCard.setupCard(viewModel: spotlightViewModel)
             initialScreen.listSpotlighStackView.addArrangedSubview(spotLightCard)
         }
     }
     private func setupDigioCashCards() {
         for cashViewModel in viewModel.digioCashViewModelList {
-            let viewModel = cashViewModel
             let digioCashCard = DigioCashCard()
-            digioCashCard.setupCardView(viewModel: viewModel)
+            digioCashCard.setupCardView(viewModel: cashViewModel)
             initialScreen.listDigioCashStackView.addArrangedSubview(digioCashCard)
         }
     }
     private func setupProductCards() {
         for productViewModel in viewModel.productViewModelList {
             let productCard = ProductCard()
-            productCard.viewModel = productViewModel
+            productCard.setupCardView(viewModel: productViewModel)
             initialScreen.listProductStackView.addArrangedSubview(productCard)
         }
     }

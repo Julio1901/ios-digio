@@ -16,11 +16,20 @@
 "accessibility-welcome-label-description" = "Imagem com o logo da Digio à esquerda e mensagem de boas vindas à direita. Item decorativo: Não há ação associada";
 "accessibility-digio-cash-label-description" = "Título escrito Digio Cash. Texto decorativo: Não há ação associada";
 "accessibility-label-name-string" = "Nome do produto:";
+"accessibility-products-label-description" = "Título escrito Produtos. Texto decorativo: Não há ação associada";
+
 
 //MARK: SpotlightCard Accessibility
 "accessibility-label-spotlight-card" = "Card com a imagem de um dos produtos na lista de destaque.";
 "accessibility-hint-spotlight-card" = "Toque duas vezes para selecionar o produto.";
+"accessibility-label-spotlight-card-error-image-state" =  "Card com a imagem indicando que houve um erro ao carregar a imagem desse produto na lista de destaques.";
 
 //MARK: DigioCashCard Accessibility
 "accessibility-label-digio-cash-card" = "Card com a imagem de um dos produtos financeiros da Digio.";
 "accessibility-hint-digio-cash-card" = "Toque duas vezes para selecionar o produto.";
+"accessibility-label-digio-cash-card-error-image-state" = "Card com a imagem indicando que houve um erro ao carregar a imagem desse produto na lista de produtos financeiros.";
+
+//MARK: ProductCard Accessibility
+"accessibility-label-product-card" = "Card com a imagem de um dos produtos digitais da Digio.";
+"accessibility-hint-product-card" = "Toque duas vezes para selecionar o produto.";
+"accessibility-label-product-card-error-image-state" = "Card com a imagem indicando que houve um erro ao carregar a imagem desse produto na lista de produtos digitais.";
