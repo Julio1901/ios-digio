@@ -9,10 +9,8 @@ import UIKit
 
 class SpotlightCard: UIView {
     let gradientLayer = CAGradientLayer()
-//    private var isSkeletonVisible = true
     override init(frame: CGRect) {
-            super.init(frame: frame)
-            setupCardView()
+        super.init(frame: frame)
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -21,20 +19,21 @@ class SpotlightCard: UIView {
         super.layoutSubviews()
         gradientLayer.frame = self.bounds
     }
-    var viewModel: SpotlightViewModel!
-    var image: UIImageView = {
+    private var viewModel: SpotlightViewModel!
+    private var image: UIImageView = {
         let it = UIImageView()
         it.translatesAutoresizingMaskIntoConstraints = false
         it.layer.cornerRadius = 10
         it.layer.masksToBounds = true
-        it.isAccessibilityElement = true
+        it.accessibilityTraits = .none
+        it.isAccessibilityElement = false
+        it.accessibilityLabel = ""
+        it.accessibilityHint = ""
         it.contentMode = .scaleToFill
-//        it.accessibilityTraits = .image
-//        it.accessibilityHint = "Decorative image: no associated action."
-//        it.tag = 123
         return it
     }()
-    private func setupCardView() {
+    func setupCard(viewModel: SpotlightViewModel) {
+        self.viewModel = viewModel
         self.translatesAutoresizingMaskIntoConstraints = false
         setupConstraints()
         self.layer.cornerRadius = 10
@@ -42,6 +41,13 @@ class SpotlightCard: UIView {
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.layer.shadowOpacity = 0.2
         self.layer.shadowRadius = 4
+        self.isAccessibilityElement = true
+        let accessibilityLabel = AccessibilityStringsUtils.getProductAccessibilityStringByKey(
+            localizableKey: "accessibility-label-spotlight-card",
+            productName: viewModel.spotlight.name
+        )
+        self.accessibilityLabel = accessibilityLabel
+        self.accessibilityHint = NSLocalizedString("accessibility-hint-spotlight-card", comment: "")
         setupSkeletonView()
         setupConstraints()
         handleImage()

@@ -64,8 +64,9 @@ class HomeScreen: UIView {
         it.translatesAutoresizingMaskIntoConstraints = false
         it.setupText(key: "digio", fontFamily: "Sora-SemiBold", fontSize: 20)
         it.textColor = UIColor(red: 48/255, green: 56/255, blue: 73/255, alpha: 1.0)
-//        it.isAccessibilityElement = true
-//        it.accessibilityHint = "Decorative message: no associated action."
+        it.isAccessibilityElement = true
+        it.accessibilityLabel = ""
+        it.accessibilityHint = NSLocalizedString("accessibility-digio-cash-label-description", comment: "")
         return it
     }()
     private var secondDigioCashLabel: UILabel = {
@@ -73,9 +74,7 @@ class HomeScreen: UIView {
         it.translatesAutoresizingMaskIntoConstraints = false
         it.setupText(key: "cash", fontFamily: "Sora-SemiBold", fontSize: 20)
         it.textColor = UIColor(red: 138/255, green: 138/255, blue: 138/255, alpha: 1.0)
-   
-//        it.isAccessibilityElement = true
-//        it.accessibilityHint = "Decorative message: no associated action."
+        it.isAccessibilityElement = false
         return it
     }()
     private var productsLabel: UILabel = {
@@ -83,9 +82,6 @@ class HomeScreen: UIView {
         it.translatesAutoresizingMaskIntoConstraints = false
         it.setupText(key: "products", fontFamily: "Sora-SemiBold", fontSize: 20)
         it.textColor = UIColor(red: 48/255, green: 56/255, blue: 73/255, alpha: 1.0)
-
-//        it.isAccessibilityElement = true
-//        it.accessibilityHint = "Decorative message: no associated action."
         return it
     }()
     var listProductScrollView: UIScrollView = {

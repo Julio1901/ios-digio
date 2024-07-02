@@ -23,8 +23,9 @@ class HomeViewController: UIViewController {
     }
     private func setupSpotLightCards() {
         for spotlightViewModel in viewModel.spotlightViewModelList {
+            let viewModel = spotlightViewModel
             let spotLightCard = SpotlightCard()
-            spotLightCard.viewModel = spotlightViewModel
+            spotLightCard.setupCard(viewModel: viewModel)
             initialScreen.listSpotlighStackView.addArrangedSubview(spotLightCard)
         }
     }
