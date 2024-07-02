@@ -62,4 +62,3 @@ extension HomeViewController: MainViewModelDelegate {
         setupProductCards()
     }
 }
-

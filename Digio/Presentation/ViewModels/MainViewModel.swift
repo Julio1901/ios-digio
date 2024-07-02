@@ -16,7 +16,6 @@ protocol MainViewModelDelegate: AnyObject {
 
 class MainViewModel {
     var delegate: MainViewModelDelegate!
-//    var productsRepository: ProductsRepository!
     var productsResponse: ProductsResponse?
     var productViewModelList: [ProductViewModel] = []
     var spotlightViewModelList: [SpotlightViewModel] = []
@@ -25,9 +24,6 @@ class MainViewModel {
     private let fetchCashUseCase: FetchCashUseCase
     private let fetchProductsUseCase: FetchProductsUseCase
     private let logger = LoggerFactory.makeLogger(category: "network")
-//    init(productsRepository: ProductsRepository) {
-//        self.productsRepository = productsRepository
-//    }
     init(fetchSpotlightsUseCase: FetchSpotlightsUseCase, fetchCashUseCase: FetchCashUseCase, fetchProductsUseCase: FetchProductsUseCase) {
         self.fetchSpotlightsUseCase = fetchSpotlightsUseCase
         self.fetchCashUseCase = fetchCashUseCase
@@ -37,22 +33,6 @@ class MainViewModel {
         loadSpotlights()
         loadCash()
         loadProducts()
-//        productsRepository.fetchItems { [weak self] result in
-//            guard let self = self else { return }
-//            switch result {
-//            case .success(let response):
-//                self.productsResponse = response
-//                populateProductViewModelList(products: response.products)
-//                populateSpotlightViewModelList(spotlights: response.spotlight)
-//                populateDigioCashViewModelList(cashList: createCashList(from: response.cash))
-//                delegate.didFetchProducts()
-//            case .failure(let error):
-//                LoggerFactory.logErrorMessage(error.localizedDescription, logger: self.logger)
-//                delegate.didFetchProducts()
-//            }
-//        }
-//        
-        
     }
     private func loadSpotlights() {
         fetchSpotlightsUseCase.execute { result in

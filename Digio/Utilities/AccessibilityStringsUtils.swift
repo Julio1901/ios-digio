@@ -14,14 +14,4 @@ class AccessibilityStringsUtils {
         let formatedAccessibilityLabel = "\(accessibilityLabel) \(productNameLabel) \(productName)."
         return formatedAccessibilityLabel
     }
-    
-    
-//    static func getAccessibilityStringByKeys(localizableKeys: [String]) -> String {
-//        var formatedLocalizableString = ""
-//        for localizableKey in localizableKeys {
-//            let localizableString = NSLocalizedString(localizableKey, comment: "")
-//            formatedLocalizableString = "\(formatedLocalizableString) \(localizableString)"
-//        }
-//        return formatedLocalizableString
-//    }
 }

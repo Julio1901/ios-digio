@@ -44,7 +44,6 @@ class ProductCard: UIView {
         self.layer.shadowOpacity = 0.2
         self.layer.shadowRadius = 4
         self.isAccessibilityElement = true
-        
         let accessibilityLabel = AccessibilityStringsUtils.getProductAccessibilityStringByKey(
             localizableKey: "accessibility-label-product-card",
             productName: viewModel.product.name

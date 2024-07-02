@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 protocol FetchCashUseCase {
     func execute(completion: @escaping (Result<Cash, Error>) -> Void)
 }
