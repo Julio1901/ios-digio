@@ -15,8 +15,12 @@
 //MARK: Home Screen Accessibility
 "accessibility-welcome-label-description" = "Image with the Digio logo on the left and welcome message on the right. Decorative item: No associated action.";
 "accessibility-digio-cash-label-description" = "Title written as Digio Cash. Decorative text: No associated action.";
+"accessibility-label-name-string" = "Product name:";
 
 //MARK: SpotlightCard Accessibility
-"accessibility-label-name-string" = "Product name:";
 "accessibility-label-spotlight-card" = "Card with the image of one of the products in the featured list.";
 "accessibility-hint-spotlight-card" = "Double tap to select the product.";
+
+//MARK: DigioCashCard Accessibility
+"accessibility-label-digio-cash-card" = "Card with the image of one of Digio's financial products.";
+"accessibility-hint-digio-cash-card" = "Double tap to select the product.";

@@ -31,8 +31,9 @@ class HomeViewController: UIViewController {
     }
     private func setupDigioCashCards() {
         for cashViewModel in viewModel.digioCashViewModelList {
+            let viewModel = cashViewModel
             let digioCashCard = DigioCashCard()
-            digioCashCard.viewModel = cashViewModel
+            digioCashCard.setupCardView(viewModel: viewModel)
             initialScreen.listDigioCashStackView.addArrangedSubview(digioCashCard)
         }
     }

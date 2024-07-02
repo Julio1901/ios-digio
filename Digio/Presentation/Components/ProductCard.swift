@@ -28,11 +28,11 @@ class ProductCard: UIView {
         it.translatesAutoresizingMaskIntoConstraints = false
         it.layer.cornerRadius = 10
         it.layer.masksToBounds = true
-        it.isAccessibilityElement = true
         it.contentMode = .scaleAspectFill
-//        it.accessibilityTraits = .image
-//        it.accessibilityHint = "Decorative image: no associated action."
-//        it.tag = 123
+        it.accessibilityTraits = .none
+        it.isAccessibilityElement = false
+        it.accessibilityLabel = ""
+        it.accessibilityHint = ""
         return it
     }()
     private func setupCardView() {
@@ -43,6 +43,9 @@ class ProductCard: UIView {
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.layer.shadowOpacity = 0.2
         self.layer.shadowRadius = 4
+        
+
+        
         setupSkeletonView()
         setupConstraints()
         handleImage()

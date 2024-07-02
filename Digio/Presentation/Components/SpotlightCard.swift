@@ -25,11 +25,12 @@ class SpotlightCard: UIView {
         it.translatesAutoresizingMaskIntoConstraints = false
         it.layer.cornerRadius = 10
         it.layer.masksToBounds = true
+        it.contentMode = .scaleToFill
         it.accessibilityTraits = .none
         it.isAccessibilityElement = false
         it.accessibilityLabel = ""
         it.accessibilityHint = ""
-        it.contentMode = .scaleToFill
+
         return it
     }()
     func setupCard(viewModel: SpotlightViewModel) {

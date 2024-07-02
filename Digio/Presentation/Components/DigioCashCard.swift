@@ -12,7 +12,6 @@ class DigioCashCard: UIView {
 
     override init(frame: CGRect) {
             super.init(frame: frame)
-            setupCardView()
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -21,23 +20,31 @@ class DigioCashCard: UIView {
         super.layoutSubviews()
         gradientLayer.frame = self.bounds
     }
-    var viewModel: DigioCashViewModel!
+    private var viewModel: DigioCashViewModel!
     var image: UIImageView = {
         let it = UIImageView()
         it.translatesAutoresizingMaskIntoConstraints = false
         it.layer.cornerRadius = 10
         it.layer.masksToBounds = true
-        it.isAccessibilityElement = true
         it.contentMode = .scaleToFill
-//        it.accessibilityTraits = .image
-//        it.accessibilityHint = "Decorative image: no associated action."
-//        it.tag = 123
+        it.accessibilityTraits = .none
+        it.isAccessibilityElement = false
+        it.accessibilityLabel = ""
+        it.accessibilityHint = ""
         return it
     }()
-    private func setupCardView() {
+    func setupCardView(viewModel: DigioCashViewModel) {
+        self.viewModel = viewModel
         self.translatesAutoresizingMaskIntoConstraints = false
         setupConstraints()
         self.layer.cornerRadius = 10
+        self.isAccessibilityElement = true
+        let accessibilityLabel = AccessibilityStringsUtils.getProductAccessibilityStringByKey(
+            localizableKey: "accessibility-label-digio-cash-card",
+            productName: viewModel.digioCash.title
+        )
+        self.accessibilityLabel = accessibilityLabel
+        self.accessibilityHint = NSLocalizedString("accessibility-hint-spotlight-card", comment: "")
         setupSkeletonView()
         setupConstraints()
         handleImage()
