@@ -7,4 +7,13 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:DigioCashModule/DigioCashModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ProductsModule/ProductsModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SpotlightsModule/SpotlightsModule.xcodeproj">
+   </FileRef>
 </Workspace>

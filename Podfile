@@ -1,6 +1,3 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
-
 workspace 'Digio.xcworkspace'
 
 target 'Digio' do
@@ -8,19 +5,19 @@ target 'Digio' do
   use_frameworks!
   
   # Pods for Digio
-pod 'SwiftLint'
+  pod 'SwiftLint'
 
-target 'SpotlightsModule' do
-  project 'SpotlightsModule/SpotlightsModule.xcodeproj'
-end
+  target 'SpotlightsModule' do
+    project 'SpotlightsModule/SpotlightsModule.xcodeproj'
+  end
 
-target 'DigioCashModule' do
-  project 'DigioCashModule/DigioCashModule.xcodeproj'
-end
+  target 'DigioCashModule' do
+    project 'DigioCashModule/DigioCashModule.xcodeproj'
+  end
 
-target 'ProductsModule' do
-  project 'ProductsModule/ProductsModule.xcodeproj'
-end
+  target 'ProductsModule' do
+    project 'ProductsModule/ProductsModule.xcodeproj'
+  end
 
   target 'DigioTests' do
     inherit! :search_paths
@@ -30,5 +27,4 @@ end
   target 'DigioUITests' do
     # Pods for testing
   end
-
 end
