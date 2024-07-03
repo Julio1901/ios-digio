@@ -9,6 +9,10 @@
     - [Padrão Delegate](#padrao-delegate)
     - [Padrão Factory](#padrao-factory)
     - [Padrão Repository](#padrao-repository)
+5. [Acessibilidade](#acessibilidade)
+
+
+⚠️ **Atenção**: Peço gentilmente que, por mais extenso que esse documento pareça ser, leiam as últimas sessões onde comento superficialmente alguns detalhes sobre determinadas implementações, sobretudo, no que tange à acessibilidade uma vez que realmente cuidei para que a mesma fosse implementada de forma correta proporcionando uma experiência boa ao usuário que fizer uso dessa feature. Também gostaria de salientar que, realizei as configurações solicitadas porém, não pude testar a aplicação em um device com iOS 12 por não possuir um aparelho antigo e também não dispor de espaço no meu macbook para realizar o download de versões mais antigas do xCode.
 
 ## Objetivo <a name="objetivo"></a>
 
@@ -46,6 +50,16 @@ O Padrão Repository é utilizado para separar a lógica que recupera dados da f
 - **Abstração**: Fornece uma API limpa para operações de acesso a dados, ocultando os detalhes de como os dados são obtidos e armazenados.
 - **Gerenciamento Centralizado de Dados**: Ajuda no gerenciamento de cache de dados, sincronização e tratamento de erros de forma centralizada.
 - **Testabilidade**: Facilita testes ao permitir a substituição de repositórios por versões de teste.
+
+
+## Acessibilidade <a name="acessibilidade"></a>
+
+A experiência do usuário foi cuidadosamente pensada para garantir acessibilidade. Foram adotadas medidas específicas para melhorar a experiência dos usuários com necessidades especiais, incluindo o uso do VoiceOver e Dynamic Fonts. Caso desejem, recomento fortemente que utilizem o Voice Over para verificar como foram realizadas algumas tratativas para, por exemplo, impedir que o mesmo tente ler textos dentro da imagem (o que atrapalha a descrição fornecida) ou como foi realizado o agrupamento de algumas labels porque devem ser tratadas como um único elemento.
+
+## Comentários gerais sobre alguns pontos da implementação:
+- O APP foi todo modularizado visando a escalabilidade e manuntenabilidade do mesmo
+- Por mais que o serviço atual retorne apenas um elemento "Digio Cash", na viewModel do módulo principal eu realizo uma tratativa para transformar isso em um array, fiz isso pensando que, se novos produtos dessa categoria "Digio Cash" forem lançados e precisarmos incluir na aplicação, a mesma já lida com isso na camada de Presentation. Ou seja, a escalabilidade se tornaria mais simples. 
+- O produto possui tratativas para erros na chamada principal e também para o carregamento das imagens. Eu criei uma  "imagem de erro default" com o logo da Digio e uma mensagem para ser usada nos casos de erro de carregamento de imagem.
 
 ## Licença
 
