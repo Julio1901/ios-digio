@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol SpotlightCardDelegate {
+    func spotlightCardDidTapped()
+}
+
 class SpotlightCard: UIView {
     let gradientLayer = CAGradientLayer()
+    var delegate: SpotlightCardDelegate!
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -30,7 +35,6 @@ class SpotlightCard: UIView {
         it.isAccessibilityElement = false
         it.accessibilityLabel = ""
         it.accessibilityHint = ""
-
         return it
     }()
     func setupCard(viewModel: SpotlightViewModel) {
@@ -52,6 +56,13 @@ class SpotlightCard: UIView {
         setupSkeletonView()
         setupConstraints()
         handleImage()
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped(_:)))
+        self.addGestureRecognizer(tapGestureRecognizer)
+        self.isUserInteractionEnabled = true
+    }
+    @objc private func viewTapped(_ sender: UITapGestureRecognizer) {
+        print("UIView foi clicada!")
+        delegate.spotlightCardDidTapped()
     }
     private func handleImage() {
         DispatchQueue.global().async {

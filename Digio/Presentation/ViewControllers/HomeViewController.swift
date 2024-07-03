@@ -7,6 +7,7 @@
 
 import UIKit
 import os.log
+import SpotlightsModule
 
 class HomeViewController: UIViewController {
     private var initialScreen = HomeScreen()
@@ -31,6 +32,7 @@ class HomeViewController: UIViewController {
     private func setupSpotLightCards() {
         for spotlightViewModel in viewModel.spotlightViewModelList {
             let spotLightCard = SpotlightCard()
+            spotLightCard.delegate = self
             spotLightCard.setupCard(viewModel: spotlightViewModel)
             initialScreen.listSpotlighStackView.addArrangedSubview(spotLightCard)
         }
@@ -61,4 +63,13 @@ extension HomeViewController: MainViewModelDelegate {
     func didFetchProducts() {
         setupProductCards()
     }
+}
+
+extension HomeViewController: SpotlightCardDelegate {
+    func spotlightCardDidTapped() {
+        let featureAViewController = SpotlightDetailsViewController()
+        present(featureAViewController, animated: true, completion: nil)
+    }
+    
+    
 }

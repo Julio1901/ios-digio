@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A094A390362BD51D2E9DCEFA /* Pods_Digio_SpotlightsModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4E013781D874C66543AC7B /* Pods_Digio_SpotlightsModule.framework */; };
+		F4B15E592C34C151006E6FC7 /* SpotlightsModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B15E502C34C151006E6FC7 /* SpotlightsModule.framework */; };
+		F4B15E5E2C34C151006E6FC7 /* SpotlightsModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E5D2C34C151006E6FC7 /* SpotlightsModuleTests.swift */; };
+		F4B15E5F2C34C151006E6FC7 /* SpotlightsModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B15E532C34C151006E6FC7 /* SpotlightsModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B15F392C34D567006E6FC7 /* SpotlightDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F382C34D567006E6FC7 /* SpotlightDetails.swift */; };
+		F4B15F3C2C34D6AD006E6FC7 /* SpotlightDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F3B2C34D6AD006E6FC7 /* SpotlightDetailsViewController.swift */; };
+		F4B15F4C2C34ECA5006E6FC7 /* SpotlightsDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F4B2C34ECA5006E6FC7 /* SpotlightsDetailViewModelProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4B15E5A2C34C151006E6FC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B15E472C34C151006E6FC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B15E4F2C34C151006E6FC7;
+			remoteInfo = SpotlightsModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C739E3CF679A14FB1599EC37 /* Pods-Digio-SpotlightsModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Digio-SpotlightsModule.debug.xcconfig"; path = "Target Support Files/Pods-Digio-SpotlightsModule/Pods-Digio-SpotlightsModule.debug.xcconfig"; sourceTree = "<group>"; };
+		EB4E013781D874C66543AC7B /* Pods_Digio_SpotlightsModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Digio_SpotlightsModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B15E502C34C151006E6FC7 /* SpotlightsModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpotlightsModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B15E532C34C151006E6FC7 /* SpotlightsModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotlightsModule.h; sourceTree = "<group>"; };
+		F4B15E582C34C151006E6FC7 /* SpotlightsModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotlightsModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B15E5D2C34C151006E6FC7 /* SpotlightsModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightsModuleTests.swift; sourceTree = "<group>"; };
+		F4B15F382C34D567006E6FC7 /* SpotlightDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightDetails.swift; sourceTree = "<group>"; };
+		F4B15F3B2C34D6AD006E6FC7 /* SpotlightDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightDetailsViewController.swift; sourceTree = "<group>"; };
+		F4B15F4B2C34ECA5006E6FC7 /* SpotlightsDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightsDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		F7C8E20D8500F8EFD676EDC4 /* Pods-Digio-SpotlightsModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Digio-SpotlightsModule.release.xcconfig"; path = "Target Support Files/Pods-Digio-SpotlightsModule/Pods-Digio-SpotlightsModule.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4B15E4D2C34C151006E6FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A094A390362BD51D2E9DCEFA /* Pods_Digio_SpotlightsModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B15E552C34C151006E6FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B15E592C34C151006E6FC7 /* SpotlightsModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBA55DC1AAEACE9CE18178D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB4E013781D874C66543AC7B /* Pods_Digio_SpotlightsModule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4B15E462C34C151006E6FC7 = {
+			isa = PBXGroup;
+			children = (
+				F4B15E7C2C34C815006E6FC7 /* Source */,
+				F4B15E522C34C151006E6FC7 /* SpotlightsModule */,
+				F4B15E5C2C34C151006E6FC7 /* SpotlightsModuleTests */,
+				F4B15E512C34C151006E6FC7 /* Products */,
+				FE9FAC78CB8FBFDD21ABEDD0 /* Pods */,
+				EBA55DC1AAEACE9CE18178D6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4B15E512C34C151006E6FC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15E502C34C151006E6FC7 /* SpotlightsModule.framework */,
+				F4B15E582C34C151006E6FC7 /* SpotlightsModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B15E522C34C151006E6FC7 /* SpotlightsModule */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15E532C34C151006E6FC7 /* SpotlightsModule.h */,
+			);
+			path = SpotlightsModule;
+			sourceTree = "<group>";
+		};
+		F4B15E5C2C34C151006E6FC7 /* SpotlightsModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15E5D2C34C151006E6FC7 /* SpotlightsModuleTests.swift */,
+			);
+			path = SpotlightsModuleTests;
+			sourceTree = "<group>";
+		};
+		F4B15E7C2C34C815006E6FC7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F4A2C34EC05006E6FC7 /* Domain */,
+				F4B15F342C34D35C006E6FC7 /* Presentation */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F4B15F342C34D35C006E6FC7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F3A2C34D67A006E6FC7 /* ViewControllers */,
+				F4B15F352C34D52C006E6FC7 /* Screens */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F4B15F352C34D52C006E6FC7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F382C34D567006E6FC7 /* SpotlightDetails.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F4B15F3A2C34D67A006E6FC7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F3B2C34D6AD006E6FC7 /* SpotlightDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F4B15F4A2C34EC05006E6FC7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F4F2C34ED8B006E6FC7 /* Models */,
+				F4B15F4D2C34ED63006E6FC7 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F4B15F4D2C34ED63006E6FC7 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F4E2C34ED6D006E6FC7 /* ViewModels */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F4B15F4E2C34ED6D006E6FC7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F4B2C34ECA5006E6FC7 /* SpotlightsDetailViewModelProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4B15F4F2C34ED8B006E6FC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE9FAC78CB8FBFDD21ABEDD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C739E3CF679A14FB1599EC37 /* Pods-Digio-SpotlightsModule.debug.xcconfig */,
+				F7C8E20D8500F8EFD676EDC4 /* Pods-Digio-SpotlightsModule.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F4B15E4B2C34C151006E6FC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B15E5F2C34C151006E6FC7 /* SpotlightsModule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F4B15E4F2C34C151006E6FC7 /* SpotlightsModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B15E622C34C151006E6FC7 /* Build configuration list for PBXNativeTarget "SpotlightsModule" */;
+			buildPhases = (
+				0D25AF77CE63520105E9046A /* [CP] Check Pods Manifest.lock */,
+				F4B15E4B2C34C151006E6FC7 /* Headers */,
+				F4B15E4C2C34C151006E6FC7 /* Sources */,
+				F4B15E4D2C34C151006E6FC7 /* Frameworks */,
+				F4B15E4E2C34C151006E6FC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotlightsModule;
+			productName = SpotlightsModule;
+			productReference = F4B15E502C34C151006E6FC7 /* SpotlightsModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4B15E572C34C151006E6FC7 /* SpotlightsModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B15E652C34C151006E6FC7 /* Build configuration list for PBXNativeTarget "SpotlightsModuleTests" */;
+			buildPhases = (
+				F4B15E542C34C151006E6FC7 /* Sources */,
+				F4B15E552C34C151006E6FC7 /* Frameworks */,
+				F4B15E562C34C151006E6FC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4B15E5B2C34C151006E6FC7 /* PBXTargetDependency */,
+			);
+			name = SpotlightsModuleTests;
+			productName = SpotlightsModuleTests;
+			productReference = F4B15E582C34C151006E6FC7 /* SpotlightsModuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4B15E472C34C151006E6FC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F4B15E4F2C34C151006E6FC7 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					F4B15E572C34C151006E6FC7 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = F4B15E4A2C34C151006E6FC7 /* Build configuration list for PBXProject "SpotlightsModule" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4B15E462C34C151006E6FC7;
+			productRefGroup = F4B15E512C34C151006E6FC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4B15E4F2C34C151006E6FC7 /* SpotlightsModule */,
+				F4B15E572C34C151006E6FC7 /* SpotlightsModuleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4B15E4E2C34C151006E6FC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B15E562C34C151006E6FC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D25AF77CE63520105E9046A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Digio-SpotlightsModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4B15E4C2C34C151006E6FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B15F4C2C34ECA5006E6FC7 /* SpotlightsDetailViewModelProtocol.swift in Sources */,
+				F4B15F3C2C34D6AD006E6FC7 /* SpotlightDetailsViewController.swift in Sources */,
+				F4B15F392C34D567006E6FC7 /* SpotlightDetails.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B15E542C34C151006E6FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B15E5E2C34C151006E6FC7 /* SpotlightsModuleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4B15E5B2C34C151006E6FC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B15E4F2C34C151006E6FC7 /* SpotlightsModule */;
+			targetProxy = F4B15E5A2C34C151006E6FC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F4B15E602C34C151006E6FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				"SWIFT_VERSION[arch=*]" = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4B15E612C34C151006E6FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				"SWIFT_VERSION[arch=*]" = 4.2;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4B15E632C34C151006E6FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C739E3CF679A14FB1599EC37 /* Pods-Digio-SpotlightsModule.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6NZ5C3QSQR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = julio.SpotlightsModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4B15E642C34C151006E6FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C8E20D8500F8EFD676EDC4 /* Pods-Digio-SpotlightsModule.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6NZ5C3QSQR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = julio.SpotlightsModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4B15E662C34C151006E6FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NZ5C3QSQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = julio.SpotlightsModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4B15E672C34C151006E6FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NZ5C3QSQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = julio.SpotlightsModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4B15E4A2C34C151006E6FC7 /* Build configuration list for PBXProject "SpotlightsModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B15E602C34C151006E6FC7 /* Debug */,
+				F4B15E612C34C151006E6FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B15E622C34C151006E6FC7 /* Build configuration list for PBXNativeTarget "SpotlightsModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B15E632C34C151006E6FC7 /* Debug */,
+				F4B15E642C34C151006E6FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B15E652C34C151006E6FC7 /* Build configuration list for PBXNativeTarget "SpotlightsModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B15E662C34C151006E6FC7 /* Debug */,
+				F4B15E672C34C151006E6FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4B15E472C34C151006E6FC7 /* Project object */;
+}

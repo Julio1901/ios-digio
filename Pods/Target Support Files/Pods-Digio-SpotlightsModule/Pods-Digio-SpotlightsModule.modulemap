@@ -1,0 +1,6 @@
+framework module Pods_Digio_SpotlightsModule {
+  umbrella header "Pods-Digio-SpotlightsModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
