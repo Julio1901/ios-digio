@@ -11,5 +11,5 @@ public protocol SpotlightsDetailViewModelProtocol {
     var spotlight: Spotlight { get set}
     var imageData: Data? { get set }
     var hasError: Bool? { get }
-    func loadImage(completion: @escaping (_ imageData: Data?) -> Void) -> Void
+    func loadImage(completion: @escaping (_ imageData: Data?) -> Void)
 }

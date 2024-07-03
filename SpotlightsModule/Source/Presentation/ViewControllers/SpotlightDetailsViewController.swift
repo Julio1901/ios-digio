@@ -10,12 +10,17 @@ import UIKit
 public class SpotlightDetailsViewController: UIViewController {
     private var initialScreen = SpotlightDetails()
     public var spotlightViewModel: SpotlightsDetailViewModelProtocol!
-    
     public override func viewDidLoad() {
         super.viewDidLoad()
         view = initialScreen
-        print("test \(spotlightViewModel.spotlight.name)")
+        setupNavigationBar()
+    }
+    private func setupNavigationBar() {
+            self.navigationController?.isNavigationBarHidden = false
+            let backButton = UIBarButtonItem()
+            backButton.title = "Voltar"
+            navigationItem.backBarButtonItem = backButton
+            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationController?.navigationBar.tintColor = .systemBlue
     }
 }
-
-
