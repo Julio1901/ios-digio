@@ -12,27 +12,29 @@ class ProductViewModel: ProductViewModelProtocol {
     var product: Product
     var imageData: Data?
     internal var hasError: Bool?
-    init(product: Product) {
+
+    private let fetchImageUseCase: FetchImageUseCase
+
+    init(product: Product, fetchImageUseCase: FetchImageUseCase) {
         self.product = product
+        self.fetchImageUseCase = fetchImageUseCase
     }
     func loadImage(completion: @escaping (_ imageData: Data?) -> Void) {
-        if imageData == nil && hasError != true {
-            guard let url = URL(string: product.imageURL) else { return }
-            URLSession.shared.dataTask(with: url) { (data, _, error) in
-                if error != nil {
-                    self.hasError = true
-                    completion(nil)
-                    return
-                }
-                guard let data = data else {
-                    self.hasError = true
-                    completion(nil)
-                    return
-                }
-                self.imageData = data
-                self.hasError = false
+        guard let url = URL(string: product.imageURL) else {
+            self.hasError = true
+            completion(nil)
+            return
+        }
+        fetchImageUseCase.fetchImage(from: url) { [weak self] result in
+            switch result {
+            case .success(let data):
+                self?.imageData = data
+                self?.hasError = false
                 completion(data)
-            }.resume()
+            case .failure:
+                self?.hasError = true
+                completion(nil)
+            }
         }
     }
 }

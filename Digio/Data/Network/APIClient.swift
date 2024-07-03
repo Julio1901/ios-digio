@@ -30,4 +30,18 @@ class APIClient: APIClientProtocol {
             completion(.success(data))
         }.resume()
     }
+    func fetchImageData(from imageURL: URL, completion: @escaping (Result<Data, Error>) -> Void) {
+        URLSession.shared.dataTask(with: imageURL) { data, _, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            guard let data = data else {
+                let error = NSError(domain: "APIClient", code: -1, userInfo: [NSLocalizedDescriptionKey: "No image data received"])
+                completion(.failure(error))
+                return
+            }
+            completion(.success(data))
+        }.resume()
+    }
 }

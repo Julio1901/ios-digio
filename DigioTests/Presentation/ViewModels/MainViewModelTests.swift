@@ -15,14 +15,17 @@ final class MainViewModelTests: XCTestCase {
     var fetchSpotlightsUseCase: FetchSpotlightsUseCase!
     var fetchCashUseCase: FetchCashUseCase!
     var fetchProductsUseCase: FetchProductsUseCase!
+    var fetchImageUseCase: FetchImageUseCase!
     override func setUpWithError() throws {
         fetchSpotlightsUseCase = MockSpotlightsUseCase(shouldFail: false)
         fetchCashUseCase = MockCashUseCase(shouldFail: false)
         fetchProductsUseCase = MockProductsUseCase(shouldFail: false)
+        fetchImageUseCase = MockFetchImageUseCase(shouldFail: false)
         mainViewModel = MainViewModel(
             fetchSpotlightsUseCase: fetchSpotlightsUseCase,
             fetchCashUseCase: fetchCashUseCase,
-            fetchProductsUseCase: fetchProductsUseCase
+            fetchProductsUseCase: fetchProductsUseCase,
+            fetchImageUseCase: fetchImageUseCase
         )
     }
     override func tearDownWithError() throws {
@@ -48,7 +51,8 @@ final class MainViewModelTests: XCTestCase {
         mainViewModel = MainViewModel(
             fetchSpotlightsUseCase: fetchSpotlightsUseCase,
             fetchCashUseCase: fetchCashUseCase,
-            fetchProductsUseCase: fetchProductsUseCase
+            fetchProductsUseCase: fetchProductsUseCase,
+            fetchImageUseCase: fetchImageUseCase
         )
         mainViewModel.fetchItems()
         XCTAssertEqual(0, mainViewModel.spotlightViewModelList.count, "Spotligh list should contain 0 items after fetch items if use case fails")
@@ -58,7 +62,8 @@ final class MainViewModelTests: XCTestCase {
         mainViewModel = MainViewModel(
             fetchSpotlightsUseCase: fetchSpotlightsUseCase,
             fetchCashUseCase: fetchCashUseCase,
-            fetchProductsUseCase: fetchProductsUseCase
+            fetchProductsUseCase: fetchProductsUseCase,
+            fetchImageUseCase: fetchImageUseCase
         )
         mainViewModel.fetchItems()
         XCTAssertEqual(0, mainViewModel.digioCashViewModelList.count, "Digio Cash list should contain 0 items after fetch items if use case fails")
@@ -68,7 +73,8 @@ final class MainViewModelTests: XCTestCase {
         mainViewModel = MainViewModel(
             fetchSpotlightsUseCase: fetchSpotlightsUseCase,
             fetchCashUseCase: fetchCashUseCase,
-            fetchProductsUseCase: fetchProductsUseCase
+            fetchProductsUseCase: fetchProductsUseCase,
+            fetchImageUseCase: fetchImageUseCase
         )
         mainViewModel.fetchItems()
         XCTAssertEqual(0, mainViewModel.productViewModelList.count, "Products list should contain 0 items after fetch items if use case fails")
@@ -79,7 +85,8 @@ final class MainViewModelTests: XCTestCase {
         mainViewModel = MainViewModel(
             fetchSpotlightsUseCase: fetchSpotlightsUseCase,
             fetchCashUseCase: fetchCashUseCase,
-            fetchProductsUseCase: fetchProductsUseCase
+            fetchProductsUseCase: fetchProductsUseCase,
+            fetchImageUseCase: fetchImageUseCase
         )
         mainViewModel.fetchItems()
         XCTAssertEqual(2, mainViewModel.spotlightViewModelList.count, "Spotligh list should contain 2 items after fetch items if use case fails")
@@ -92,7 +99,8 @@ final class MainViewModelTests: XCTestCase {
         mainViewModel = MainViewModel(
             fetchSpotlightsUseCase: fetchSpotlightsUseCase,
             fetchCashUseCase: fetchCashUseCase,
-            fetchProductsUseCase: fetchProductsUseCase
+            fetchProductsUseCase: fetchProductsUseCase,
+            fetchImageUseCase: fetchImageUseCase
         )
         mainViewModel.fetchItems()
         XCTAssertEqual(1, mainViewModel.digioCashViewModelList.count, "Digio Cash list should contain 1 item after fetch items if use case fails")
@@ -105,7 +113,8 @@ final class MainViewModelTests: XCTestCase {
         mainViewModel = MainViewModel(
             fetchSpotlightsUseCase: fetchSpotlightsUseCase,
             fetchCashUseCase: fetchCashUseCase,
-            fetchProductsUseCase: fetchProductsUseCase
+            fetchProductsUseCase: fetchProductsUseCase,
+            fetchImageUseCase: fetchImageUseCase
         )
         mainViewModel.fetchItems()
         XCTAssertEqual(3, mainViewModel.productViewModelList.count, "Product list should contain 3 items after fetch items if use case fails")

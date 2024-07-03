@@ -9,4 +9,5 @@ import Foundation
 
 protocol APIClientProtocol {
     func fetchItems(completion: @escaping (Result<Data, Error>) -> Void)
+    func fetchImageData(from imageURL: URL, completion: @escaping (Result<Data, Error>) -> Void)
 }

@@ -26,11 +26,13 @@ class MainViewModel {
     private let fetchSpotlightsUseCase: FetchSpotlightsUseCase
     private let fetchCashUseCase: FetchCashUseCase
     private let fetchProductsUseCase: FetchProductsUseCase
+    private let fetchImageUseCase: FetchImageUseCase
     private let logger = LoggerFactory.makeLogger(category: "network")
-    init(fetchSpotlightsUseCase: FetchSpotlightsUseCase, fetchCashUseCase: FetchCashUseCase, fetchProductsUseCase: FetchProductsUseCase) {
+    init(fetchSpotlightsUseCase: FetchSpotlightsUseCase, fetchCashUseCase: FetchCashUseCase, fetchProductsUseCase: FetchProductsUseCase, fetchImageUseCase: FetchImageUseCase) {
         self.fetchSpotlightsUseCase = fetchSpotlightsUseCase
         self.fetchCashUseCase = fetchCashUseCase
         self.fetchProductsUseCase = fetchProductsUseCase
+        self.fetchImageUseCase = fetchImageUseCase
     }
     func fetchItems() {
         let group = DispatchGroup()
@@ -82,17 +84,17 @@ class MainViewModel {
     }
     private func populateProductViewModelList(products: [Product]) {
         for product in products {
-            productViewModelList.append(ProductViewModel(product: product))
+            productViewModelList.append(ProductViewModel(product: product, fetchImageUseCase: self.fetchImageUseCase))
         }
     }
     private func populateSpotlightViewModelList(spotlights: [Spotlight]) {
         for spotlight in spotlights {
-            spotlightViewModelList.append(SpotlightViewModel(spotlight: spotlight))
+            spotlightViewModelList.append(SpotlightViewModel(spotlight: spotlight, fetchImageUseCase: self.fetchImageUseCase))
         }
     }
     private func populateDigioCashViewModelList(cashList: [Cash]) {
         for cash in cashList {
-            digioCashViewModelList.append(DigioCashViewModel(digioCash: cash))
+            digioCashViewModelList.append(DigioCashViewModel(digioCash: cash, fetchImageUseCase: self.fetchImageUseCase))
         }
     }
     private func createCashList(from cash: Cash) -> [Cash] {

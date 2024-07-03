@@ -23,10 +23,13 @@ class HomeViewController: UIViewController {
         let fetchSpotlightsUseCase = FetchSpotlightsUseCaseImpl(repository: repository)
         let fetchCashUseCase = FetchCashUseCaseImpl(repository: repository)
         let fetchProductsUseCase = FetchProductsUseCaseImpl(repository: repository)
+        let imageRepository = ImageRepositoryImpl(apiClient: apiClient)
+        let fetchImageUseCase = FetchImageUseCaseImpl(imageRepository: imageRepository)
         self.viewModel = MainViewModel(
             fetchSpotlightsUseCase: fetchSpotlightsUseCase,
             fetchCashUseCase: fetchCashUseCase,
-            fetchProductsUseCase: fetchProductsUseCase
+            fetchProductsUseCase: fetchProductsUseCase,
+            fetchImageUseCase: fetchImageUseCase
         )
         viewModel.delegate = self
         viewModel.fetchItems()
