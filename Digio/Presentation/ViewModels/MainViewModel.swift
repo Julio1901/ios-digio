@@ -18,8 +18,7 @@ protocol MainViewModelDelegate: AnyObject {
 }
 
 class MainViewModel {
-    var delegate: MainViewModelDelegate!
-    var productsResponse: ProductsResponse?
+    var delegate: MainViewModelDelegate?
     var productViewModelList: [ProductViewModel] = []
     var spotlightViewModelList: [SpotlightViewModel] = []
     var digioCashViewModelList: [DigioCashViewModel] = []
@@ -42,7 +41,7 @@ class MainViewModel {
             switch result {
             case .success(let spotlights):
                 self.populateSpotlightViewModelList(spotlights: spotlights)
-                self.delegate.didFetchSpotlights()
+                self.delegate?.didFetchSpotlights()
             case .failure(let error):
                 LoggerFactory.logErrorMessage(error.localizedDescription, logger: self.logger)
             }
@@ -53,18 +52,18 @@ class MainViewModel {
             switch result {
             case .success(let cash):
                 self.populateDigioCashViewModelList(cashList: self.createCashList(from: cash))
-                self.delegate.didFetchCash()
+                self.delegate?.didFetchCash()
             case .failure(let error):
                 LoggerFactory.logErrorMessage(error.localizedDescription, logger: self.logger)
             }
         }
     }
-    func loadProducts() {
+    private func loadProducts() {
         fetchProductsUseCase.execute { result in
             switch result {
             case .success(let products):
                 self.populateProductViewModelList(products: products)
-                self.delegate.didFetchProducts()
+                self.delegate?.didFetchProducts()
             case .failure(let error):
                 LoggerFactory.logErrorMessage(error.localizedDescription, logger: self.logger)
             }
