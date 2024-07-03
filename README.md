@@ -10,6 +10,7 @@
     - [Padrão Factory](#padrao-factory)
     - [Padrão Repository](#padrao-repository)
 5. [Acessibilidade](#acessibilidade)
+6. [Suporte a Múltiplos Idiomas](#multilinguagem)
 
 
 ⚠️ **Atenção**: Peço gentilmente que, por mais extenso que esse documento pareça ser, leiam as últimas sessões onde comento superficialmente alguns detalhes sobre determinadas implementações, sobretudo, no que tange à acessibilidade uma vez que realmente cuidei para que a mesma fosse implementada de forma correta proporcionando uma experiência boa ao usuário que fizer uso dessa feature. Também gostaria de salientar que, realizei as configurações solicitadas porém, não pude testar a aplicação em um device com iOS 12 por não possuir um aparelho antigo e também não dispor de espaço no meu macbook para realizar o download de versões mais antigas do xCode.
@@ -55,6 +56,10 @@ O Padrão Repository é utilizado para separar a lógica que recupera dados da f
 ## Acessibilidade <a name="acessibilidade"></a>
 
 A experiência do usuário foi cuidadosamente pensada para garantir acessibilidade. Foram adotadas medidas específicas para melhorar a experiência dos usuários com necessidades especiais, incluindo o uso do VoiceOver e Dynamic Fonts. Caso desejem, recomento fortemente que utilizem o Voice Over para verificar como foram realizadas algumas tratativas para, por exemplo, impedir que o mesmo tente ler textos dentro da imagem (o que atrapalha a descrição fornecida) ou como foi realizado o agrupamento de algumas labels porque devem ser tratadas como um único elemento.
+
+## Suporte a Múltiplos Idiomas <a name="multilinguagem"></a>
+
+O projeto oferece suporte a múltiplos idiomas (português e inglês.)
 
 ## Comentários gerais sobre alguns pontos da implementação:
 - O APP foi todo modularizado visando a escalabilidade e manuntenabilidade do mesmo
