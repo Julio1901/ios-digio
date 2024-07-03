@@ -12,9 +12,11 @@ public class ProductDetailsViewController: UIViewController {
     public var productViewModel: ProductViewModelProtocol!
     public override func viewDidLoad() {
         super.viewDidLoad()
+        initialScreen.setup(productName: productViewModel.product.name, imageData: productViewModel.imageData,
+            description: productViewModel.product.description
+        )
         view = initialScreen
         setupNavigationBar()
-        print("test cash \(productViewModel.product.name)")
     }
     private func setupNavigationBar() {
             self.navigationController?.isNavigationBarHidden = false
@@ -22,6 +24,4 @@ public class ProductDetailsViewController: UIViewController {
             navigationController?.navigationBar.frame.size.height = 24
             navigationController?.navigationBar.tintColor = .systemBlue
     }
-
-
 }

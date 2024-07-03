@@ -41,5 +41,6 @@
 //MARK: Details screen Accessibility
 "accessibility-hint-details-screen-default" = "Titulo da tela. Item decorativo: Não há ação associada.";
 "accessibility-label-details-screen-image-default" = "Imagem do produto selecionado";
+"accessibility-label-details-screen-image-error-state" = "Imagem indicando que houve um erro ao carregar a imagem do produto selecionado";
 "accessibility-hint-details-screen-image-default" = "Imagem decorativa: Não há ação associada";
 "accessibility-hint-details-screen-description-default" = "Texto decorativo: Não há ação associada.";

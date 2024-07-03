@@ -15,7 +15,6 @@ protocol DigioCashCardDelegate: AnyObject {
 class DigioCashCard: UIView {
     let gradientLayer = CAGradientLayer()
     var delegate: DigioCashCardDelegate!
-    
     override init(frame: CGRect) {
             super.init(frame: frame)
     }

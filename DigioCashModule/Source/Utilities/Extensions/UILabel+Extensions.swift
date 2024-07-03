@@ -27,4 +27,3 @@ extension UILabel {
         self.adjustsFontForContentSizeCategory = true
     }
 }
-

@@ -74,8 +74,15 @@ class SpotlightDetails: UIView {
         self.productNameLabel.setupText(text: text, fontFamily: "Sora-SemiBold", fontSize: 15)
     }
     private func setupImage(imageData: Data?) {
-        guard let imageData else { return }
-        self.image.image = UIImage(data: imageData)
+        if let imageData = imageData, UIImage(data: imageData) != nil {
+            self.image.image = UIImage(data: imageData)
+        } else {
+            setImageErrorState()
+            self.image.accessibilityLabel = NSLocalizedString("accessibility-label-details-screen-image-error-state", comment: "")
+        }
+    }
+    private func setImageErrorState() {
+        self.image.image = UIImage(named: "image-product-error")
     }
     private func setupDescription(text: String) {
         self.descriptionLabel.setupText(text: text, fontFamily: "Sora-SemiBold", fontSize: 18)

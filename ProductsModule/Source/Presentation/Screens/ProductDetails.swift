@@ -14,10 +14,40 @@ class ProductDetails: UIView {
     private var titleLabel: UILabel = {
         let it = UILabel()
         it.translatesAutoresizingMaskIntoConstraints = false
-        it.text = "Product Details"
         it.textColor = UIColor.black
-//        it.isAccessibilityElement = true
-//        it.accessibilityHint = NSLocalizedString("accessibility-welcome-label-description", comment: "")
+        it.setupTextFromLocalizable(key: "product-details-screen-title", fontFamily: "Sora-SemiBold", fontSize: 20)
+        it.isAccessibilityElement = true
+        it.accessibilityHint = NSLocalizedString("accessibility-hint-details-screen-default", comment: "")
+        return it
+    }()
+    private var productNameLabel: UILabel = {
+        let it = UILabel()
+        it.translatesAutoresizingMaskIntoConstraints = false
+        it.textColor = UIColor.black
+        it.isAccessibilityElement = true
+        it.accessibilityHint = NSLocalizedString("product-name-hint", comment: "")
+        return it
+    }()
+    private var image: UIImageView = {
+        let it = UIImageView()
+        it.translatesAutoresizingMaskIntoConstraints = false
+        it.layer.cornerRadius = 10
+        it.layer.masksToBounds = true
+        it.contentMode = .scaleToFill
+        it.accessibilityTraits = .none
+        it.isAccessibilityElement = true
+        it.accessibilityHint = NSLocalizedString("accessibility-hint-details-screen-image-default", comment: "")
+        it.accessibilityLabel = NSLocalizedString("accessibility-label-details-screen-image-default", comment: "")
+        return it
+    }()
+    private var descriptionLabel: UILabel = {
+        let it = UILabel()
+        it.translatesAutoresizingMaskIntoConstraints = false
+        it.textColor = UIColor(red: 138/255, green: 138/255, blue: 138/255, alpha: 1.0)
+        it.numberOfLines = 0
+        it.lineBreakMode = .byWordWrapping
+        it.isAccessibilityElement = true
+        it.accessibilityHint = NSLocalizedString("accessibility-hint-details-screen-description-default", comment: "")
         return it
     }()
     init() {
@@ -31,12 +61,47 @@ class ProductDetails: UIView {
     }
     func addSubViews() {
         addSubview(titleLabel)
+        addSubview(image)
+        addSubview(productNameLabel)
+        addSubview(descriptionLabel)
+    }
+    func setup(productName: String, imageData: Data?, description: String) {
+        setupImage(imageData: imageData)
+        setupProductName(text: productName)
+        setupDescription(text: description)
+    }
+    private func setupProductName(text: String) {
+        self.productNameLabel.setupText(text: text, fontFamily: "Sora-SemiBold", fontSize: 15)
+    }
+    private func setupImage(imageData: Data?) {
+        if let imageData = imageData, UIImage(data: imageData) != nil {
+            self.image.image = UIImage(data: imageData)
+        } else {
+            setImageErrorState()
+            self.image.accessibilityLabel = NSLocalizedString("accessibility-label-details-screen-image-error-state", comment: "")
+        }
+    }
+    private func setImageErrorState() {
+        self.image.image = UIImage(named: "image-product-error")
+    }
+    private func setupDescription(text: String) {
+        self.descriptionLabel.setupText(text: text, fontFamily: "Sora-SemiBold", fontSize: 18)
     }
     func setupConstraints() {
         let safeArea = safeAreaLayoutGuide
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 10),
-            titleLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: DEFAULT_LEADING_ANCHOR_VALUE)
+            titleLabel.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 15),
+            titleLabel.centerXAnchor.constraint(equalTo: safeArea.centerXAnchor),
+            productNameLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 25),
+            productNameLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: DEFAULT_LEADING_ANCHOR_VALUE),
+            image.topAnchor.constraint(equalTo: productNameLabel.bottomAnchor, constant: 15),
+            image.centerXAnchor.constraint(equalTo: safeArea.centerXAnchor),
+            image.heightAnchor.constraint(equalToConstant: 200),
+            image.heightAnchor.constraint(equalToConstant: 100),
+            image.widthAnchor.constraint(equalToConstant: 100),
+            descriptionLabel.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 15),
+            descriptionLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: DEFAULT_LEADING_ANCHOR_VALUE),
+            descriptionLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: DEFAULT_TRAILING_ANCHOR_VALUE)
         ])
     }
 }

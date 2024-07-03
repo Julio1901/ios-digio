@@ -120,7 +120,7 @@ class ProductCard: UIView {
         gradientLayer.removeFromSuperlayer()
         self.backgroundColor = UIColor.white
     }
-    func setImageErrorState() {
+    private func setImageErrorState() {
         self.image.image = UIImage(named: "image-product-error")
         self.accessibilityLabel = AccessibilityStringsUtils.getProductAccessibilityStringByKey(
             localizableKey: "accessibility-label-product-card-error-image-state",

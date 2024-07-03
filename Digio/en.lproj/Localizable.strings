@@ -40,5 +40,6 @@
 //MARK: Details screen Accessibility
 "accessibility-hint-details-screen-default" = "Screen title. Decorative item: No associated action.";
 "accessibility-label-details-screen-image-default" = "Selected product image";
+"accessibility-label-details-screen-image-error-state" = "Image indicating that there was an error loading the selected product image.";
 "accessibility-hint-details-screen-image-default" = "Decorative image: No associated action.";
 "accessibility-hint-details-screen-description-default" = "Decorative text: No associated action.";
