@@ -33,3 +33,13 @@
 "accessibility-label-product-card" = "Card com a imagem de um dos produtos digitais da Digio.";
 "accessibility-hint-product-card" = "Toque duas vezes para selecionar o produto.";
 "accessibility-label-product-card-error-image-state" = "Card com a imagem indicando que houve um erro ao carregar a imagem desse produto na lista de produtos digitais.";
+
+//MARK: Details screen
+"product-details-screen-title" = "Tela de detalhes do produto";
+"product-name-hint" = "Titulo com o nome do produto. Texto decorativo: Não há ação associada";
+
+//MARK: Details screen Accessibility
+"accessibility-hint-details-screen-default" = "Titulo da tela. Item decorativo: Não há ação associada.";
+"accessibility-label-details-screen-image-default" = "Imagem do produto selecionado";
+"accessibility-hint-details-screen-image-default" = "Imagem decorativa: Não há ação associada";
+"accessibility-hint-details-screen-description-default" = "Texto decorativo: Não há ação associada.";

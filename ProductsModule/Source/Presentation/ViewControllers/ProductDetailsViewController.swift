@@ -18,10 +18,8 @@ public class ProductDetailsViewController: UIViewController {
     }
     private func setupNavigationBar() {
             self.navigationController?.isNavigationBarHidden = false
-            let backButton = UIBarButtonItem()
-            backButton.title = "Voltar"
-            navigationItem.backBarButtonItem = backButton
-            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationController?.navigationBar.prefersLargeTitles = false
+            navigationController?.navigationBar.frame.size.height = 24
             navigationController?.navigationBar.tintColor = .systemBlue
     }
 
