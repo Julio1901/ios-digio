@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import DigioCashModule
 
-class DigioCashViewModel {
+class DigioCashViewModel: DigioCashDetailViewModelProtocol {
     var digioCash: Cash
     var imageData: Data?
-    private var hasError: Bool?
+    internal var hasError: Bool?
     init(digioCash: Cash) {
         self.digioCash = digioCash
     }

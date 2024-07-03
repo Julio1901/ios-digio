@@ -6,10 +6,16 @@
 //
 
 import UIKit
+import DigioCashModule
+
+protocol DigioCashCardDelegate: AnyObject {
+    func spotlightCardDidTapped(viewModel: DigioCashDetailViewModelProtocol)
+}
 
 class DigioCashCard: UIView {
     let gradientLayer = CAGradientLayer()
-
+    var delegate: DigioCashCardDelegate!
+    
     override init(frame: CGRect) {
             super.init(frame: frame)
     }
@@ -20,7 +26,7 @@ class DigioCashCard: UIView {
         super.layoutSubviews()
         gradientLayer.frame = self.bounds
     }
-    private var viewModel: DigioCashViewModel!
+    private var viewModel: DigioCashDetailViewModelProtocol!
     var image: UIImageView = {
         let it = UIImageView()
         it.translatesAutoresizingMaskIntoConstraints = false
@@ -33,7 +39,7 @@ class DigioCashCard: UIView {
         it.accessibilityHint = ""
         return it
     }()
-    func setupCardView(viewModel: DigioCashViewModel) {
+    func setupCard(viewModel: DigioCashDetailViewModelProtocol) {
         self.viewModel = viewModel
         self.translatesAutoresizingMaskIntoConstraints = false
         setupConstraints()
@@ -48,6 +54,12 @@ class DigioCashCard: UIView {
         setupSkeletonView()
         setupConstraints()
         handleImage()
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped(_:)))
+        self.addGestureRecognizer(tapGestureRecognizer)
+        self.isUserInteractionEnabled = true
+    }
+    @objc private func viewTapped(_ sender: UITapGestureRecognizer) {
+        delegate.spotlightCardDidTapped(viewModel: self.viewModel)
     }
     private func handleImage() {
         DispatchQueue.global().async {

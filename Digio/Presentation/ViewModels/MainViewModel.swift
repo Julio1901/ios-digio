@@ -8,6 +8,7 @@
 import Foundation
 import os.log
 import SpotlightsModule
+import DigioCashModule
 
 protocol MainViewModelDelegate: AnyObject {
     func didFetchSpotlights()

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import DigioCashModule
 
 protocol FetchCashUseCase {
     func execute(completion: @escaping (Result<Cash, Error>) -> Void)

@@ -15,27 +15,36 @@
 			dependencies = (
 			);
 			name = SwiftLint;
-			productName = SwiftLint;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0B31CB530FB8E7EF478BDC78B681469B /* Pods-Digio-SpotlightsModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F943981A6383E4458D357F9F3465E49E /* Pods-Digio-SpotlightsModule-dummy.m */; };
-		0B9B5F2D76CBC508E3B3F60A3BAA9086 /* Pods-DigioTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0C23F96AFFBAF642AAE284B6C389F5 /* Pods-DigioTests-dummy.m */; };
-		13BB455BBDE0055AA36BA880BBBDDF80 /* Pods-Digio-DigioUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E42A065522A9291FA5A804F81264C9F0 /* Pods-Digio-DigioUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B31CB530FB8E7EF478BDC78B681469B /* Pods-Digio-SpotlightsModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7398663F671F99D49C010BD32F1222 /* Pods-Digio-SpotlightsModule-dummy.m */; };
+		0B9B5F2D76CBC508E3B3F60A3BAA9086 /* Pods-DigioTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3720844EEABEB50B45728E7B80580E /* Pods-DigioTests-dummy.m */; };
+		13BB455BBDE0055AA36BA880BBBDDF80 /* Pods-Digio-DigioUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F02B8A24B829B2442EA32DAD34710A2 /* Pods-Digio-DigioUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2339BE6D66E193EF24226E3E225F6BEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5F92DA49FD5786E0C69D433DA2FC3362 /* Pods-Digio-SpotlightsModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E233FB537A82A12820034E2997CE59E /* Pods-Digio-SpotlightsModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F92DA49FD5786E0C69D433DA2FC3362 /* Pods-Digio-SpotlightsModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3AEEF497F51A60730B70DFE171D8CD1 /* Pods-Digio-SpotlightsModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6238BC946320B20B699194A90A220629 /* Pods-Digio-DigioCashModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6267CD855DB0F2392316AE2F9EAB7F71 /* Pods-Digio-DigioCashModule-dummy.m */; };
+		6F3A43F3860C62B252164F9CDB02192B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		7EA4593B4252699F9C4629F51770DFBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A5E610394E60B7C0D986A933160676F6 /* Pods-Digio-DigioUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5559D174EAE5B4959BB4276F3DB0B3 /* Pods-Digio-DigioUITests-dummy.m */; };
-		A84156D71BA89C9AB29FE8F6CA62B366 /* Pods-Digio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E237C9947D5EED640570871F5D4AE5 /* Pods-Digio-dummy.m */; };
-		AAF19C73D04FAB8EF02DD18E012A516B /* Pods-Digio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53237FF561681FCD3313B97A56C115E6 /* Pods-Digio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC477E3421790B50A379CC9907DE7967 /* Pods-DigioTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4A6F5533E0DF735697377E0AB3846B /* Pods-DigioTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5E610394E60B7C0D986A933160676F6 /* Pods-Digio-DigioUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA4902A4AC5DC89B0503D1F06FBB245 /* Pods-Digio-DigioUITests-dummy.m */; };
+		A84156D71BA89C9AB29FE8F6CA62B366 /* Pods-Digio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31298B18E7B9B315066E659AB9200007 /* Pods-Digio-dummy.m */; };
+		AAF19C73D04FAB8EF02DD18E012A516B /* Pods-Digio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA84CD9CFA8C9CF58E8DF6AE610C7E9E /* Pods-Digio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC477E3421790B50A379CC9907DE7967 /* Pods-DigioTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E86B62F5BEA3CE93A75CC064CA5DD0 /* Pods-DigioTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1C2F7287C36DF113B307B23AC4EE210 /* Pods-Digio-DigioCashModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F6D92ED24520A018B45FCFD1D5B1FD /* Pods-Digio-DigioCashModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7D0C888E09067508C3ADC80C820546F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D4CBF6B655B6D8F5F158D85A44C115CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		6F42D2E62415D752B4D47D45D53854D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		B0E57B30608FE768F2F5459749FA54A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -66,46 +75,55 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0117E7C13038C02AF52573A9EC07445E /* Pods-Digio-DigioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio-DigioUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		03E237C9947D5EED640570871F5D4AE5 /* Pods-Digio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Digio-dummy.m"; sourceTree = "<group>"; };
-		07D74E386EF8F3284E12B6A7FB665347 /* Pods-Digio-DigioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio-DigioUITests.release.xcconfig"; sourceTree = "<group>"; };
-		0A8612770AD980B70DF5C364B5F0CFC8 /* Pods-Digio-SpotlightsModule-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Digio-SpotlightsModule-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0E233FB537A82A12820034E2997CE59E /* Pods-Digio-SpotlightsModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Digio-SpotlightsModule-umbrella.h"; sourceTree = "<group>"; };
-		15685468BAB337AC64C086EF53DDA492 /* Pods-DigioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigioTests.release.xcconfig"; sourceTree = "<group>"; };
-		37174A9683C1075CFF355632B2CDFECE /* Pods-Digio-DigioUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Digio-DigioUITests.modulemap"; sourceTree = "<group>"; };
+		02AE10D0B81C540AD27EA60B4C551D25 /* Pods-Digio-DigioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio-DigioUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A8EDE79128A849BBD4DB81B9AFC8DC5 /* Pods-DigioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0BB96C9A80C9E54505137E69C5A6462A /* Pods-Digio-SpotlightsModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio-SpotlightsModule.release.xcconfig"; sourceTree = "<group>"; };
+		0C3720844EEABEB50B45728E7B80580E /* Pods-DigioTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DigioTests-dummy.m"; sourceTree = "<group>"; };
+		0DBF377AAD34BDA4CC1BAFF2D8542F2A /* Pods-Digio-DigioCashModule-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-DigioCashModule-acknowledgements.plist"; sourceTree = "<group>"; };
+		0EA4902A4AC5DC89B0503D1F06FBB245 /* Pods-Digio-DigioUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Digio-DigioUITests-dummy.m"; sourceTree = "<group>"; };
+		136BEE3371D28124E407460C15063174 /* Pods-DigioTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DigioTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		31298B18E7B9B315066E659AB9200007 /* Pods-Digio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Digio-dummy.m"; sourceTree = "<group>"; };
+		31A6F4E7A97ACAB54A0965B2D433BC24 /* Pods-Digio-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Digio-acknowledgements.markdown"; sourceTree = "<group>"; };
+		32F6D92ED24520A018B45FCFD1D5B1FD /* Pods-Digio-DigioCashModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Digio-DigioCashModule-umbrella.h"; sourceTree = "<group>"; };
+		3C3B6AAA1A6F3BC0B47838C82022B0CB /* Pods-Digio-SpotlightsModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-SpotlightsModule-Info.plist"; sourceTree = "<group>"; };
 		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
-		3F0C23F96AFFBAF642AAE284B6C389F5 /* Pods-DigioTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DigioTests-dummy.m"; sourceTree = "<group>"; };
 		42CAF2A4104E1BD5987C05CD5421D931 /* Pods-DigioTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DigioTests"; path = Pods_DigioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		488FAC69276040EC27C8BB3FAE2AE270 /* Pods-Digio-SpotlightsModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio-SpotlightsModule.debug.xcconfig"; sourceTree = "<group>"; };
-		53237FF561681FCD3313B97A56C115E6 /* Pods-Digio-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Digio-umbrella.h"; sourceTree = "<group>"; };
-		558F90BEF306FA396A089285ACE90A10 /* Pods-Digio-DigioUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-DigioUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5B5559D174EAE5B4959BB4276F3DB0B3 /* Pods-Digio-DigioUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Digio-DigioUITests-dummy.m"; sourceTree = "<group>"; };
-		6B874DFF4D512697961244B083407AE8 /* Pods-Digio-SpotlightsModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Digio-SpotlightsModule.modulemap"; sourceTree = "<group>"; };
-		6C5AF8DBBAA520E15E9F86BBCC944E08 /* Pods-DigioTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DigioTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		532C374954E76F0DC0F2DE95922B7C56 /* Pods-Digio.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Digio.modulemap"; sourceTree = "<group>"; };
+		55C797C95AB25B3D9C295FA054523E06 /* Pods-Digio-DigioCashModule */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Digio-DigioCashModule"; path = Pods_Digio_DigioCashModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57A73CB4CDF75D37EE930835451372AE /* Pods-Digio-DigioUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Digio-DigioUITests.modulemap"; sourceTree = "<group>"; };
+		5AF936AF961513124D53B99E196CAB51 /* Pods-DigioTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DigioTests-Info.plist"; sourceTree = "<group>"; };
+		5ECC9868FD6952428E84A64F94D5C524 /* Pods-Digio-SpotlightsModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio-SpotlightsModule.debug.xcconfig"; sourceTree = "<group>"; };
+		6267CD855DB0F2392316AE2F9EAB7F71 /* Pods-Digio-DigioCashModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Digio-DigioCashModule-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		732A89FEFBAB11B11DACCF28A0DC1FE5 /* Pods-DigioTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DigioTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7924C2333D9C7EFD4BCB2DF671A84CE0 /* Pods-Digio-DigioUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Digio-DigioUITests"; path = Pods_Digio_DigioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A262682159199462184F92452525184 /* Pods-DigioTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DigioTests-Info.plist"; sourceTree = "<group>"; };
+		7A83AD4065630275783A7E549048AFB1 /* Pods-Digio-DigioUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-DigioUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D1321F649149450577594D5B71F95ED /* Pods-Digio-DigioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio-DigioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
-		86D314EB2A0AE5FEDE016282D3922226 /* Pods-Digio-SpotlightsModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio-SpotlightsModule.release.xcconfig"; sourceTree = "<group>"; };
-		9BD110239CDA279E14770B1B3AF1FC0F /* Pods-Digio-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA5515626B5774E4F65376839E7D6B1D /* Pods-Digio-SpotlightsModule-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-SpotlightsModule-acknowledgements.plist"; sourceTree = "<group>"; };
-		B3B7A280E2BF70D239D917AB30441B01 /* Pods-Digio-SpotlightsModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-SpotlightsModule-Info.plist"; sourceTree = "<group>"; };
-		BADF69EAF52509DA98677809224EC287 /* Pods-Digio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio.debug.xcconfig"; sourceTree = "<group>"; };
-		BBDCABF24E88EF5AF4C2126574406A84 /* Pods-Digio.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Digio.modulemap"; sourceTree = "<group>"; };
-		BE7E3F8262B281401FAA31D3E9D5F833 /* Pods-Digio-DigioUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-DigioUITests-Info.plist"; sourceTree = "<group>"; };
-		C60442C71BCA6E66CEE385A1D7668783 /* Pods-Digio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio.release.xcconfig"; sourceTree = "<group>"; };
-		C7BDB84FA8D471C5B45DCB3406CFD760 /* Pods-Digio-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Digio-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D38943667D45833CAFAFF8A94C4BE4A3 /* Pods-DigioTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DigioTests.modulemap"; sourceTree = "<group>"; };
+		8183125627CB0612762AB1F3C197BAB0 /* Pods-Digio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio.debug.xcconfig"; sourceTree = "<group>"; };
+		8780E46B53B9A5EFF10ECA134F2BC24B /* Pods-Digio-SpotlightsModule-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Digio-SpotlightsModule-acknowledgements.markdown"; sourceTree = "<group>"; };
+		892883F487C4FB8448AFC42CA0A1660D /* Pods-Digio-DigioCashModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio-DigioCashModule.debug.xcconfig"; sourceTree = "<group>"; };
+		8F02B8A24B829B2442EA32DAD34710A2 /* Pods-Digio-DigioUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Digio-DigioUITests-umbrella.h"; sourceTree = "<group>"; };
+		91E3F67F2D6993DA72A940D0118337D2 /* Pods-Digio-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-Info.plist"; sourceTree = "<group>"; };
+		95453BA8C7B96B93C7DCDC7909071171 /* Pods-Digio-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3AEEF497F51A60730B70DFE171D8CD1 /* Pods-Digio-SpotlightsModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Digio-SpotlightsModule-umbrella.h"; sourceTree = "<group>"; };
+		A4F5C7F6840427CE7A0B0F2948BAAEF9 /* Pods-Digio-DigioCashModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio-DigioCashModule.release.xcconfig"; sourceTree = "<group>"; };
+		A6231E26662A3E5DB3A4B9C30D0EE21C /* Pods-DigioTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DigioTests.modulemap"; sourceTree = "<group>"; };
+		A6C3F48A2251C8003265FF190DBA914B /* Pods-Digio-DigioCashModule-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Digio-DigioCashModule-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB5F7AA5130F4E811B472ED67D2B076D /* Pods-DigioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigioTests.release.xcconfig"; sourceTree = "<group>"; };
+		B479CE3D3E1E566FDBD000E48A84767F /* Pods-Digio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Digio.release.xcconfig"; sourceTree = "<group>"; };
+		B62ED6EF9D164101D5F1D0CF3D356B81 /* Pods-Digio-DigioUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-DigioUITests-Info.plist"; sourceTree = "<group>"; };
+		C47A4592CC6B41785003C4D9F8CAA278 /* Pods-Digio-DigioCashModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Digio-DigioCashModule.modulemap"; sourceTree = "<group>"; };
+		C498B5243D3C46DC615F32208309A427 /* Pods-Digio-SpotlightsModule-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-SpotlightsModule-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA84CD9CFA8C9CF58E8DF6AE610C7E9E /* Pods-Digio-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Digio-umbrella.h"; sourceTree = "<group>"; };
+		CC7398663F671F99D49C010BD32F1222 /* Pods-Digio-SpotlightsModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Digio-SpotlightsModule-dummy.m"; sourceTree = "<group>"; };
+		D4E86B62F5BEA3CE93A75CC064CA5DD0 /* Pods-DigioTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DigioTests-umbrella.h"; sourceTree = "<group>"; };
 		DE7A039E8ADEDDB045304793B8F14BF3 /* Pods-Digio */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Digio"; path = Pods_Digio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E19CC9398684F204FF35D5A842204DE1 /* Pods-Digio-DigioUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Digio-DigioUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E27A44240615C87A289E0563933657C7 /* Pods-DigioTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DigioTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E42A065522A9291FA5A804F81264C9F0 /* Pods-Digio-DigioUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Digio-DigioUITests-umbrella.h"; sourceTree = "<group>"; };
-		EBD1FB7577AD3322084D3204991282F6 /* Pods-DigioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DigioTests.debug.xcconfig"; sourceTree = "<group>"; };
-		EE4A6F5533E0DF735697377E0AB3846B /* Pods-DigioTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DigioTests-umbrella.h"; sourceTree = "<group>"; };
+		E05B41146E0DF4C62A677F3C8F4911F2 /* Pods-Digio-DigioCashModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-DigioCashModule-Info.plist"; sourceTree = "<group>"; };
+		E12F1D45E8CA531383CA93880F94110A /* Pods-Digio-DigioUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Digio-DigioUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F4D2215A97A94DB2812FA963F04AB74C /* Pods-Digio-SpotlightsModule */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Digio-SpotlightsModule"; path = Pods_Digio_SpotlightsModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F517367A75C81351E959E513B916EBF9 /* Pods-Digio-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Digio-acknowledgements.plist"; sourceTree = "<group>"; };
-		F943981A6383E4458D357F9F3465E49E /* Pods-Digio-SpotlightsModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Digio-SpotlightsModule-dummy.m"; sourceTree = "<group>"; };
+		F5658199FA451D15C91BB4E71D010435 /* Pods-Digio-SpotlightsModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Digio-SpotlightsModule.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +132,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D0C888E09067508C3ADC80C820546F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D3F0587BF5BB7BE8330E48D11831E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F3A43F3860C62B252164F9CDB02192B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,31 +170,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28F32A39D78DA9CA52A75F3C0A4FBEA8 /* Pods-Digio-DigioUITests */ = {
+		3AD7FA4642B759B9966C74ECBCA02A81 /* Pods-Digio */ = {
 			isa = PBXGroup;
 			children = (
-				37174A9683C1075CFF355632B2CDFECE /* Pods-Digio-DigioUITests.modulemap */,
-				E19CC9398684F204FF35D5A842204DE1 /* Pods-Digio-DigioUITests-acknowledgements.markdown */,
-				558F90BEF306FA396A089285ACE90A10 /* Pods-Digio-DigioUITests-acknowledgements.plist */,
-				5B5559D174EAE5B4959BB4276F3DB0B3 /* Pods-Digio-DigioUITests-dummy.m */,
-				BE7E3F8262B281401FAA31D3E9D5F833 /* Pods-Digio-DigioUITests-Info.plist */,
-				E42A065522A9291FA5A804F81264C9F0 /* Pods-Digio-DigioUITests-umbrella.h */,
-				0117E7C13038C02AF52573A9EC07445E /* Pods-Digio-DigioUITests.debug.xcconfig */,
-				07D74E386EF8F3284E12B6A7FB665347 /* Pods-Digio-DigioUITests.release.xcconfig */,
+				532C374954E76F0DC0F2DE95922B7C56 /* Pods-Digio.modulemap */,
+				31A6F4E7A97ACAB54A0965B2D433BC24 /* Pods-Digio-acknowledgements.markdown */,
+				95453BA8C7B96B93C7DCDC7909071171 /* Pods-Digio-acknowledgements.plist */,
+				31298B18E7B9B315066E659AB9200007 /* Pods-Digio-dummy.m */,
+				91E3F67F2D6993DA72A940D0118337D2 /* Pods-Digio-Info.plist */,
+				CA84CD9CFA8C9CF58E8DF6AE610C7E9E /* Pods-Digio-umbrella.h */,
+				8183125627CB0612762AB1F3C197BAB0 /* Pods-Digio.debug.xcconfig */,
+				B479CE3D3E1E566FDBD000E48A84767F /* Pods-Digio.release.xcconfig */,
 			);
-			name = "Pods-Digio-DigioUITests";
-			path = "Target Support Files/Pods-Digio-DigioUITests";
+			name = "Pods-Digio";
+			path = "Target Support Files/Pods-Digio";
 			sourceTree = "<group>";
 		};
-		309A53C5F671170BDD61F739C578C893 /* Products */ = {
+		4311E9987EB1D3BDEBC09BBF52D5CECF /* Pods-Digio-DigioCashModule */ = {
 			isa = PBXGroup;
 			children = (
-				DE7A039E8ADEDDB045304793B8F14BF3 /* Pods-Digio */,
-				7924C2333D9C7EFD4BCB2DF671A84CE0 /* Pods-Digio-DigioUITests */,
-				F4D2215A97A94DB2812FA963F04AB74C /* Pods-Digio-SpotlightsModule */,
-				42CAF2A4104E1BD5987C05CD5421D931 /* Pods-DigioTests */,
+				C47A4592CC6B41785003C4D9F8CAA278 /* Pods-Digio-DigioCashModule.modulemap */,
+				A6C3F48A2251C8003265FF190DBA914B /* Pods-Digio-DigioCashModule-acknowledgements.markdown */,
+				0DBF377AAD34BDA4CC1BAFF2D8542F2A /* Pods-Digio-DigioCashModule-acknowledgements.plist */,
+				6267CD855DB0F2392316AE2F9EAB7F71 /* Pods-Digio-DigioCashModule-dummy.m */,
+				E05B41146E0DF4C62A677F3C8F4911F2 /* Pods-Digio-DigioCashModule-Info.plist */,
+				32F6D92ED24520A018B45FCFD1D5B1FD /* Pods-Digio-DigioCashModule-umbrella.h */,
+				892883F487C4FB8448AFC42CA0A1660D /* Pods-Digio-DigioCashModule.debug.xcconfig */,
+				A4F5C7F6840427CE7A0B0F2948BAAEF9 /* Pods-Digio-DigioCashModule.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-Digio-DigioCashModule";
+			path = "Target Support Files/Pods-Digio-DigioCashModule";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -179,47 +210,16 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		60C38C2F78B734F5A1BCECA610A9FF8E /* Targets Support Files */ = {
+		734B1E5AC26FC2067D8E00980338B83D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C60DA4FDCF34388DD52EDC80B9A3BC1B /* Pods-Digio */,
-				28F32A39D78DA9CA52A75F3C0A4FBEA8 /* Pods-Digio-DigioUITests */,
-				700DDEE4670493CB1704CC38BEB07694 /* Pods-Digio-SpotlightsModule */,
-				6E193175CB3B778576B8E6715E0722F2 /* Pods-DigioTests */,
+				DE7A039E8ADEDDB045304793B8F14BF3 /* Pods-Digio */,
+				55C797C95AB25B3D9C295FA054523E06 /* Pods-Digio-DigioCashModule */,
+				7924C2333D9C7EFD4BCB2DF671A84CE0 /* Pods-Digio-DigioUITests */,
+				F4D2215A97A94DB2812FA963F04AB74C /* Pods-Digio-SpotlightsModule */,
+				42CAF2A4104E1BD5987C05CD5421D931 /* Pods-DigioTests */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		6E193175CB3B778576B8E6715E0722F2 /* Pods-DigioTests */ = {
-			isa = PBXGroup;
-			children = (
-				D38943667D45833CAFAFF8A94C4BE4A3 /* Pods-DigioTests.modulemap */,
-				6C5AF8DBBAA520E15E9F86BBCC944E08 /* Pods-DigioTests-acknowledgements.markdown */,
-				E27A44240615C87A289E0563933657C7 /* Pods-DigioTests-acknowledgements.plist */,
-				3F0C23F96AFFBAF642AAE284B6C389F5 /* Pods-DigioTests-dummy.m */,
-				7A262682159199462184F92452525184 /* Pods-DigioTests-Info.plist */,
-				EE4A6F5533E0DF735697377E0AB3846B /* Pods-DigioTests-umbrella.h */,
-				EBD1FB7577AD3322084D3204991282F6 /* Pods-DigioTests.debug.xcconfig */,
-				15685468BAB337AC64C086EF53DDA492 /* Pods-DigioTests.release.xcconfig */,
-			);
-			name = "Pods-DigioTests";
-			path = "Target Support Files/Pods-DigioTests";
-			sourceTree = "<group>";
-		};
-		700DDEE4670493CB1704CC38BEB07694 /* Pods-Digio-SpotlightsModule */ = {
-			isa = PBXGroup;
-			children = (
-				6B874DFF4D512697961244B083407AE8 /* Pods-Digio-SpotlightsModule.modulemap */,
-				0A8612770AD980B70DF5C364B5F0CFC8 /* Pods-Digio-SpotlightsModule-acknowledgements.markdown */,
-				AA5515626B5774E4F65376839E7D6B1D /* Pods-Digio-SpotlightsModule-acknowledgements.plist */,
-				F943981A6383E4458D357F9F3465E49E /* Pods-Digio-SpotlightsModule-dummy.m */,
-				B3B7A280E2BF70D239D917AB30441B01 /* Pods-Digio-SpotlightsModule-Info.plist */,
-				0E233FB537A82A12820034E2997CE59E /* Pods-Digio-SpotlightsModule-umbrella.h */,
-				488FAC69276040EC27C8BB3FAE2AE270 /* Pods-Digio-SpotlightsModule.debug.xcconfig */,
-				86D314EB2A0AE5FEDE016282D3922226 /* Pods-Digio-SpotlightsModule.release.xcconfig */,
-			);
-			name = "Pods-Digio-SpotlightsModule";
-			path = "Target Support Files/Pods-Digio-SpotlightsModule";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
@@ -240,20 +240,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C60DA4FDCF34388DD52EDC80B9A3BC1B /* Pods-Digio */ = {
+		AE098C2799877BED10FF56A44198F7FC /* Pods-DigioTests */ = {
 			isa = PBXGroup;
 			children = (
-				BBDCABF24E88EF5AF4C2126574406A84 /* Pods-Digio.modulemap */,
-				C7BDB84FA8D471C5B45DCB3406CFD760 /* Pods-Digio-acknowledgements.markdown */,
-				F517367A75C81351E959E513B916EBF9 /* Pods-Digio-acknowledgements.plist */,
-				03E237C9947D5EED640570871F5D4AE5 /* Pods-Digio-dummy.m */,
-				9BD110239CDA279E14770B1B3AF1FC0F /* Pods-Digio-Info.plist */,
-				53237FF561681FCD3313B97A56C115E6 /* Pods-Digio-umbrella.h */,
-				BADF69EAF52509DA98677809224EC287 /* Pods-Digio.debug.xcconfig */,
-				C60442C71BCA6E66CEE385A1D7668783 /* Pods-Digio.release.xcconfig */,
+				A6231E26662A3E5DB3A4B9C30D0EE21C /* Pods-DigioTests.modulemap */,
+				136BEE3371D28124E407460C15063174 /* Pods-DigioTests-acknowledgements.markdown */,
+				732A89FEFBAB11B11DACCF28A0DC1FE5 /* Pods-DigioTests-acknowledgements.plist */,
+				0C3720844EEABEB50B45728E7B80580E /* Pods-DigioTests-dummy.m */,
+				5AF936AF961513124D53B99E196CAB51 /* Pods-DigioTests-Info.plist */,
+				D4E86B62F5BEA3CE93A75CC064CA5DD0 /* Pods-DigioTests-umbrella.h */,
+				0A8EDE79128A849BBD4DB81B9AFC8DC5 /* Pods-DigioTests.debug.xcconfig */,
+				AB5F7AA5130F4E811B472ED67D2B076D /* Pods-DigioTests.release.xcconfig */,
 			);
-			name = "Pods-Digio";
-			path = "Target Support Files/Pods-Digio";
+			name = "Pods-DigioTests";
+			path = "Target Support Files/Pods-DigioTests";
+			sourceTree = "<group>";
+		};
+		B673563DF502C553B8EDC0679FF36D1D /* Pods-Digio-DigioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57A73CB4CDF75D37EE930835451372AE /* Pods-Digio-DigioUITests.modulemap */,
+				E12F1D45E8CA531383CA93880F94110A /* Pods-Digio-DigioUITests-acknowledgements.markdown */,
+				7A83AD4065630275783A7E549048AFB1 /* Pods-Digio-DigioUITests-acknowledgements.plist */,
+				0EA4902A4AC5DC89B0503D1F06FBB245 /* Pods-Digio-DigioUITests-dummy.m */,
+				B62ED6EF9D164101D5F1D0CF3D356B81 /* Pods-Digio-DigioUITests-Info.plist */,
+				8F02B8A24B829B2442EA32DAD34710A2 /* Pods-Digio-DigioUITests-umbrella.h */,
+				02AE10D0B81C540AD27EA60B4C551D25 /* Pods-Digio-DigioUITests.debug.xcconfig */,
+				7D1321F649149450577594D5B71F95ED /* Pods-Digio-DigioUITests.release.xcconfig */,
+			);
+			name = "Pods-Digio-DigioUITests";
+			path = "Target Support Files/Pods-Digio-DigioUITests";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -262,8 +278,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				965877409E01FB3D85D85E90E6B30185 /* Pods */,
-				309A53C5F671170BDD61F739C578C893 /* Products */,
-				60C38C2F78B734F5A1BCECA610A9FF8E /* Targets Support Files */,
+				734B1E5AC26FC2067D8E00980338B83D /* Products */,
+				E0CA361792B9C7AE6D414A239A28818D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -280,7 +296,36 @@
 			children = (
 				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
 			);
+			name = SwiftLint;
 			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		E0CA361792B9C7AE6D414A239A28818D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AD7FA4642B759B9966C74ECBCA02A81 /* Pods-Digio */,
+				4311E9987EB1D3BDEBC09BBF52D5CECF /* Pods-Digio-DigioCashModule */,
+				B673563DF502C553B8EDC0679FF36D1D /* Pods-Digio-DigioUITests */,
+				E1CF955D603E395F7C57B65A757D0992 /* Pods-Digio-SpotlightsModule */,
+				AE098C2799877BED10FF56A44198F7FC /* Pods-DigioTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E1CF955D603E395F7C57B65A757D0992 /* Pods-Digio-SpotlightsModule */ = {
+			isa = PBXGroup;
+			children = (
+				F5658199FA451D15C91BB4E71D010435 /* Pods-Digio-SpotlightsModule.modulemap */,
+				8780E46B53B9A5EFF10ECA134F2BC24B /* Pods-Digio-SpotlightsModule-acknowledgements.markdown */,
+				C498B5243D3C46DC615F32208309A427 /* Pods-Digio-SpotlightsModule-acknowledgements.plist */,
+				CC7398663F671F99D49C010BD32F1222 /* Pods-Digio-SpotlightsModule-dummy.m */,
+				3C3B6AAA1A6F3BC0B47838C82022B0CB /* Pods-Digio-SpotlightsModule-Info.plist */,
+				A3AEEF497F51A60730B70DFE171D8CD1 /* Pods-Digio-SpotlightsModule-umbrella.h */,
+				5ECC9868FD6952428E84A64F94D5C524 /* Pods-Digio-SpotlightsModule.debug.xcconfig */,
+				0BB96C9A80C9E54505137E69C5A6462A /* Pods-Digio-SpotlightsModule.release.xcconfig */,
+			);
+			name = "Pods-Digio-SpotlightsModule";
+			path = "Target Support Files/Pods-Digio-SpotlightsModule";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +336,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC477E3421790B50A379CC9907DE7967 /* Pods-DigioTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393F785118689EC3F7BA0A8A16D1217C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1C2F7287C36DF113B307B23AC4EE210 /* Pods-Digio-DigioCashModule-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +431,25 @@
 			productReference = 42CAF2A4104E1BD5987C05CD5421D931 /* Pods-DigioTests */;
 			productType = "com.apple.product-type.framework";
 		};
+		C839C6D70FCF8ACB6B554C06F244B6E8 /* Pods-Digio-DigioCashModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 590C11788C129EFE315A268797708AEB /* Build configuration list for PBXNativeTarget "Pods-Digio-DigioCashModule" */;
+			buildPhases = (
+				393F785118689EC3F7BA0A8A16D1217C /* Headers */,
+				991E666E9F00696D52AF22C1EAAB9543 /* Sources */,
+				80D3F0587BF5BB7BE8330E48D11831E9 /* Frameworks */,
+				CFF554BD08291F018127B18C1137C1C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E08E349D36506053E9CD106852E798B0 /* PBXTargetDependency */,
+			);
+			name = "Pods-Digio-DigioCashModule";
+			productName = Pods_Digio_DigioCashModule;
+			productReference = 55C797C95AB25B3D9C295FA054523E06 /* Pods-Digio-DigioCashModule */;
+			productType = "com.apple.product-type.framework";
+		};
 		CA7FCC6EAFF6C28BA5621AC76F06FAA7 /* Pods-Digio-SpotlightsModule */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E0EA49A54881935488408A7B9E5357B /* Build configuration list for PBXNativeTarget "Pods-Digio-SpotlightsModule" */;
@@ -415,11 +487,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 309A53C5F671170BDD61F739C578C893 /* Products */;
+			productRefGroup = 734B1E5AC26FC2067D8E00980338B83D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				11C293AC3E9C5216963E61531F9988CB /* Pods-Digio */,
+				C839C6D70FCF8ACB6B554C06F244B6E8 /* Pods-Digio-DigioCashModule */,
 				075FAFC1B229B9F37EDA5D97C4514483 /* Pods-Digio-DigioUITests */,
 				CA7FCC6EAFF6C28BA5621AC76F06FAA7 /* Pods-Digio-SpotlightsModule */,
 				8B44EE139B8D1C14784EE70A2136F58B /* Pods-DigioTests */,
@@ -457,6 +530,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFF554BD08291F018127B18C1137C1C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -481,6 +561,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84156D71BA89C9AB29FE8F6CA62B366 /* Pods-Digio-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991E666E9F00696D52AF22C1EAAB9543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6238BC946320B20B699194A90A220629 /* Pods-Digio-DigioCashModule-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,12 +607,18 @@
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
 			targetProxy = 6F42D2E62415D752B4D47D45D53854D6 /* PBXContainerItemProxy */;
 		};
+		E08E349D36506053E9CD106852E798B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = B0E57B30608FE768F2F5459749FA54A9 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		24B69FE6FB53A44C18A34FD21DA8D474 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0117E7C13038C02AF52573A9EC07445E /* Pods-Digio-DigioUITests.debug.xcconfig */;
+			baseConfigurationReference = 02AE10D0B81C540AD27EA60B4C551D25 /* Pods-Digio-DigioUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -566,7 +660,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,7 +673,7 @@
 		};
 		298C36288D59FE1CFABCE1F830E8F31E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15685468BAB337AC64C086EF53DDA492 /* Pods-DigioTests.release.xcconfig */;
+			baseConfigurationReference = AB5F7AA5130F4E811B472ED67D2B076D /* Pods-DigioTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -743,9 +837,46 @@
 			};
 			name = Release;
 		};
+		676B8B47D39440BB7592249106115F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892883F487C4FB8448AFC42CA0A1660D /* Pods-Digio-DigioCashModule.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Digio-DigioCashModule/Pods-Digio-DigioCashModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Digio-DigioCashModule/Pods-Digio-DigioCashModule.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9EDE5CB2E9C80D0B9B7D342DF130B781 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07D74E386EF8F3284E12B6A7FB665347 /* Pods-Digio-DigioUITests.release.xcconfig */;
+			baseConfigurationReference = 7D1321F649149450577594D5B71F95ED /* Pods-Digio-DigioUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -783,7 +914,7 @@
 		};
 		BE6451F48260B43735893AE70D09AFDB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86D314EB2A0AE5FEDE016282D3922226 /* Pods-Digio-SpotlightsModule.release.xcconfig */;
+			baseConfigurationReference = 0BB96C9A80C9E54505137E69C5A6462A /* Pods-Digio-SpotlightsModule.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -819,9 +950,47 @@
 			};
 			name = Release;
 		};
+		C0B3EBE89FD749674AC8248A5B45F7BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F5C7F6840427CE7A0B0F2948BAAEF9 /* Pods-Digio-DigioCashModule.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Digio-DigioCashModule/Pods-Digio-DigioCashModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Digio-DigioCashModule/Pods-Digio-DigioCashModule.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D387EB4CD97751600E3F98F5C05B95B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BADF69EAF52509DA98677809224EC287 /* Pods-Digio.debug.xcconfig */;
+			baseConfigurationReference = 8183125627CB0612762AB1F3C197BAB0 /* Pods-Digio.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -858,7 +1027,7 @@
 		};
 		D983496CCF24A25ADF1AA746FDDCB483 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 488FAC69276040EC27C8BB3FAE2AE270 /* Pods-Digio-SpotlightsModule.debug.xcconfig */;
+			baseConfigurationReference = 5ECC9868FD6952428E84A64F94D5C524 /* Pods-Digio-SpotlightsModule.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -895,7 +1064,7 @@
 		};
 		E6483190C813613EF03D6BAD5C9E1825 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBD1FB7577AD3322084D3204991282F6 /* Pods-DigioTests.debug.xcconfig */;
+			baseConfigurationReference = 0A8EDE79128A849BBD4DB81B9AFC8DC5 /* Pods-DigioTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -937,7 +1106,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -949,7 +1118,7 @@
 		};
 		FE84F5683FB2BC4E27D57FE4E6BE086F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C60442C71BCA6E66CEE385A1D7668783 /* Pods-Digio.release.xcconfig */;
+			baseConfigurationReference = B479CE3D3E1E566FDBD000E48A84767F /* Pods-Digio.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1002,6 +1171,15 @@
 			buildConfigurations = (
 				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
 				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		590C11788C129EFE315A268797708AEB /* Build configuration list for PBXNativeTarget "Pods-Digio-DigioCashModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676B8B47D39440BB7592249106115F00 /* Debug */,
+				C0B3EBE89FD749674AC8248A5B45F7BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

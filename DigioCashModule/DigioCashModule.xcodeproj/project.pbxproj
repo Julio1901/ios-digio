@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		649AD79C4459C342E003F607 /* Pods_Digio_DigioCashModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46583A29DF1360C27E99778E /* Pods_Digio_DigioCashModule.framework */; };
+		F4B15F652C34F944006E6FC7 /* DigioCashModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B15F5C2C34F944006E6FC7 /* DigioCashModule.framework */; };
+		F4B15F6A2C34F944006E6FC7 /* DigioCashModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F692C34F944006E6FC7 /* DigioCashModuleTests.swift */; };
+		F4B15F6B2C34F944006E6FC7 /* DigioCashModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B15F5F2C34F944006E6FC7 /* DigioCashModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B15F862C34FF29006E6FC7 /* DigioCashDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F852C34FF29006E6FC7 /* DigioCashDetails.swift */; };
+		F4B15F882C34FF71006E6FC7 /* DigioCashDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F872C34FF71006E6FC7 /* DigioCashDetailsViewController.swift */; };
+		F4B15F8D2C34FFEB006E6FC7 /* DigioCashDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F8C2C34FFEB006E6FC7 /* DigioCashDetailViewModelProtocol.swift */; };
+		F4B15F902C3500D9006E6FC7 /* Cash.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F8F2C3500D9006E6FC7 /* Cash.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4B15F662C34F944006E6FC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B15F532C34F944006E6FC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B15F5B2C34F944006E6FC7;
+			remoteInfo = DigioCashModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CA9621DCAE8A4A767B47673 /* Pods-Digio-DigioCashModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Digio-DigioCashModule.release.xcconfig"; path = "Target Support Files/Pods-Digio-DigioCashModule/Pods-Digio-DigioCashModule.release.xcconfig"; sourceTree = "<group>"; };
+		3B4FC63B9E3F9CC6E7119A51 /* Pods-Digio-DigioCashModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Digio-DigioCashModule.debug.xcconfig"; path = "Target Support Files/Pods-Digio-DigioCashModule/Pods-Digio-DigioCashModule.debug.xcconfig"; sourceTree = "<group>"; };
+		46583A29DF1360C27E99778E /* Pods_Digio_DigioCashModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Digio_DigioCashModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B15F5C2C34F944006E6FC7 /* DigioCashModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DigioCashModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B15F5F2C34F944006E6FC7 /* DigioCashModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigioCashModule.h; sourceTree = "<group>"; };
+		F4B15F642C34F944006E6FC7 /* DigioCashModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioCashModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B15F692C34F944006E6FC7 /* DigioCashModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioCashModuleTests.swift; sourceTree = "<group>"; };
+		F4B15F852C34FF29006E6FC7 /* DigioCashDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioCashDetails.swift; sourceTree = "<group>"; };
+		F4B15F872C34FF71006E6FC7 /* DigioCashDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioCashDetailsViewController.swift; sourceTree = "<group>"; };
+		F4B15F8C2C34FFEB006E6FC7 /* DigioCashDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioCashDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		F4B15F8F2C3500D9006E6FC7 /* Cash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4B15F592C34F944006E6FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649AD79C4459C342E003F607 /* Pods_Digio_DigioCashModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B15F612C34F944006E6FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B15F652C34F944006E6FC7 /* DigioCashModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4290174715550B4E64D3AB8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46583A29DF1360C27E99778E /* Pods_Digio_DigioCashModule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6212A7695F74C458202EF048 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4FC63B9E3F9CC6E7119A51 /* Pods-Digio-DigioCashModule.debug.xcconfig */,
+				1CA9621DCAE8A4A767B47673 /* Pods-Digio-DigioCashModule.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		F4B15F522C34F944006E6FC7 = {
+			isa = PBXGroup;
+			children = (
+				F4B15F812C34FB17006E6FC7 /* Source */,
+				F4B15F5E2C34F944006E6FC7 /* DigioCashModule */,
+				F4B15F682C34F944006E6FC7 /* DigioCashModuleTests */,
+				F4B15F5D2C34F944006E6FC7 /* Products */,
+				6212A7695F74C458202EF048 /* Pods */,
+				4290174715550B4E64D3AB8A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4B15F5D2C34F944006E6FC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F5C2C34F944006E6FC7 /* DigioCashModule.framework */,
+				F4B15F642C34F944006E6FC7 /* DigioCashModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B15F5E2C34F944006E6FC7 /* DigioCashModule */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F5F2C34F944006E6FC7 /* DigioCashModule.h */,
+			);
+			path = DigioCashModule;
+			sourceTree = "<group>";
+		};
+		F4B15F682C34F944006E6FC7 /* DigioCashModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F692C34F944006E6FC7 /* DigioCashModuleTests.swift */,
+			);
+			path = DigioCashModuleTests;
+			sourceTree = "<group>";
+		};
+		F4B15F812C34FB17006E6FC7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F892C34FFBF006E6FC7 /* Domain */,
+				F4B15F822C34FB4A006E6FC7 /* Presentation */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F4B15F822C34FB4A006E6FC7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F842C34FEEF006E6FC7 /* ViewControllers */,
+				F4B15F832C34FEE3006E6FC7 /* Screens */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F4B15F832C34FEE3006E6FC7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F852C34FF29006E6FC7 /* DigioCashDetails.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F4B15F842C34FEEF006E6FC7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F872C34FF71006E6FC7 /* DigioCashDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F4B15F892C34FFBF006E6FC7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F8E2C3500A9006E6FC7 /* Models */,
+				F4B15F8A2C34FFC8006E6FC7 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F4B15F8A2C34FFC8006E6FC7 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F8B2C34FFD2006E6FC7 /* ViewModels */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F4B15F8B2C34FFD2006E6FC7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F8C2C34FFEB006E6FC7 /* DigioCashDetailViewModelProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4B15F8E2C3500A9006E6FC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F8F2C3500D9006E6FC7 /* Cash.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F4B15F572C34F944006E6FC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B15F6B2C34F944006E6FC7 /* DigioCashModule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F4B15F5B2C34F944006E6FC7 /* DigioCashModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B15F6E2C34F944006E6FC7 /* Build configuration list for PBXNativeTarget "DigioCashModule" */;
+			buildPhases = (
+				1901CC9F0B8CACB0E6800592 /* [CP] Check Pods Manifest.lock */,
+				F4B15F572C34F944006E6FC7 /* Headers */,
+				F4B15F582C34F944006E6FC7 /* Sources */,
+				F4B15F592C34F944006E6FC7 /* Frameworks */,
+				F4B15F5A2C34F944006E6FC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigioCashModule;
+			productName = DigioCashModule;
+			productReference = F4B15F5C2C34F944006E6FC7 /* DigioCashModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4B15F632C34F944006E6FC7 /* DigioCashModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B15F712C34F944006E6FC7 /* Build configuration list for PBXNativeTarget "DigioCashModuleTests" */;
+			buildPhases = (
+				F4B15F602C34F944006E6FC7 /* Sources */,
+				F4B15F612C34F944006E6FC7 /* Frameworks */,
+				F4B15F622C34F944006E6FC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4B15F672C34F944006E6FC7 /* PBXTargetDependency */,
+			);
+			name = DigioCashModuleTests;
+			productName = DigioCashModuleTests;
+			productReference = F4B15F642C34F944006E6FC7 /* DigioCashModuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4B15F532C34F944006E6FC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F4B15F5B2C34F944006E6FC7 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					F4B15F632C34F944006E6FC7 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = F4B15F562C34F944006E6FC7 /* Build configuration list for PBXProject "DigioCashModule" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4B15F522C34F944006E6FC7;
+			productRefGroup = F4B15F5D2C34F944006E6FC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4B15F5B2C34F944006E6FC7 /* DigioCashModule */,
+				F4B15F632C34F944006E6FC7 /* DigioCashModuleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4B15F5A2C34F944006E6FC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B15F622C34F944006E6FC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1901CC9F0B8CACB0E6800592 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Digio-DigioCashModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4B15F582C34F944006E6FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B15F902C3500D9006E6FC7 /* Cash.swift in Sources */,
+				F4B15F862C34FF29006E6FC7 /* DigioCashDetails.swift in Sources */,
+				F4B15F882C34FF71006E6FC7 /* DigioCashDetailsViewController.swift in Sources */,
+				F4B15F8D2C34FFEB006E6FC7 /* DigioCashDetailViewModelProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B15F602C34F944006E6FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B15F6A2C34F944006E6FC7 /* DigioCashModuleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4B15F672C34F944006E6FC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B15F5B2C34F944006E6FC7 /* DigioCashModule */;
+			targetProxy = F4B15F662C34F944006E6FC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F4B15F6C2C34F944006E6FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4B15F6D2C34F944006E6FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4B15F6F2C34F944006E6FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4FC63B9E3F9CC6E7119A51 /* Pods-Digio-DigioCashModule.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6NZ5C3QSQR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = julio.DigioCashModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4B15F702C34F944006E6FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA9621DCAE8A4A767B47673 /* Pods-Digio-DigioCashModule.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6NZ5C3QSQR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = julio.DigioCashModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4B15F722C34F944006E6FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NZ5C3QSQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = julio.DigioCashModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4B15F732C34F944006E6FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NZ5C3QSQR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = julio.DigioCashModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4B15F562C34F944006E6FC7 /* Build configuration list for PBXProject "DigioCashModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B15F6C2C34F944006E6FC7 /* Debug */,
+				F4B15F6D2C34F944006E6FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B15F6E2C34F944006E6FC7 /* Build configuration list for PBXNativeTarget "DigioCashModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B15F6F2C34F944006E6FC7 /* Debug */,
+				F4B15F702C34F944006E6FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B15F712C34F944006E6FC7 /* Build configuration list for PBXNativeTarget "DigioCashModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B15F722C34F944006E6FC7 /* Debug */,
+				F4B15F732C34F944006E6FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4B15F532C34F944006E6FC7 /* Project object */;
+}

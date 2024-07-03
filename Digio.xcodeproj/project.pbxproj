@@ -20,7 +20,6 @@
 		F43F95AB2C2FD5FB00FE1C90 /* DigioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F95AA2C2FD5FB00FE1C90 /* DigioUITestsLaunchTests.swift */; };
 		F4B15E1B2C32F799006E6FC7 /* ProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E1A2C32F799006E6FC7 /* ProductsResponse.swift */; };
 		F4B15E1F2C32F7D7006E6FC7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E1E2C32F7D7006E6FC7 /* Product.swift */; };
-		F4B15E212C32F7EF006E6FC7 /* Cash.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E202C32F7EF006E6FC7 /* Cash.swift */; };
 		F4B15E242C32FAA3006E6FC7 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E232C32FAA3006E6FC7 /* MainViewModel.swift */; };
 		F4B15E282C331866006E6FC7 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E272C331866006E6FC7 /* ProductViewModel.swift */; };
 		F4B15E2A2C3318B9006E6FC7 /* SpotlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E292C3318B9006E6FC7 /* SpotlightViewModel.swift */; };
@@ -36,6 +35,8 @@
 		F4B15E452C34BA8D006E6FC7 /* FetchProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15E442C34BA8D006E6FC7 /* FetchProductsUseCase.swift */; };
 		F4B15F472C34DDCC006E6FC7 /* SpotlightsModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B15E742C34C47F006E6FC7 /* SpotlightsModule.framework */; };
 		F4B15F482C34DDCC006E6FC7 /* SpotlightsModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4B15E742C34C47F006E6FC7 /* SpotlightsModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4B15F7D2C34FA14006E6FC7 /* DigioCashModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B15F7A2C34FA00006E6FC7 /* DigioCashModule.framework */; };
+		F4B15F7E2C34FA14006E6FC7 /* DigioCashModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4B15F7A2C34FA00006E6FC7 /* DigioCashModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4CBE0592C311260009DE789 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE0582C311260009DE789 /* HomeScreen.swift */; };
 		F4CBE05C2C3121EC009DE789 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE05B2C3121EC009DE789 /* Extensions.swift */; };
 		F4CBE05F2C31230D009DE789 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4CBE05D2C31230D009DE789 /* Localizable.strings */; };
@@ -81,6 +82,20 @@
 			remoteGlobalIDString = F4B15E582C34C151006E6FC7;
 			remoteInfo = SpotlightsModuleTests;
 		};
+		F4B15F792C34FA00006E6FC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B15F742C34FA00006E6FC7 /* DigioCashModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4B15F5C2C34F944006E6FC7;
+			remoteInfo = DigioCashModule;
+		};
+		F4B15F7B2C34FA00006E6FC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B15F742C34FA00006E6FC7 /* DigioCashModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4B15F642C34F944006E6FC7;
+			remoteInfo = DigioCashModuleTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +105,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F4B15F7E2C34FA14006E6FC7 /* DigioCashModule.framework in Embed Frameworks */,
 				F4B15F482C34DDCC006E6FC7 /* SpotlightsModule.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -120,7 +136,6 @@
 		F43F95AA2C2FD5FB00FE1C90 /* DigioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F4B15E1A2C32F799006E6FC7 /* ProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResponse.swift; sourceTree = "<group>"; };
 		F4B15E1E2C32F7D7006E6FC7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		F4B15E202C32F7EF006E6FC7 /* Cash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash.swift; sourceTree = "<group>"; };
 		F4B15E232C32FAA3006E6FC7 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F4B15E272C331866006E6FC7 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		F4B15E292C3318B9006E6FC7 /* SpotlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightViewModel.swift; sourceTree = "<group>"; };
@@ -137,6 +152,7 @@
 		F4B15E422C34B887006E6FC7 /* FetchCashUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCashUseCase.swift; sourceTree = "<group>"; };
 		F4B15E442C34BA8D006E6FC7 /* FetchProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchProductsUseCase.swift; sourceTree = "<group>"; };
 		F4B15E6E2C34C47F006E6FC7 /* SpotlightsModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpotlightsModule.xcodeproj; path = SpotlightsModule/SpotlightsModule.xcodeproj; sourceTree = "<group>"; };
+		F4B15F742C34FA00006E6FC7 /* DigioCashModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DigioCashModule.xcodeproj; path = DigioCashModule/DigioCashModule.xcodeproj; sourceTree = "<group>"; };
 		F4CBE0582C311260009DE789 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		F4CBE05B2C3121EC009DE789 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F4CBE05E2C31230D009DE789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -159,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B15F7D2C34FA14006E6FC7 /* DigioCashModule.framework in Frameworks */,
 				2911F3456CEFF45A0EFE87F8 /* Pods_Digio.framework in Frameworks */,
 				F4B15F472C34DDCC006E6FC7 /* SpotlightsModule.framework in Frameworks */,
 			);
@@ -196,6 +213,7 @@
 		F43F957B2C2FD5FA00FE1C90 = {
 			isa = PBXGroup;
 			children = (
+				F4B15F742C34FA00006E6FC7 /* DigioCashModule.xcodeproj */,
 				F4B15E6E2C34C47F006E6FC7 /* SpotlightsModule.xcodeproj */,
 				F43F95862C2FD5FA00FE1C90 /* Digio */,
 				F43F959D2C2FD5FB00FE1C90 /* DigioTests */,
@@ -257,7 +275,6 @@
 			children = (
 				F4B15E1A2C32F799006E6FC7 /* ProductsResponse.swift */,
 				F4B15E1E2C32F7D7006E6FC7 /* Product.swift */,
-				F4B15E202C32F7EF006E6FC7 /* Cash.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +324,15 @@
 			children = (
 				F4B15E742C34C47F006E6FC7 /* SpotlightsModule.framework */,
 				F4B15E762C34C47F006E6FC7 /* SpotlightsModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B15F752C34FA00006E6FC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15F7A2C34FA00006E6FC7 /* DigioCashModule.framework */,
+				F4B15F7C2C34FA00006E6FC7 /* DigioCashModuleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -532,6 +558,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = F4B15F752C34FA00006E6FC7 /* Products */;
+					ProjectRef = F4B15F742C34FA00006E6FC7 /* DigioCashModule.xcodeproj */;
+				},
+				{
 					ProductGroup = F4B15E6F2C34C47F006E6FC7 /* Products */;
 					ProjectRef = F4B15E6E2C34C47F006E6FC7 /* SpotlightsModule.xcodeproj */;
 				},
@@ -558,6 +588,20 @@
 			fileType = wrapper.cfbundle;
 			path = SpotlightsModuleTests.xctest;
 			remoteRef = F4B15E752C34C47F006E6FC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4B15F7A2C34FA00006E6FC7 /* DigioCashModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DigioCashModule.framework;
+			remoteRef = F4B15F792C34FA00006E6FC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4B15F7C2C34FA00006E6FC7 /* DigioCashModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DigioCashModuleTests.xctest;
+			remoteRef = F4B15F7B2C34FA00006E6FC7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -691,7 +735,6 @@
 				F43F958C2C2FD5FA00FE1C90 /* HomeViewController.swift in Sources */,
 				F4B15E452C34BA8D006E6FC7 /* FetchProductsUseCase.swift in Sources */,
 				F4B15E2E2C335623006E6FC7 /* DigioCashViewModel.swift in Sources */,
-				F4B15E212C32F7EF006E6FC7 /* Cash.swift in Sources */,
 				F4B15E362C344951006E6FC7 /* UILabel+Extensions.swift in Sources */,
 				F4B15E412C34B1F7006E6FC7 /* FetchSpotlightsUseCase.swift in Sources */,
 				F4B15E332C3380C2006E6FC7 /* LoggerFactory.swift in Sources */,

@@ -8,6 +8,7 @@
 import UIKit
 import os.log
 import SpotlightsModule
+import DigioCashModule
 
 class HomeViewController: UIViewController {
     private var initialScreen = HomeScreen()
@@ -40,7 +41,8 @@ class HomeViewController: UIViewController {
     private func setupDigioCashCards() {
         for cashViewModel in viewModel.digioCashViewModelList {
             let digioCashCard = DigioCashCard()
-            digioCashCard.setupCardView(viewModel: cashViewModel)
+            digioCashCard.delegate = self
+            digioCashCard.setupCard(viewModel: cashViewModel)
             initialScreen.listDigioCashStackView.addArrangedSubview(digioCashCard)
         }
     }
@@ -67,8 +69,16 @@ extension HomeViewController: MainViewModelDelegate {
 
 extension HomeViewController: SpotlightCardDelegate {
     func spotlightCardDidTapped(viewModel: any SpotlightsModule.SpotlightsDetailViewModelProtocol) {
-        let featureAViewController = SpotlightDetailsViewController()
-        featureAViewController.spotlightViewModel = viewModel
-        navigationController?.pushViewController(featureAViewController, animated: true)
+        let spotlightDetailsViewController = SpotlightDetailsViewController()
+        spotlightDetailsViewController.spotlightViewModel = viewModel
+        navigationController?.pushViewController(spotlightDetailsViewController, animated: true)
+    }
+}
+
+extension HomeViewController: DigioCashCardDelegate {
+    func spotlightCardDidTapped(viewModel: any DigioCashModule.DigioCashDetailViewModelProtocol) {
+        let digioCashDetailsViewController = DigioCashDetailsViewController()
+        digioCashDetailsViewController.digioCashViewModel = viewModel
+        navigationController?.pushViewController(digioCashDetailsViewController, animated: true)
     }
 }

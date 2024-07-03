@@ -14,6 +14,10 @@ target 'SpotlightsModule' do
   project 'SpotlightsModule/SpotlightsModule.xcodeproj'
 end
 
+target 'DigioCashModule' do
+  project 'DigioCashModule/DigioCashModule.xcodeproj'
+end
+
   target 'DigioTests' do
     inherit! :search_paths
     # Pods for testing

@@ -1,20 +1,20 @@
 //
-//  SpotlightDetails.swift
-//  SpotlightsModule
+//  DigioCashDetails.swift
+//  DigioCashModule
 //
-//  Created by Julio Cesar Pereira on 02/07/24.
+//  Created by Julio Cesar Pereira on 03/07/24.
 //
 
 import UIKit
 
-class SpotlightDetails: UIView {
+class DigioCashDetails: UIView {
     private let DEFAULT_LEADING_ANCHOR_VALUE: CGFloat = 10
     private let DEFAULT_TRAILING_ANCHOR_VALUE: CGFloat = -10
 
     private var titleLabel: UILabel = {
         let it = UILabel()
         it.translatesAutoresizingMaskIntoConstraints = false
-        it.text = "Spotlight Details"
+        it.text = "Digio Cash Details"
         it.textColor = UIColor.black
 //        it.isAccessibilityElement = true
 //        it.accessibilityHint = NSLocalizedString("accessibility-welcome-label-description", comment: "")
