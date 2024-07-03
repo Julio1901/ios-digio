@@ -11,6 +11,7 @@
     - [Padrão Repository](#padrao-repository)
 5. [Acessibilidade](#acessibilidade)
 6. [Suporte a Múltiplos Idiomas](#multilinguagem)
+7. [Fluxo de Trabalho com GitFlow](#gitflow)
 
 
 ⚠️ **Atenção**: Peço gentilmente que, por mais extenso que esse documento pareça ser, leiam as últimas sessões onde comento superficialmente alguns detalhes sobre determinadas implementações, sobretudo, no que tange à acessibilidade uma vez que realmente cuidei para que a mesma fosse implementada de forma correta proporcionando uma experiência boa ao usuário que fizer uso dessa feature. Também gostaria de salientar que, realizei as configurações solicitadas porém, não pude testar a aplicação em um device com iOS 12 por não possuir um aparelho antigo e também não dispor de espaço no meu macbook para realizar o download de versões mais antigas do xCode.
@@ -60,6 +61,10 @@ A experiência do usuário foi cuidadosamente pensada para garantir acessibilida
 ## Suporte a Múltiplos Idiomas <a name="multilinguagem"></a>
 
 O projeto oferece suporte a múltiplos idiomas (português e inglês.)
+
+## Fluxo de Trabalho com GitFlow <a name="gitflow"></a>
+
+Para o gerenciamento de branches, este projeto utiliza o GitFlow, um modelo de branching que facilita o desenvolvimento paralelo de recursos e a manutenção de releases estáveis.
 
 ## Comentários gerais sobre alguns pontos da implementação:
 - O APP foi todo modularizado visando a escalabilidade e manuntenabilidade do mesmo
