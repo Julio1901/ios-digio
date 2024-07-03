@@ -7,6 +7,7 @@
 
 import Foundation
 import os.log
+import SpotlightsModule
 
 protocol MainViewModelDelegate: AnyObject {
     func didFetchSpotlights()

@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import SpotlightsModule
 
-protocol SpotlightCardDelegate {
-    func spotlightCardDidTapped()
+protocol SpotlightCardDelegate: AnyObject {
+    func spotlightCardDidTapped(viewModel: SpotlightsDetailViewModelProtocol)
 }
 
 class SpotlightCard: UIView {
@@ -24,7 +25,7 @@ class SpotlightCard: UIView {
         super.layoutSubviews()
         gradientLayer.frame = self.bounds
     }
-    private var viewModel: SpotlightViewModel!
+    private var viewModel: SpotlightsDetailViewModelProtocol!
     private var image: UIImageView = {
         let it = UIImageView()
         it.translatesAutoresizingMaskIntoConstraints = false
@@ -61,8 +62,7 @@ class SpotlightCard: UIView {
         self.isUserInteractionEnabled = true
     }
     @objc private func viewTapped(_ sender: UITapGestureRecognizer) {
-        print("UIView foi clicada!")
-        delegate.spotlightCardDidTapped()
+        delegate.spotlightCardDidTapped(viewModel: self.viewModel)
     }
     private func handleImage() {
         DispatchQueue.global().async {

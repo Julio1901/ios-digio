@@ -14,6 +14,7 @@
 		F4B15F392C34D567006E6FC7 /* SpotlightDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F382C34D567006E6FC7 /* SpotlightDetails.swift */; };
 		F4B15F3C2C34D6AD006E6FC7 /* SpotlightDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F3B2C34D6AD006E6FC7 /* SpotlightDetailsViewController.swift */; };
 		F4B15F4C2C34ECA5006E6FC7 /* SpotlightsDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F4B2C34ECA5006E6FC7 /* SpotlightsDetailViewModelProtocol.swift */; };
+		F4B15F512C34EDF9006E6FC7 /* Spotlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F502C34EDF9006E6FC7 /* Spotlight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F4B15F382C34D567006E6FC7 /* SpotlightDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightDetails.swift; sourceTree = "<group>"; };
 		F4B15F3B2C34D6AD006E6FC7 /* SpotlightDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightDetailsViewController.swift; sourceTree = "<group>"; };
 		F4B15F4B2C34ECA5006E6FC7 /* SpotlightsDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightsDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		F4B15F502C34EDF9006E6FC7 /* Spotlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotlight.swift; sourceTree = "<group>"; };
 		F7C8E20D8500F8EFD676EDC4 /* Pods-Digio-SpotlightsModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Digio-SpotlightsModule.release.xcconfig"; path = "Target Support Files/Pods-Digio-SpotlightsModule/Pods-Digio-SpotlightsModule.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +168,7 @@
 		F4B15F4F2C34ED8B006E6FC7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F4B15F502C34EDF9006E6FC7 /* Spotlight.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B15F512C34EDF9006E6FC7 /* Spotlight.swift in Sources */,
 				F4B15F4C2C34ECA5006E6FC7 /* SpotlightsDetailViewModelProtocol.swift in Sources */,
 				F4B15F3C2C34D6AD006E6FC7 /* SpotlightDetailsViewController.swift in Sources */,
 				F4B15F392C34D567006E6FC7 /* SpotlightDetails.swift in Sources */,

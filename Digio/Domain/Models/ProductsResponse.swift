@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SpotlightsModule
 
 struct ProductsResponse: Codable {
     let spotlight: [Spotlight]

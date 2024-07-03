@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SpotlightsModule
 
 protocol FetchSpotlightsUseCase {
     func execute(completion: @escaping (Result<[Spotlight], Error>) -> Void)

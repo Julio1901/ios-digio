@@ -66,10 +66,13 @@ extension HomeViewController: MainViewModelDelegate {
 }
 
 extension HomeViewController: SpotlightCardDelegate {
-    func spotlightCardDidTapped() {
+    func spotlightCardDidTapped(viewModel: any SpotlightsModule.SpotlightsDetailViewModelProtocol) {
         let featureAViewController = SpotlightDetailsViewController()
+        featureAViewController.spotlightViewModel = viewModel
         present(featureAViewController, animated: true, completion: nil)
+        
     }
+    
     
     
 }

@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import SpotlightsModule
 
-class SpotlightViewModel {
+class SpotlightViewModel: SpotlightsDetailViewModelProtocol {
     var spotlight: Spotlight
     var imageData: Data?
-    private var hasError: Bool?
+    internal var hasError: Bool?
     init(spotlight: Spotlight) {
         self.spotlight = spotlight
     }
