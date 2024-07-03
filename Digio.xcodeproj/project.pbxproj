@@ -187,6 +187,7 @@
 		F4B1602D2C35CB42006E6FC7 /* FetchImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageUseCase.swift; sourceTree = "<group>"; };
 		F4B1602F2C35CF6E006E6FC7 /* MockFetchImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchImageUseCase.swift; sourceTree = "<group>"; };
 		F4B160342C35D1C2006E6FC7 /* MockImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MockImage.png; sourceTree = "<group>"; };
+		F4B1605C2C35E22A006E6FC7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F4CBE0582C311260009DE789 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		F4CBE05B2C3121EC009DE789 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F4CBE05E2C31230D009DE789 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -248,6 +249,7 @@
 		F43F957B2C2FD5FA00FE1C90 = {
 			isa = PBXGroup;
 			children = (
+				F4B1605C2C35E22A006E6FC7 /* README.md */,
 				F4B15FB72C350655006E6FC7 /* ProductsModule.xcodeproj */,
 				F4B15F742C34FA00006E6FC7 /* DigioCashModule.xcodeproj */,
 				F4B15E6E2C34C47F006E6FC7 /* SpotlightsModule.xcodeproj */,

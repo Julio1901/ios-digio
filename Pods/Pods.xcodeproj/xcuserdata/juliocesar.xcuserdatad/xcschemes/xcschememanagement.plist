@@ -46,6 +46,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>SnapshotTesting.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>SwiftLint.xcscheme</key>
 		<dict>
 			<key>isShown</key>
