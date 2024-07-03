@@ -15,6 +15,7 @@ protocol MainViewModelDelegate: AnyObject {
     func didFetchSpotlights()
     func didFetchCash()
     func didFetchProducts()
+    func handleNetworkCompletion(hasError: Bool)
 }
 
 class MainViewModel {
@@ -32,23 +33,32 @@ class MainViewModel {
         self.fetchProductsUseCase = fetchProductsUseCase
     }
     func fetchItems() {
-        loadSpotlights()
-        loadCash()
-        loadProducts()
-    }
-    private func loadSpotlights() {
-        fetchSpotlightsUseCase.execute { result in
-            switch result {
-            case .success(let spotlights):
-                self.populateSpotlightViewModelList(spotlights: spotlights)
-                self.delegate?.didFetchSpotlights()
-            case .failure(let error):
-                LoggerFactory.logErrorMessage(error.localizedDescription, logger: self.logger)
-            }
+        let group = DispatchGroup()
+        group.enter()
+        loadSpotlights(group: group)
+        group.enter()
+        loadCash(group: group)
+        group.enter()
+        loadProducts(group: group)
+        group.notify(queue: .main) {
+            self.handleNetworkCompletion()
         }
     }
-    private func loadCash() {
+    private func loadSpotlights(group: DispatchGroup) {
+           fetchSpotlightsUseCase.execute { result in
+               defer { group.leave() }
+               switch result {
+               case .success(let spotlights):
+                   self.populateSpotlightViewModelList(spotlights: spotlights)
+                   self.delegate?.didFetchSpotlights()
+               case .failure(let error):
+                   LoggerFactory.logErrorMessage(error.localizedDescription, logger: self.logger)
+               }
+           }
+       }
+    private func loadCash(group: DispatchGroup) {
         fetchCashUseCase.execute { result in
+            defer { group.leave() }
             switch result {
             case .success(let cash):
                 self.populateDigioCashViewModelList(cashList: self.createCashList(from: cash))
@@ -58,8 +68,9 @@ class MainViewModel {
             }
         }
     }
-    private func loadProducts() {
+    private func loadProducts(group: DispatchGroup) {
         fetchProductsUseCase.execute { result in
+            defer { group.leave() }
             switch result {
             case .success(let products):
                 self.populateProductViewModelList(products: products)
@@ -86,5 +97,8 @@ class MainViewModel {
     }
     private func createCashList(from cash: Cash) -> [Cash] {
         return [cash]
+    }
+    private func handleNetworkCompletion() {
+        delegate?.handleNetworkCompletion(hasError: spotlightViewModelList.isEmpty && digioCashViewModelList.isEmpty && productViewModelList.isEmpty)
     }
 }

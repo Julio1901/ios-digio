@@ -11,13 +11,14 @@
 "digio" = "digio";
 "cash" = "Cash";
 "products" = "Produtos";
+"error-state-message" = "Parece que houve um erro ao carregar o APP. Por favor, verifique sua conexão e tente novamente.";
 
 //MARK: Home Screen Accessibility
 "accessibility-welcome-label-description" = "Imagem com o logo da Digio à esquerda e mensagem de boas vindas à direita. Item decorativo: Não há ação associada";
 "accessibility-digio-cash-label-description" = "Título escrito Digio Cash. Texto decorativo: Não há ação associada";
 "accessibility-label-name-string" = "Nome do produto:";
 "accessibility-products-label-description" = "Título escrito Produtos. Texto decorativo: Não há ação associada";
-
+"accessibility-hint-error-state" = "Texto indicando erro.  Texto decorativo: Não há ação associada";
 
 //MARK: SpotlightCard Accessibility
 "accessibility-label-spotlight-card" = "Card com a imagem de um dos produtos na lista de destaque.";

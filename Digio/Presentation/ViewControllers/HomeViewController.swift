@@ -58,6 +58,11 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: MainViewModelDelegate {
+    func handleNetworkCompletion(hasError: Bool) {
+        if hasError {
+            initialScreen.setupErrorState()
+        }
+    }
     func didFetchSpotlights() {
         setupSpotLightCards()
     }

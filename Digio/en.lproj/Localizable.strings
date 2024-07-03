@@ -11,12 +11,14 @@
 "digio" = "digio";
 "cash" = "Cash";
 "products" = "Products";
+"error-state-message" = "It seems there was an error loading the app. Please check your connection and try again.";
 
 //MARK: Home Screen Accessibility
 "accessibility-welcome-label-description" = "Image with the Digio logo on the left and welcome message on the right. Decorative item: No associated action.";
 "accessibility-digio-cash-label-description" = "Title written as Digio Cash. Decorative text: No associated action.";
 "accessibility-label-name-string" = "Product name:";
 "accessibility-products-label-description" = "Title written as Products. Decorative text: No associated action.";
+"accessibility-hint-error-state" = "Error message. Decorative text: No associated action";
 
 //MARK: SpotlightCard Accessibility
 "accessibility-label-spotlight-card" = "Card with the image of one of the products in the featured list.";

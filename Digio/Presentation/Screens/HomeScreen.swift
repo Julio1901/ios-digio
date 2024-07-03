@@ -102,6 +102,17 @@ class HomeScreen: UIView {
         it.translatesAutoresizingMaskIntoConstraints = false
         return it
       }()
+    private var errorMessageLabel: UILabel = {
+        let it = UILabel()
+        it.translatesAutoresizingMaskIntoConstraints = false
+        it.setupText(key: "error-state-message", fontFamily: "Sora-SemiBold", fontSize: 20)
+        it.textColor = UIColor(red: 48/255, green: 56/255, blue: 73/255, alpha: 1.0)
+        it.numberOfLines = 0
+        it.lineBreakMode = .byWordWrapping
+        it.isAccessibilityElement = true
+        it.accessibilityHint = NSLocalizedString("accessibility-hint-error-state", comment: "")
+        return it
+    }()
     init() {
         super.init(frame: .zero)
         self.backgroundColor = UIColor.white
@@ -123,6 +134,16 @@ class HomeScreen: UIView {
         addSubview(productsLabel)
         addSubview(listProductScrollView)
         listProductScrollView.addSubview(listProductStackView)
+    }
+    func setupErrorState() {
+        for subview in self.subviews {
+            subview.removeFromSuperview()
+        }
+        addSubview(errorMessageLabel)
+        let safeArea = safeAreaLayoutGuide
+        errorMessageLabel.centerYAnchor.constraint(equalTo: safeArea.centerYAnchor).isActive = true
+        errorMessageLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: DEFAULT_LEADING_ANCHOR_VALUE).isActive = true
+        errorMessageLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: DEFAULT_TRAILING_ANCHOR_VALUE).isActive = true
     }
     func setupConstraints() {
         let safeArea = safeAreaLayoutGuide
