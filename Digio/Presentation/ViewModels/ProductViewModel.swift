@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import ProductsModule
 
-class ProductViewModel {
+class ProductViewModel: ProductViewModelProtocol {
     var product: Product
     var imageData: Data?
-    private var hasError: Bool?
+    internal var hasError: Bool?
     init(product: Product) {
         self.product = product
     }

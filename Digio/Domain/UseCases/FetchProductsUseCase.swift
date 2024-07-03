@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ProductsModule
 
 protocol FetchProductsUseCase {
     func execute(completion: @escaping (Result<[Product], Error>) -> Void)

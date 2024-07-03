@@ -9,7 +9,7 @@ import UIKit
 import DigioCashModule
 
 protocol DigioCashCardDelegate: AnyObject {
-    func spotlightCardDidTapped(viewModel: DigioCashDetailViewModelProtocol)
+    func digioCashCardDidTapped(viewModel: DigioCashDetailViewModelProtocol)
 }
 
 class DigioCashCard: UIView {
@@ -59,7 +59,7 @@ class DigioCashCard: UIView {
         self.isUserInteractionEnabled = true
     }
     @objc private func viewTapped(_ sender: UITapGestureRecognizer) {
-        delegate.spotlightCardDidTapped(viewModel: self.viewModel)
+        delegate.digioCashCardDidTapped(viewModel: self.viewModel)
     }
     private func handleImage() {
         DispatchQueue.global().async {

@@ -6,9 +6,15 @@
 //
 
 import UIKit
+import ProductsModule
+
+protocol ProductCardDelegate: AnyObject {
+    func productCardDidTapped(viewModel: ProductViewModelProtocol)
+}
 
 class ProductCard: UIView {
     private let gradientLayer = CAGradientLayer()
+    var delegate: ProductCardDelegate!
     var imageWidth = 60
     var imageHeigth = 60
     override init(frame: CGRect) {
@@ -21,7 +27,7 @@ class ProductCard: UIView {
         super.layoutSubviews()
         gradientLayer.frame = self.bounds
     }
-    private var viewModel: ProductViewModel!
+    private var viewModel: ProductViewModelProtocol!
     var image: UIImageView = {
         let it = UIImageView()
         it.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +40,7 @@ class ProductCard: UIView {
         it.accessibilityHint = ""
         return it
     }()
-    func setupCardView(viewModel: ProductViewModel) {
+    func setupCard(viewModel: ProductViewModelProtocol) {
         self.viewModel = viewModel
         self.translatesAutoresizingMaskIntoConstraints = false
         setupConstraints()
@@ -54,9 +60,14 @@ class ProductCard: UIView {
         setupSkeletonView()
         setupConstraints()
         handleImage()
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped(_:)))
+        self.addGestureRecognizer(tapGestureRecognizer)
+        self.isUserInteractionEnabled = true
+    }
+    @objc private func viewTapped(_ sender: UITapGestureRecognizer) {
+        delegate.productCardDidTapped(viewModel: self.viewModel)
     }
     private func handleImage() {
-
         DispatchQueue.global().async {
             self.viewModel.loadImage(completion: { imageData in
                 self.removeSkeletonView()

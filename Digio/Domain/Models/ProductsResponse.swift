@@ -8,6 +8,7 @@
 import Foundation
 import SpotlightsModule
 import DigioCashModule
+import ProductsModule
 
 struct ProductsResponse: Codable {
     let spotlight: [Spotlight]
