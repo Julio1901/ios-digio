@@ -12,9 +12,11 @@ public class DigioCashDetailsViewController: UIViewController {
     public var digioCashViewModel: DigioCashDetailViewModelProtocol!
     public override func viewDidLoad() {
         super.viewDidLoad()
+        initialScreen.setup(productName: digioCashViewModel.digioCash.title, imageData: digioCashViewModel.imageData,
+            description: digioCashViewModel.digioCash.description
+        )
         view = initialScreen
         setupNavigationBar()
-        print("test cash \(digioCashViewModel.digioCash.title)")
     }
     private func setupNavigationBar() {
             self.navigationController?.isNavigationBarHidden = false

@@ -15,6 +15,7 @@
 		F4B15FD02C3507BC006E6FC7 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15FCF2C3507BC006E6FC7 /* ProductDetailsViewController.swift */; };
 		F4B15FD22C350841006E6FC7 /* ProductViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15FD12C350841006E6FC7 /* ProductViewModelProtocol.swift */; };
 		F4B15FD42C3508A4006E6FC7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15FD32C3508A4006E6FC7 /* Product.swift */; };
+		F4B15FEE2C359411006E6FC7 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15FED2C359411006E6FC7 /* UILabel+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		F4B15FCF2C3507BC006E6FC7 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		F4B15FD12C350841006E6FC7 /* ProductViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelProtocol.swift; sourceTree = "<group>"; };
 		F4B15FD32C3508A4006E6FC7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F4B15FED2C359411006E6FC7 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		F4B15FC52C3506B8006E6FC7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F4B15FEB2C3593F6006E6FC7 /* Utilities */,
 				F4B15FC62C3506DB006E6FC7 /* Domain */,
 				F4B15FC72C3506E1006E6FC7 /* Presentation */,
 			);
@@ -171,6 +174,22 @@
 				F4B15FD12C350841006E6FC7 /* ProductViewModelProtocol.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F4B15FEB2C3593F6006E6FC7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15FEC2C3593FD006E6FC7 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F4B15FEC2C3593FD006E6FC7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15FED2C359411006E6FC7 /* UILabel+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FA2288B06E1EF656059F4ADC /* Pods */ = {
@@ -320,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B15FD22C350841006E6FC7 /* ProductViewModelProtocol.swift in Sources */,
+				F4B15FEE2C359411006E6FC7 /* UILabel+Extensions.swift in Sources */,
 				F4B15FD42C3508A4006E6FC7 /* Product.swift in Sources */,
 				F4B15FCE2C35074E006E6FC7 /* ProductDetails.swift in Sources */,
 				F4B15FD02C3507BC006E6FC7 /* ProductDetailsViewController.swift in Sources */,

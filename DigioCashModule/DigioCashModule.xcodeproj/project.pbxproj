@@ -15,6 +15,7 @@
 		F4B15F882C34FF71006E6FC7 /* DigioCashDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F872C34FF71006E6FC7 /* DigioCashDetailsViewController.swift */; };
 		F4B15F8D2C34FFEB006E6FC7 /* DigioCashDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F8C2C34FFEB006E6FC7 /* DigioCashDetailViewModelProtocol.swift */; };
 		F4B15F902C3500D9006E6FC7 /* Cash.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15F8F2C3500D9006E6FC7 /* Cash.swift */; };
+		F4B15FEA2C3593E5006E6FC7 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B15FE92C3593E5006E6FC7 /* UILabel+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		F4B15F872C34FF71006E6FC7 /* DigioCashDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioCashDetailsViewController.swift; sourceTree = "<group>"; };
 		F4B15F8C2C34FFEB006E6FC7 /* DigioCashDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioCashDetailViewModelProtocol.swift; sourceTree = "<group>"; };
 		F4B15F8F2C3500D9006E6FC7 /* Cash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash.swift; sourceTree = "<group>"; };
+		F4B15FE92C3593E5006E6FC7 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		F4B15F812C34FB17006E6FC7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F4B15FE72C3593B9006E6FC7 /* Utilities */,
 				F4B15F892C34FFBF006E6FC7 /* Domain */,
 				F4B15F822C34FB4A006E6FC7 /* Presentation */,
 			);
@@ -181,6 +184,22 @@
 				F4B15F8F2C3500D9006E6FC7 /* Cash.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F4B15FE72C3593B9006E6FC7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15FE82C3593C6006E6FC7 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F4B15FE82C3593C6006E6FC7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4B15FE92C3593E5006E6FC7 /* UILabel+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B15F902C3500D9006E6FC7 /* Cash.swift in Sources */,
+				F4B15FEA2C3593E5006E6FC7 /* UILabel+Extensions.swift in Sources */,
 				F4B15F862C34FF29006E6FC7 /* DigioCashDetails.swift in Sources */,
 				F4B15F882C34FF71006E6FC7 /* DigioCashDetailsViewController.swift in Sources */,
 				F4B15F8D2C34FFEB006E6FC7 /* DigioCashDetailViewModelProtocol.swift in Sources */,

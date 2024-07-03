@@ -25,5 +25,3 @@ public class SpotlightDetailsViewController: UIViewController {
             navigationController?.navigationBar.tintColor = .systemBlue
     }
 }
-
-
